@@ -473,6 +473,9 @@ ${JSON.stringify(inputs, null, 2)}`;
       const contentStrategy = this.generateContentStrategy(results);
       const topOpportunities = this.generateTopOpportunities(results);
       
+      // Generate static pillar chart HTML
+      const staticPillarChart = this.generateStaticPillarChart(results);
+
       // Replace template variables
       let html = template
         .replace(/{{BRAND_NAME}}/g, results.brand || 'Unknown Brand')
@@ -492,7 +495,8 @@ ${JSON.stringify(inputs, null, 2)}`;
         .replace(/{{COMPETITOR_ANALYSIS}}/g, competitorAnalysis)
         .replace(/{{CONTENT_STRATEGY}}/g, contentStrategy)
         .replace(/{{TOP_OPPORTUNITIES}}/g, topOpportunities)
-        .replace(/{{AEO_DATA}}/g, JSON.stringify(results, null, 2));
+        .replace(/{{STATIC_PILLAR_CHART}}/g, staticPillarChart)
+        .replace(/{{AEO_DATA}}/g, JSON.stringify(results, null, 2).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/`/g, '&#96;'));
       
       // Write the generated HTML
       await fs.writeFile(visualizerDest, html);
@@ -516,19 +520,47 @@ ${JSON.stringify(inputs, null, 2)}`;
   }
 
   calculateAverageGoogleScore(results) {
-    if (!results.summary?.queryPerformance) return 0;
-    const scores = Object.values(results.summary.queryPerformance)
-      .map(perf => perf.google?.visibilityScore || 0)
-      .filter(score => score > 0);
-    return scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+    // Try to get from summary.queryPerformance first, then fall back to queryAnalysis
+    if (results.summary?.queryPerformance) {
+      const scores = Object.values(results.summary.queryPerformance)
+        .map(perf => perf.google?.visibilityScore || 0)
+        .filter(score => score > 0);
+      if (scores.length > 0) {
+        return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+      }
+    }
+    
+    // Fallback: calculate from queryAnalysis
+    if (results.queryAnalysis) {
+      const scores = Object.values(results.queryAnalysis)
+        .map(query => query.google?.brandVisibility?.visibilityScore || 0)
+        .filter(score => score > 0);
+      return scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+    }
+    
+    return 0;
   }
 
   calculateAverageAiScore(results) {
-    if (!results.summary?.queryPerformance) return 0;
-    const scores = Object.values(results.summary.queryPerformance)
-      .map(perf => perf.perplexity?.combined || 0)
-      .filter(score => score > 0);
-    return scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+    // Try to get from summary.queryPerformance first, then fall back to queryAnalysis
+    if (results.summary?.queryPerformance) {
+      const scores = Object.values(results.summary.queryPerformance)
+        .map(perf => perf.perplexity?.combined || 0)
+        .filter(score => score > 0);
+      if (scores.length > 0) {
+        return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+      }
+    }
+    
+    // Fallback: calculate from queryAnalysis
+    if (results.queryAnalysis) {
+      const scores = Object.values(results.queryAnalysis)
+        .map(query => query.perplexity?.overallScore?.combined || 0)
+        .filter(score => score > 0);
+      return scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+    }
+    
+    return 0;
   }
 
   countP0Recommendations(results) {
@@ -537,14 +569,25 @@ ${JSON.stringify(inputs, null, 2)}`;
   }
 
   generateQueryCards(results) {
-    if (!results.queries || !results.summary?.queryPerformance) return '';
+    if (!results.queries) return '';
     
     return results.queries.map(query => {
-      const perf = results.summary.queryPerformance[query] || {};
-      const googleScore = perf.google?.visibilityScore || 0;
-      const aiScore = perf.perplexity?.combined || 0;
-      const topPosition = perf.google?.topPosition || 'N/A';
-      const mentions = perf.google?.totalMentions || 0;
+      // Try to get from summary.queryPerformance first, then fall back to queryAnalysis
+      let googleScore = 0, aiScore = 0, topPosition = 'N/A', mentions = 0;
+      
+      if (results.summary?.queryPerformance?.[query]) {
+        const perf = results.summary.queryPerformance[query];
+        googleScore = perf.google?.visibilityScore || 0;
+        aiScore = perf.perplexity?.combined || 0;
+        topPosition = perf.google?.topPosition || 'N/A';
+        mentions = perf.google?.totalMentions || 0;
+      } else if (results.queryAnalysis?.[query]) {
+        const analysis = results.queryAnalysis[query];
+        googleScore = analysis.google?.brandVisibility?.visibilityScore || 0;
+        aiScore = analysis.perplexity?.overallScore?.combined || 0;
+        topPosition = analysis.google?.brandVisibility?.topPosition || 'N/A';
+        mentions = analysis.google?.brandVisibility?.totalMentions || 0;
+      }
       
       return `
         <div class="query-performance-card rounded-xl p-6 shadow-lg">
@@ -634,6 +677,35 @@ ${JSON.stringify(inputs, null, 2)}`;
         </div>
       `;
     }).join('');
+  }
+
+  generateStaticPillarChart(results) {
+    if (!results.steps?.aeoScore?.pillars) return '<p class="text-gray-500">No pillar data available</p>';
+    
+    const pillars = results.steps.aeoScore.pillars;
+    const maxScores = [15, 25, 30, 15, 15];
+    const colors = ['#3b82f6', '#8b5cf6', '#06d6a0', '#f59e0b', '#ef4444'];
+    
+    let html = '<div class="static-pillar-chart space-y-4">';
+    
+    pillars.forEach((pillar, index) => {
+      const percentage = (pillar.subtotal / maxScores[index]) * 100;
+      html += `
+        <div class="pillar-item">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-medium text-gray-800">${pillar.name}</span>
+            <span class="font-bold text-gray-900">${pillar.subtotal}/${maxScores[index]}</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="h-3 rounded-full transition-all duration-300" style="width: ${percentage}%; background-color: ${colors[index]}"></div>
+          </div>
+          <div class="text-sm text-gray-600 mt-1">${percentage.toFixed(1)}% complete</div>
+        </div>
+      `;
+    });
+    
+    html += '</div>';
+    return html;
   }
 
   generateRecommendationsList(results) {

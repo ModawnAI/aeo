@@ -3,121 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AEO Analysis Dashboard - {{BRAND_NAME}}</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <title>{{BRAND_NAME}} - AEO Analysis Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #7c3aed;
-            --success-color: #059669;
-            --warning-color: #d97706;
-            --danger-color: #dc2626;
-            --info-color: #0891b2;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-        }
-        
         .glass-card {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .metric-card {
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .metric-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        
-        .score-circle {
-            position: relative;
-            width: 160px;
-            height: 160px;
-        }
-        
-        .score-circle svg {
-            transform: rotate(-90deg);
-        }
-        
-        .score-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        
-        .pillar-bar {
-            height: 8px;
-            border-radius: 4px;
-            background: #e5e7eb;
-            overflow: hidden;
-        }
-        
-        .pillar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 1s ease-in-out;
-        }
-        
-        .recommendation-card {
-            border-left: 4px solid;
+        .tab-button {
             transition: all 0.3s ease;
         }
         
-        .recommendation-card:hover {
-            transform: translateX(4px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        
-        .priority-p0 { border-left-color: var(--danger-color); }
-        .priority-p1 { border-left-color: var(--warning-color); }
-        .priority-p2 { border-left-color: var(--success-color); }
-        
-        .query-performance-card {
-            background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-        
-        .competitor-insight {
-            background: linear-gradient(145deg, #fef7ff 0%, #f3e8ff 100%);
-        }
-        
-        .loading-skeleton {
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
-        }
-        
-        @keyframes loading {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-in-out;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .pulse-animation {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+        .tab-button.active {
+            color: #3b82f6 !important;
+            border-bottom-color: #3b82f6 !important;
         }
         
         .tab-content {
@@ -128,155 +31,182 @@
             display: block;
         }
         
-        .tab-button {
-            transition: all 0.3s ease;
+        .pillar-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
         }
         
-        .tab-button.active {
-            background: var(--primary-color);
-            color: white;
+        .pillar-fill {
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .priority-p0 {
+            border-left: 4px solid #ef4444;
+            background-color: #fef2f2;
+        }
+        
+        .priority-p1 {
+            border-left: 4px solid #f59e0b;
+            background-color: #fffbeb;
+        }
+        
+        .priority-p2 {
+            border-left: 4px solid #10b981;
+            background-color: #f0fdf4;
+        }
+        
+        .score-circle {
+            stroke-dasharray: 440;
+            stroke-dashoffset: {{SCORE_OFFSET}};
+            transition: stroke-dashoffset 0.5s ease-in-out;
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
-    <!-- Header Section -->
-    <div class="gradient-bg text-white py-8">
-        <div class="container mx-auto px-6">
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
             <div class="flex items-center justify-between">
                 <div>
-                    <h1 class="text-4xl font-bold mb-2">{{BRAND_NAME}} AEO Analysis</h1>
-                    <p class="text-blue-100 text-lg">AI Engine Optimization Performance Dashboard</p>
-                    <div class="flex items-center space-x-4 mt-3 text-sm">
-                        <span><i class="fas fa-calendar-alt mr-1"></i> {{ANALYSIS_DATE}}</span>
-                        <span><i class="fas fa-search mr-1"></i> {{QUERIES_COUNT}} queries analyzed</span>
-                        <span><i class="fas fa-chart-line mr-1"></i> {{COMPETITOR_COUNT}} competitors tracked</span>
-                    </div>
+                    <h1 class="text-3xl font-bold text-gray-800">{{BRAND_NAME}} AEO Analysis</h1>
+                    <p class="text-gray-600 mt-2">Comprehensive Answer Engine Optimization Report</p>
                 </div>
-                <div class="score-circle">
-                    <svg width="160" height="160">
-                        <circle cx="80" cy="80" r="70" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="8"/>
-                        <circle cx="80" cy="80" r="70" fill="none" stroke="white" stroke-width="8" 
-                                stroke-dasharray="440" stroke-dashoffset="{{SCORE_OFFSET}}" 
-                                stroke-linecap="round" id="main-score-circle"/>
-                    </svg>
-                    <div class="score-text text-white">
-                        <div class="text-3xl font-bold">{{TOTAL_SCORE}}</div>
-                        <div class="text-sm opacity-90">AEO Score</div>
-                        <div class="text-xs mt-1 px-2 py-1 bg-white bg-opacity-20 rounded">{{SCORE_CATEGORY}}</div>
-                    </div>
+                <div class="text-right">
+                    <div class="text-sm text-gray-500">Generated on {{ANALYSIS_DATE}}</div>
+                    <div class="text-2xl font-bold text-blue-600">{{TOTAL_SCORE}}/100</div>
+                    <div class="text-sm text-gray-600">{{SCORE_CATEGORY}}</div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- Navigation Tabs -->
     <div class="bg-white shadow-sm border-b">
         <div class="container mx-auto px-6">
             <div class="flex space-x-8">
-                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 active" onclick="showTab('overview')">
+                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 active" data-tab="overview">
                     <i class="fas fa-tachometer-alt mr-2"></i>Overview
                 </button>
-                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" onclick="showTab('queries')">
+                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" data-tab="queries">
                     <i class="fas fa-search mr-2"></i>Query Performance
                 </button>
-                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" onclick="showTab('pillars')">
+                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" data-tab="pillars">
                     <i class="fas fa-columns mr-2"></i>AEO Pillars
                 </button>
-                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" onclick="showTab('recommendations')">
+                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" data-tab="recommendations">
                     <i class="fas fa-lightbulb mr-2"></i>Recommendations
                 </button>
-                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" onclick="showTab('competitors')">
+                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" data-tab="competitors">
                     <i class="fas fa-users mr-2"></i>Competitors
                 </button>
-                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" onclick="showTab('strategy')">
-                    <i class="fas fa-rocket mr-2"></i>Strategy
+                <button class="tab-button py-4 px-6 font-medium text-gray-600 hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600" data-tab="strategy">
+                    <i class="fas fa-chess mr-2"></i>Strategy
                 </button>
             </div>
         </div>
     </div>
 
-    <div class="container mx-auto px-6 py-8">
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8">
         <!-- Overview Tab -->
-        <div id="overview" class="tab-content active fade-in">
-            <!-- Key Metrics Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div class="metric-card glass-card rounded-xl p-6 shadow-lg">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-gray-600 text-sm font-medium">Total AEO Score</p>
-                            <p class="text-3xl font-bold text-gray-800">{{TOTAL_SCORE}}/100</p>
-                            <p class="text-sm text-green-600 mt-1">
-                                <i class="fas fa-arrow-up mr-1"></i>{{SCORE_CATEGORY}}
-                            </p>
-                        </div>
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-chart-line text-blue-600 text-xl"></i>
-                        </div>
-                    </div>
-                </div>
+        <div id="overview" class="tab-content active">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">AEO Performance Overview</h2>
+                <p class="text-gray-600">High-level insights into your Answer Engine Optimization performance</p>
+            </div>
 
-                <div class="metric-card glass-card rounded-xl p-6 shadow-lg">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-gray-600 text-sm font-medium">Google Visibility</p>
-                            <p class="text-3xl font-bold text-gray-800">{{AVG_GOOGLE_SCORE}}%</p>
-                            <p class="text-sm text-gray-500 mt-1">Average across queries</p>
-                        </div>
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                            <i class="fab fa-google text-green-600 text-xl"></i>
-                        </div>
-                    </div>
+            <!-- Key Metrics -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="glass-card rounded-xl p-6 shadow-lg text-center">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">{{QUERIES_COUNT}}</div>
+                    <div class="text-gray-600">Queries Analyzed</div>
                 </div>
-
-                <div class="metric-card glass-card rounded-xl p-6 shadow-lg">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-gray-600 text-sm font-medium">AI Engine Score</p>
-                            <p class="text-3xl font-bold text-gray-800">{{AVG_AI_SCORE}}%</p>
-                            <p class="text-sm text-gray-500 mt-1">Perplexity performance</p>
-                        </div>
-                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-robot text-purple-600 text-xl"></i>
-                        </div>
-                    </div>
+                <div class="glass-card rounded-xl p-6 shadow-lg text-center">
+                    <div class="text-3xl font-bold text-green-600 mb-2">{{COMPETITOR_COUNT}}</div>
+                    <div class="text-gray-600">Competitors</div>
                 </div>
+                <div class="glass-card rounded-xl p-6 shadow-lg text-center">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">{{AVG_GOOGLE_SCORE}}%</div>
+                    <div class="text-gray-600">Avg Google Score</div>
+                </div>
+                <div class="glass-card rounded-xl p-6 shadow-lg text-center">
+                    <div class="text-3xl font-bold text-orange-600 mb-2">{{AVG_AI_SCORE}}%</div>
+                    <div class="text-gray-600">Avg AI Score</div>
+                </div>
+            </div>
 
-                <div class="metric-card glass-card rounded-xl p-6 shadow-lg">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-gray-600 text-sm font-medium">Priority Actions</p>
-                            <p class="text-3xl font-bold text-gray-800">{{P0_COUNT}}</p>
-                            <p class="text-sm text-red-600 mt-1">Critical improvements</p>
-                        </div>
-                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+            <!-- AEO Score Circle -->
+            <div class="glass-card rounded-xl p-6 shadow-lg mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">Overall AEO Score</h3>
+                <div class="flex justify-center">
+                    <div class="relative w-48 h-48">
+                        <svg class="w-48 h-48 transform -rotate-90" viewBox="0 0 160 160">
+                            <circle cx="80" cy="80" r="70" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                            <circle cx="80" cy="80" r="70" stroke="#3b82f6" stroke-width="8" fill="none" 
+                                    class="score-circle" stroke-linecap="round"/>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-gray-800">{{TOTAL_SCORE}}</div>
+                                <div class="text-sm text-gray-600">out of 100</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Insights -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                <div class="glass-card rounded-xl p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">
-                        <i class="fas fa-chart-pie mr-2 text-blue-600"></i>AEO Pillar Performance
-                    </h3>
-                    <canvas id="overview-pillar-chart" width="400" height="300"></canvas>
+            <!-- AEO Pillars Overview -->
+            <div class="glass-card rounded-xl p-6 shadow-lg mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">AEO Pillar Performance</h3>
+                <div id="pillar-overview">
+                    {{STATIC_PILLAR_CHART}}
                 </div>
-
-                <div class="glass-card rounded-xl p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">
-                        <i class="fas fa-trophy mr-2 text-yellow-600"></i>Top Opportunities
-                    </h3>
-                    <div class="space-y-4" id="top-opportunities">
-                        {{TOP_OPPORTUNITIES}}
+                
+                <!-- AEO Pillar Definitions -->
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">AEO 기둥 정의</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-800 mb-2">1. 온페이지 구조 (On-Page Structure)</h5>
+                            <p class="text-gray-700">질문 기반 H2/H3 제목, 첫 번째 단락의 직접적인 답변(40-60자), 구조화된 표/목록, 그리고 사실적 밀도(숫자/날짜)에 중점을 둡니다.</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h5 class="font-semibold text-purple-800 mb-2">2. E-E-A-T & 콘텐츠 품질 (Content Quality)</h5>
+                            <p class="text-gray-700">경험(Experience), 전문성(Expertise), 권위성(Authoritativeness), 신뢰성(Trustworthiness) 신호를 평가하며, 저자 자격증명, 출처 인용, 콘텐츠 신선도, 정책 페이지를 포함합니다.</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h5 class="font-semibold text-green-800 mb-2">3. 오프사이트 권위 (Off-Site Authority)</h5>
+                            <p class="text-gray-700">미디어 언급, 커뮤니티 존재감, 전문가 인용, 그리고 웹 전반의 엔티티 일관성을 측정합니다.</p>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h5 class="font-semibold text-yellow-800 mb-2">4. 기술 & 스키마 (Technical Foundation)</h5>
+                            <p class="text-gray-700">Core Web Vitals, 모바일 최적화, 그리고 스키마 마크업(Organization, Article, FAQ, HowTo, Product)을 평가합니다.</p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg md:col-span-2">
+                            <h5 class="font-semibold text-red-800 mb-2">5. 직접 AEO 성과 (Direct AEO Performance)</h5>
+                            <p class="text-gray-700">AI 개요 출현, 챗봇 추천/언급, 그리고 브랜드 검색량 증가를 추적합니다.</p>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Top Opportunities -->
+            <div class="glass-card rounded-xl p-6 shadow-lg">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">
+                    <i class="fas fa-trophy mr-2 text-yellow-600"></i>Top Opportunities
+                </h3>
+                <div class="space-y-4" id="top-opportunities">
+                    {{TOP_OPPORTUNITIES}}
                 </div>
             </div>
         </div>
 
         <!-- Query Performance Tab -->
-        <div id="queries" class="tab-content fade-in">
+        <div id="queries" class="tab-content">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">Query Performance Analysis</h2>
                 <p class="text-gray-600">Detailed breakdown of performance across all analyzed queries</p>
@@ -285,61 +215,66 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="query-performance-grid">
                 {{QUERY_CARDS}}
             </div>
-
-            <!-- Query Performance Chart -->
-            <div class="glass-card rounded-xl p-6 shadow-lg mt-8">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">Performance Comparison</h3>
-                <canvas id="query-comparison-chart" width="400" height="200"></canvas>
-            </div>
         </div>
 
         <!-- AEO Pillars Tab -->
-        <div id="pillars" class="tab-content fade-in">
+        <div id="pillars" class="tab-content">
             <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">AEO Pillar Analysis</h2>
-                <p class="text-gray-600">Deep dive into each pillar of AI Engine Optimization</p>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">AEO Pillars Deep Dive</h2>
+                <p class="text-gray-600">Comprehensive analysis of all five AEO performance pillars</p>
             </div>
 
-            <!-- Pillar Overview -->
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-8" id="pillar-overview">
+            <!-- AEO Pillar Definitions -->
+            <div class="glass-card rounded-xl p-6 shadow-lg mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">AEO 기둥이란 무엇인가요?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                        <h4 class="font-bold text-blue-800 mb-3 text-lg">1. 온페이지 구조 (On-Page Structure)</h4>
+                        <p class="text-gray-700 mb-3">질문 기반 H2/H3 제목, 첫 번째 단락의 직접적인 답변(40-60자), 구조화된 표/목록, 그리고 사실적 밀도(숫자/날짜)에 중점을 둡니다.</p>
+                        <div class="text-sm text-blue-600 font-semibold">최대 점수: 15점</div>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+                        <h4 class="font-bold text-purple-800 mb-3 text-lg">2. E-E-A-T & 콘텐츠 품질 (Content Quality)</h4>
+                        <p class="text-gray-700 mb-3">경험(Experience), 전문성(Expertise), 권위성(Authoritativeness), 신뢰성(Trustworthiness) 신호를 평가하며, 저자 자격증명, 출처 인용, 콘텐츠 신선도, 정책 페이지를 포함합니다.</p>
+                        <div class="text-sm text-purple-600 font-semibold">최대 점수: 25점</div>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-bold text-green-800 mb-3 text-lg">3. 오프사이트 권위 (Off-Site Authority)</h4>
+                        <p class="text-gray-700 mb-3">미디어 언급, 커뮤니티 존재감, 전문가 인용, 그리고 웹 전반의 엔티티 일관성을 측정합니다.</p>
+                        <div class="text-sm text-green-600 font-semibold">최대 점수: 30점</div>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+                        <h4 class="font-bold text-yellow-800 mb-3 text-lg">4. 기술 & 스키마 (Technical Foundation)</h4>
+                        <p class="text-gray-700 mb-3">Core Web Vitals, 모바일 최적화, 그리고 스키마 마크업(Organization, Article, FAQ, HowTo, Product)을 평가합니다.</p>
+                        <div class="text-sm text-yellow-600 font-semibold">최대 점수: 15점</div>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 md:col-span-2">
+                        <h4 class="font-bold text-red-800 mb-3 text-lg">5. 직접 AEO 성과 (Direct AEO Performance)</h4>
+                        <p class="text-gray-700 mb-3">AI 개요 출현, 챗봇 추천/언급, 그리고 브랜드 검색량 증가를 추적합니다.</p>
+                        <div class="text-sm text-red-600 font-semibold">최대 점수: 15점</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {{PILLAR_CARDS}}
             </div>
 
             <!-- Detailed Pillar Analysis -->
-            <div class="glass-card rounded-xl p-6 shadow-lg mb-8">
+            <div class="glass-card rounded-xl p-6 shadow-lg">
                 <h3 class="text-xl font-bold text-gray-800 mb-6">Detailed Pillar Breakdown</h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div>
-                        <canvas id="pillar-radar-chart" width="400" height="400"></canvas>
-                    </div>
-                    <div id="pillar-details">
-                        {{PILLAR_DETAILS}}
-                    </div>
+                <div id="pillar-details">
+                    {{PILLAR_DETAILS}}
                 </div>
             </div>
         </div>
 
         <!-- Recommendations Tab -->
-        <div id="recommendations" class="tab-content fade-in">
+        <div id="recommendations" class="tab-content">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">Actionable Recommendations</h2>
                 <p class="text-gray-600">Prioritized improvements to boost your AEO performance</p>
-            </div>
-
-            <!-- Priority Filter -->
-            <div class="flex space-x-4 mb-6">
-                <button class="filter-btn px-4 py-2 rounded-lg bg-red-100 text-red-800 font-medium active" onclick="filterRecommendations('all')">
-                    All Recommendations
-                </button>
-                <button class="filter-btn px-4 py-2 rounded-lg bg-gray-100 text-gray-600 font-medium" onclick="filterRecommendations('P0')">
-                    <i class="fas fa-exclamation-circle mr-1"></i>Critical (P0)
-                </button>
-                <button class="filter-btn px-4 py-2 rounded-lg bg-gray-100 text-gray-600 font-medium" onclick="filterRecommendations('P1')">
-                    <i class="fas fa-exclamation-triangle mr-1"></i>High (P1)
-                </button>
-                <button class="filter-btn px-4 py-2 rounded-lg bg-gray-100 text-gray-600 font-medium" onclick="filterRecommendations('P2')">
-                    <i class="fas fa-info-circle mr-1"></i>Medium (P2)
-                </button>
             </div>
 
             <div class="space-y-6" id="recommendations-list">
@@ -348,247 +283,83 @@
         </div>
 
         <!-- Competitors Tab -->
-        <div id="competitors" class="tab-content fade-in">
+        <div id="competitors" class="tab-content">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">Competitor Analysis</h2>
-                <p class="text-gray-600">Insights from top-ranking competitor pages</p>
+                <p class="text-gray-600">Insights from analyzing top-performing competitor content</p>
             </div>
 
-            <div id="competitor-insights">
+            <div id="competitor-analysis">
                 {{COMPETITOR_ANALYSIS}}
             </div>
         </div>
 
         <!-- Strategy Tab -->
-        <div id="strategy" class="tab-content fade-in">
+        <div id="strategy" class="tab-content">
             <div class="mb-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-2">Content Strategy</h2>
-                <p class="text-gray-600">Actionable content strategies based on competitor analysis</p>
+                <p class="text-gray-600">Personalized content recommendations for {{BRAND_NAME}}</p>
             </div>
 
             <div id="content-strategy">
                 {{CONTENT_STRATEGY}}
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-16">
+    <footer class="bg-gray-800 text-white py-8 mt-12">
         <div class="container mx-auto px-6 text-center">
             <p class="text-gray-400">AEO Analysis Dashboard • Generated on {{ANALYSIS_DATE}} • Powered by Perpex AI</p>
         </div>
     </footer>
 
+    <!-- JSON Data -->
+    <script id="aeo-data" type="application/json">{{AEO_DATA}}</script>
+
+    <!-- Main JavaScript -->
     <script>
         // Global data object
-        let aeoData = {{AEO_DATA}};
-
+        let aeoData = JSON.parse(document.getElementById('aeo-data').textContent);
+        
         // Tab functionality
-        function showTab(tabName) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
+        function initializeTabs() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
             
-            // Remove active class from all buttons
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected tab
-            document.getElementById(tabName).classList.add('active');
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
-            
-            // Initialize charts for the active tab
-            setTimeout(() => {
-                initializeChartsForTab(tabName);
-            }, 100);
-        }
-
-        // Initialize charts based on active tab
-        function initializeChartsForTab(tabName) {
-            switch(tabName) {
-                case 'overview':
-                    initOverviewCharts();
-                    break;
-                case 'queries':
-                    initQueryCharts();
-                    break;
-                case 'pillars':
-                    initPillarCharts();
-                    break;
-            }
-        }
-
-        // Initialize overview charts
-        function initOverviewCharts() {
-            const ctx = document.getElementById('overview-pillar-chart');
-            if (!ctx) return;
-            
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: aeoData.steps.aeoScore.pillars.map(p => p.name.split(' ')[0]),
-                    datasets: [{
-                        data: aeoData.steps.aeoScore.pillars.map(p => p.subtotal),
-                        backgroundColor: [
-                            '#3b82f6', '#8b5cf6', '#06d6a0', '#f59e0b', '#ef4444'
-                        ],
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                padding: 20,
-                                usePointStyle: true
-                            }
-                        }
-                    }
-                }
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(targetTab).classList.add('active');
+                    
+                    console.log('Switched to tab:', targetTab);
+                });
             });
         }
-
-        // Initialize query performance charts
-        function initQueryCharts() {
-            const ctx = document.getElementById('query-comparison-chart');
-            if (!ctx) return;
-            
-            const queries = aeoData.queries;
-            const googleScores = queries.map(q => aeoData.summary.queryPerformance[q]?.google?.visibilityScore || 0);
-            const aiScores = queries.map(q => aeoData.summary.queryPerformance[q]?.perplexity?.combined || 0);
-            
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: queries,
-                    datasets: [{
-                        label: 'Google Visibility',
-                        data: googleScores,
-                        backgroundColor: '#3b82f6',
-                        borderRadius: 4
-                    }, {
-                        label: 'AI Engine Score',
-                        data: aiScores,
-                        backgroundColor: '#8b5cf6',
-                        borderRadius: 4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            max: 100
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            position: 'top'
-                        }
-                    }
-                }
-            });
-        }
-
-        // Initialize pillar charts
-        function initPillarCharts() {
-            const ctx = document.getElementById('pillar-radar-chart');
-            if (!ctx) return;
-            
-            const maxScores = [15, 25, 30, 15, 15];
-            
-            new Chart(ctx, {
-                type: 'radar',
-                data: {
-                    labels: aeoData.steps.aeoScore.pillars.map(p => p.name.split(' ')[0]),
-                    datasets: [{
-                        label: 'Current Score',
-                        data: aeoData.steps.aeoScore.pillars.map(p => p.subtotal),
-                        borderColor: '#3b82f6',
-                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                        pointBackgroundColor: '#3b82f6',
-                        pointBorderColor: '#3b82f6',
-                        pointRadius: 6
-                    }, {
-                        label: 'Max Possible',
-                        data: maxScores,
-                        borderColor: '#e5e7eb',
-                        backgroundColor: 'rgba(229, 231, 235, 0.1)',
-                        pointBackgroundColor: '#e5e7eb',
-                        pointBorderColor: '#e5e7eb',
-                        pointRadius: 4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            beginAtZero: true,
-                            max: Math.max(...maxScores),
-                            ticks: {
-                                stepSize: 5
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            position: 'top'
-                        }
-                    }
-                }
-            });
-        }
-
-        // Filter recommendations
-        function filterRecommendations(priority) {
-            const recommendations = document.querySelectorAll('.recommendation-item');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            // Update button states
-            buttons.forEach(btn => {
-                btn.classList.remove('active', 'bg-red-100', 'text-red-800');
-                btn.classList.add('bg-gray-100', 'text-gray-600');
-            });
-            
-            event.target.classList.remove('bg-gray-100', 'text-gray-600');
-            event.target.classList.add('active', 'bg-red-100', 'text-red-800');
-            
-            // Filter recommendations
-            recommendations.forEach(rec => {
-                if (priority === 'all' || rec.dataset.priority === priority) {
-                    rec.style.display = 'block';
-                } else {
-                    rec.style.display = 'none';
-                }
-            });
-        }
-
+        
         // Initialize dashboard
         function initializeDashboard() {
-            // Animate score circle
-            setTimeout(() => {
-                const circle = document.getElementById('main-score-circle');
-                if (circle) {
-                    circle.style.transition = 'stroke-dashoffset 2s ease-in-out';
-                }
-            }, 500);
+            console.log('Initializing AEO Dashboard...');
+            console.log('Data loaded:', aeoData ? 'Yes' : 'No');
             
-            // Initialize overview charts by default
-            setTimeout(() => {
-                initOverviewCharts();
-            }, 1000);
+            // Initialize tabs
+            initializeTabs();
+            
+            // Set default active tab
+            document.querySelector('[data-tab="overview"]').classList.add('active');
+            document.getElementById('overview').classList.add('active');
+            
+            console.log('Dashboard initialized successfully');
         }
-
-        // Initialize when page loads
+        
+        // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', initializeDashboard);
     </script>
 </body>
