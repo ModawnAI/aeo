@@ -434,39 +434,372 @@ ${JSON.stringify(inputs, null, 2)}`;
     await fs.writeFile(outputPath, JSON.stringify(results, null, 2));
     console.log(`✅ Results saved to: ${outputPath}`);
     
-    // Copy visualizer to output directory for easy access
-    await this.setupVisualizer();
+    // Generate enhanced visualizer with actual data
+    await this.generateVisualizer(results);
   }
 
 
-  async setupVisualizer() {
+  async generateVisualizer(results) {
     try {
+      console.log('📊 Generating enhanced AEO dashboard...');
+      
+      const templatePath = path.join(__dirname, 'aeo-visualizer.html');
       const outputDir = path.join(__dirname, '..', 'output');
       const visualizerDest = path.join(outputDir, 'dashboard.html');
       
-      // Check if dashboard.html already exists in output directory
-      let visualizerSource;
-      try {
-        await fs.access(visualizerDest);
-        console.log(`📊 Dashboard already exists at: ${visualizerDest}`);
-        return visualizerDest;
-      } catch {
-        // Dashboard doesn't exist, copy from src/visualizer.html
-        visualizerSource = path.join(__dirname, 'visualizer.html');
-      }
+      // Read the template
+      const template = await fs.readFile(templatePath, 'utf-8');
       
-      const visualizerContent = await fs.readFile(visualizerSource, 'utf-8');
-      await fs.writeFile(visualizerDest, visualizerContent);
+      // Calculate metrics
+      const totalScore = results.steps.aeoScore?.totalScore || 0;
+      const scoreCategory = this.getScoreCategory(totalScore);
+      const queriesCount = results.queries?.length || 0;
+      const competitorCount = this.calculateCompetitorCount(results);
       
-      console.log(`📊 Dashboard created at: ${visualizerDest}`);
+      // Calculate average scores
+      const avgGoogleScore = this.calculateAverageGoogleScore(results);
+      const avgAiScore = this.calculateAverageAiScore(results);
+      const p0Count = this.countP0Recommendations(results);
+      
+      // Calculate score circle offset (circumference = 2 * π * 70 = 440)
+      const scoreOffset = 440 - (totalScore / 100) * 440;
+      
+      // Generate content sections
+      const queryCards = this.generateQueryCards(results);
+      const pillarCards = this.generatePillarCards(results);
+      const pillarDetails = this.generatePillarDetails(results);
+      const recommendationsList = this.generateRecommendationsList(results);
+      const competitorAnalysis = this.generateCompetitorAnalysis(results);
+      const contentStrategy = this.generateContentStrategy(results);
+      const topOpportunities = this.generateTopOpportunities(results);
+      
+      // Replace template variables
+      let html = template
+        .replace(/{{BRAND_NAME}}/g, results.brand || 'Unknown Brand')
+        .replace(/{{ANALYSIS_DATE}}/g, new Date(results.timestamp).toLocaleDateString())
+        .replace(/{{QUERIES_COUNT}}/g, queriesCount.toString())
+        .replace(/{{COMPETITOR_COUNT}}/g, competitorCount.toString())
+        .replace(/{{TOTAL_SCORE}}/g, totalScore.toString())
+        .replace(/{{SCORE_CATEGORY}}/g, scoreCategory)
+        .replace(/{{SCORE_OFFSET}}/g, scoreOffset.toString())
+        .replace(/{{AVG_GOOGLE_SCORE}}/g, avgGoogleScore.toString())
+        .replace(/{{AVG_AI_SCORE}}/g, avgAiScore.toString())
+        .replace(/{{P0_COUNT}}/g, p0Count.toString())
+        .replace(/{{QUERY_CARDS}}/g, queryCards)
+        .replace(/{{PILLAR_CARDS}}/g, pillarCards)
+        .replace(/{{PILLAR_DETAILS}}/g, pillarDetails)
+        .replace(/{{RECOMMENDATIONS_LIST}}/g, recommendationsList)
+        .replace(/{{COMPETITOR_ANALYSIS}}/g, competitorAnalysis)
+        .replace(/{{CONTENT_STRATEGY}}/g, contentStrategy)
+        .replace(/{{TOP_OPPORTUNITIES}}/g, topOpportunities)
+        .replace(/{{AEO_DATA}}/g, JSON.stringify(results, null, 2));
+      
+      // Write the generated HTML
+      await fs.writeFile(visualizerDest, html);
+      
+      console.log(`✅ Enhanced dashboard generated at: ${visualizerDest}`);
       console.log(`🌐 To view dashboard, run: cd /Users/kjyoo/Perpex && npm run dashboard`);
       console.log(`🌐 Then open: http://localhost:8080/dashboard.html`);
       
       return visualizerDest;
     } catch (error) {
-      console.error('Error setting up visualizer:', error.message);
+      console.error('❌ Error generating visualizer:', error.message);
       return null;
     }
+  }
+
+  calculateCompetitorCount(results) {
+    if (!results.steps?.pageAudits) return 0;
+    return Object.values(results.steps.pageAudits)
+      .flat()
+      .filter(audit => !audit.signals?.error).length;
+  }
+
+  calculateAverageGoogleScore(results) {
+    if (!results.summary?.queryPerformance) return 0;
+    const scores = Object.values(results.summary.queryPerformance)
+      .map(perf => perf.google?.visibilityScore || 0)
+      .filter(score => score > 0);
+    return scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+  }
+
+  calculateAverageAiScore(results) {
+    if (!results.summary?.queryPerformance) return 0;
+    const scores = Object.values(results.summary.queryPerformance)
+      .map(perf => perf.perplexity?.combined || 0)
+      .filter(score => score > 0);
+    return scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+  }
+
+  countP0Recommendations(results) {
+    if (!results.steps?.recommendations?.recommendations) return 0;
+    return results.steps.recommendations.recommendations.filter(rec => rec.priority === 'P0').length;
+  }
+
+  generateQueryCards(results) {
+    if (!results.queries || !results.summary?.queryPerformance) return '';
+    
+    return results.queries.map(query => {
+      const perf = results.summary.queryPerformance[query] || {};
+      const googleScore = perf.google?.visibilityScore || 0;
+      const aiScore = perf.perplexity?.combined || 0;
+      const topPosition = perf.google?.topPosition || 'N/A';
+      const mentions = perf.google?.totalMentions || 0;
+      
+      return `
+        <div class="query-performance-card rounded-xl p-6 shadow-lg">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-bold text-gray-800">${query}</h3>
+            <div class="text-sm text-gray-500">Query Performance</div>
+          </div>
+          
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-sm font-medium text-gray-600">Google Visibility</span>
+                <span class="text-sm font-bold text-gray-800">${googleScore}%</span>
+              </div>
+              <div class="pillar-bar">
+                <div class="pillar-fill bg-blue-500" style="width: ${googleScore}%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-sm font-medium text-gray-600">AI Engine Score</span>
+                <span class="text-sm font-bold text-gray-800">${aiScore.toFixed(1)}%</span>
+              </div>
+              <div class="pillar-bar">
+                <div class="pillar-fill bg-purple-500" style="width: ${aiScore}%"></div>
+              </div>
+            </div>
+            
+            <div class="flex justify-between text-xs text-gray-500 pt-2 border-t">
+              <span>Top Position: ${topPosition}</span>
+              <span>Mentions: ${mentions}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  generatePillarCards(results) {
+    if (!results.steps?.aeoScore?.pillars) return '';
+    
+    const maxScores = [15, 25, 30, 15, 15];
+    const colors = ['bg-blue-500', 'bg-purple-500', 'bg-green-500', 'bg-yellow-500', 'bg-red-500'];
+    
+    return results.steps.aeoScore.pillars.map((pillar, index) => {
+      const percentage = (pillar.subtotal / maxScores[index]) * 100;
+      
+      return `
+        <div class="glass-card rounded-xl p-6 shadow-lg text-center">
+          <div class="w-16 h-16 ${colors[index]} rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-2xl font-bold">${pillar.subtotal}</span>
+          </div>
+          <h4 class="font-semibold text-gray-800 mb-2">${pillar.name}</h4>
+          <div class="text-sm text-gray-600 mb-3">${pillar.subtotal}/${maxScores[index]} points</div>
+          <div class="pillar-bar">
+            <div class="pillar-fill ${colors[index]}" style="width: ${percentage}%"></div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  generatePillarDetails(results) {
+    if (!results.steps?.aeoScore?.pillars) return '';
+    
+    const explanations = {
+      'On-Page Structure': 'Focuses on question-based H2/H3 headings, direct answers in first paragraphs (40-60 chars), structured tables/lists, and factual density (numbers/dates).',
+      'E-E-A-T & Content Quality': 'Evaluates Experience, Expertise, Authoritativeness, and Trustworthiness signals including author credentials, source citations, content freshness, and policy pages.',
+      'Off-Site Authority': 'Measures media mentions, community presence, expert citations, and entity consistency across the web.',
+      'Technical Foundation': 'Assesses Core Web Vitals, mobile optimization, and schema markup (Organization, Article, FAQ, HowTo, Product).',
+      'Direct AEO Performance': 'Tracks AI Overviews appearances, chatbot recommendations/mentions, and brand search volume increases.'
+    };
+    
+    return results.steps.aeoScore.pillars.map(pillar => {
+      const explanation = explanations[pillar.name] || 'No explanation available';
+      const items = pillar.items || [];
+      
+      return `
+        <div class="bg-gray-50 rounded-lg p-4 mb-4">
+          <h4 class="font-bold text-gray-800 mb-2">${pillar.name}</h4>
+          <p class="text-sm text-gray-600 mb-3">${explanation}</p>
+          <div class="text-sm">
+            <strong>Score: ${pillar.subtotal} points</strong>
+            ${items.length > 0 ? `<br>Items evaluated: ${items.length}` : ''}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  generateRecommendationsList(results) {
+    if (!results.steps?.recommendations?.recommendations) return '';
+    
+    return results.steps.recommendations.recommendations.map(rec => {
+      const priorityClass = rec.priority === 'P0' ? 'priority-p0' : 
+                           rec.priority === 'P1' ? 'priority-p1' : 'priority-p2';
+      const priorityBadge = rec.priority === 'P0' ? 'bg-red-100 text-red-800' :
+                           rec.priority === 'P1' ? 'bg-yellow-100 text-yellow-800' : 'bg-green-100 text-green-800';
+      
+      return `
+        <div class="recommendation-card ${priorityClass} glass-card rounded-xl p-6 shadow-lg recommendation-item" data-priority="${rec.priority}">
+          <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center space-x-3">
+              <span class="px-3 py-1 text-xs font-bold rounded-full ${priorityBadge}">${rec.priority}</span>
+              <span class="px-3 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">${rec.category}</span>
+              <div class="text-xs text-gray-500">
+                Impact: ${rec.impact} • Effort: ${rec.effort}
+              </div>
+            </div>
+          </div>
+          
+          <h4 class="text-lg font-bold text-gray-800 mb-3">${rec.description}</h4>
+          
+          <div class="bg-gray-50 rounded-lg p-4 mb-4">
+            <h5 class="font-medium text-gray-700 mb-2">Implementation Example:</h5>
+            <pre class="text-sm text-gray-600 whitespace-pre-wrap">${rec.suggestion_snippet}</pre>
+          </div>
+          
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <span>Metric: ${rec.metric}</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  generateCompetitorAnalysis(results) {
+    if (!results.steps?.pageAudits) return '<p class="text-gray-500">No competitor analysis data available.</p>';
+    
+    let html = '<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">';
+    
+    Object.entries(results.steps.pageAudits).forEach(([query, audits]) => {
+      html += `
+        <div class="competitor-insight rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-bold text-gray-800 mb-4">
+            <i class="fas fa-search mr-2 text-purple-600"></i>${query}
+          </h3>
+          <div class="space-y-3">
+      `;
+      
+      audits.slice(0, 3).forEach((audit, index) => {
+        if (!audit.signals?.error) {
+          html += `
+            <div class="bg-white rounded-lg p-4 border-l-4 border-purple-500">
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-medium text-gray-800">#${index + 1} ${audit.domain}</span>
+                <span class="text-xs text-gray-500">Pos: ${audit.position || 'N/A'}</span>
+              </div>
+              <p class="text-sm text-gray-600">${audit.whyItRanks || 'Analysis not available'}</p>
+              <div class="flex items-center space-x-4 mt-2 text-xs text-gray-500">
+                <span><i class="fas fa-heading mr-1"></i>${audit.signals?.h2Questions?.length || 0} H2s</span>
+                <span><i class="fas fa-code mr-1"></i>${audit.signals?.schemaTypes?.length || 0} schemas</span>
+              </div>
+            </div>
+          `;
+        }
+      });
+      
+      html += '</div></div>';
+    });
+    
+    html += '</div>';
+    return html;
+  }
+
+  generateContentStrategy(results) {
+    if (!results.queries) return '';
+    
+    return results.queries.map(query => {
+      const audits = results.steps?.pageAudits?.[query] || [];
+      const competitorInsights = audits.slice(0, 3)
+        .map(audit => audit.whyItRanks)
+        .filter(insight => insight)
+        .join('\n• ');
+      
+      return `
+        <div class="glass-card rounded-xl p-6 shadow-lg mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-bold text-gray-800">
+              <i class="fas fa-rocket mr-2 text-blue-600"></i>${query} Strategy
+            </h3>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Content Plan</span>
+          </div>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-bold text-gray-700 mb-2">1. Question-Based Headlines</h4>
+                <div class="bg-gray-50 rounded-lg p-3">
+                  <code class="text-sm">## ${query} 추천 2025년 최고의 선택은?</code>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="font-bold text-gray-700 mb-2">2. Direct Answer (50-80 chars)</h4>
+                <div class="bg-gray-50 rounded-lg p-3">
+                  <p class="text-sm text-gray-600">Provide immediate, specific answer addressing user intent with key benefits and use cases.</p>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="font-bold text-gray-700 mb-2">3. Structured Data</h4>
+                <div class="bg-gray-50 rounded-lg p-3">
+                  <code class="text-xs">FAQ, HowTo, Product schemas for ${query}</code>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-bold text-gray-700 mb-2">Competitor Insights to Emulate</h4>
+              <div class="bg-purple-50 rounded-lg p-4">
+                <ul class="text-sm text-gray-600 space-y-1">
+                  ${competitorInsights ? competitorInsights.split('\n').map(insight => 
+                    `<li><i class="fas fa-check-circle text-purple-600 mr-2"></i>${insight}</li>`
+                  ).join('') : '<li class="text-gray-400">No competitor insights available</li>'}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  generateTopOpportunities(results) {
+    if (!results.steps?.recommendations?.recommendations) return '';
+    
+    const topRecs = results.steps.recommendations.recommendations
+      .filter(rec => rec.priority === 'P0' || rec.priority === 'P1')
+      .slice(0, 3);
+    
+    return topRecs.map((rec, index) => {
+      const icon = index === 0 ? 'fas fa-star' : index === 1 ? 'fas fa-bolt' : 'fas fa-target';
+      const color = rec.priority === 'P0' ? 'text-red-600' : 'text-yellow-600';
+      
+      return `
+        <div class="flex items-start space-x-3 p-3 bg-gray-50 rounded-lg">
+          <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm">
+            <i class="${icon} ${color} text-sm"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="font-medium text-gray-800">${rec.description}</h4>
+            <p class="text-sm text-gray-600 mt-1">${rec.category} • ${rec.priority} Priority</p>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  async setupVisualizer() {
+    // This method is kept for backward compatibility but now just calls generateVisualizer
+    console.log('📊 Setting up legacy visualizer compatibility...');
+    return null;
   }
 
   async savePartialResults(stepName, data) {
@@ -1056,8 +1389,8 @@ Focus on creating specific, actionable strategies for "${normalizedIntake.brand}
       // Save results
       await this.saveResults(results);
       
-      // Setup dashboard
-      const dashboardPath = await this.setupVisualizer();
+      // Generate enhanced dashboard
+      const dashboardPath = await this.generateVisualizer(results);
       
       const duration = Math.round((Date.now() - startTime) / 1000);
       console.log(`=====================================`);
