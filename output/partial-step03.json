@@ -1,0 +1,181 @@
+{
+  "totalScore": 43,
+  "maxScore": 100,
+  "pillars": [
+    {
+      "name": "온페이지 구조",
+      "subtotal": 1.5,
+      "maxPoints": 15,
+      "items": [
+        {
+          "item": "제목이 직접적인 질문인가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "구글 검색 결과에서 대상 브랜드와 관련된 상위 노출 페이지의 제목들이 직접적인 질문 형태를 사용하지 않고 선언적인 문구를 사용하고 있습니다.",
+          "evidence": "Google results: 제목들이 'Smart TVs: HD & LED Smart TVs – Best Buy' 또는 'Smart TV - Wikipedia' 등 선언적 형태임."
+        },
+        {
+          "item": "H2/H3 다음에 40-60자 답변이 있는가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "제공된 스니펫 정보만으로는 LG 웹사이트의 원본 페이지 구조(H2/H3 사용 여부 및 후속 답변 길이)를 확인할 수 없으므로 점수를 부여할 수 없습니다.",
+          "evidence": "NormalizedIntake: 대상 브랜드의 온페이지 HTML 구조에 대한 직접적인 데이터 부재."
+        },
+        {
+          "item": "표나 목록으로 구조화되어 있는가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "구글 스니펫이나 AI 요약 내용에서 대상 브랜드 콘텐츠가 표나 목록 형태로 명확하게 구조화되었다는 증거를 찾을 수 없습니다.",
+          "evidence": "NormalizedIntake: 스니펫에서 표/목록 구조를 암시하는 포맷 미확인."
+        },
+        {
+          "item": "숫자, 날짜, 통계 등 사실이 포함되어 있는가?",
+          "max_points": 3,
+          "awarded": 1.5,
+          "rationale": "LG에 대한 구글 검색 결과 중 하나(프리미엄 가전 2위)는 아카이브된 이미지 파일과 함께 특정 날짜(2014년)를 언급하는 사실 정보를 포함하고 있습니다.",
+          "evidence": "Google result (프리미엄 가전, 2위): 'File:LG전자, 미국 프리미엄 가전시장 공략 강화 - 14262405138.jpg...'에 'Jun 17, 2014' 날짜가 명시됨."
+        }
+      ]
+    },
+    {
+      "name": "E-E-A-T & 콘텐츠 품질",
+      "subtotal": 13,
+      "maxPoints": 25,
+      "items": [
+        {
+          "item": "작가 프로필이나 전문성이 명시되어 있는가?",
+          "max_points": 6,
+          "awarded": 0,
+          "rationale": "제공된 데이터는 외부 검색 결과 및 AI 요약이므로, LG 자체 콘텐츠에 전문가 프로필이나 명확한 저자가 명시되어 있는지 여부를 평가할 수 없습니다.",
+          "evidence": "NormalizedIntake: 저자 프로필 또는 전문성 명시 정보 부재."
+        },
+        {
+          "item": "출처나 인용이 명확한가?",
+          "max_points": 7,
+          "awarded": 7,
+          "rationale": "Perplexity AI는 LG를 언급하면서 시장 보고서, 기술 리뷰 사이트(RTINGS.com), 소비자 보고서 등 신뢰할 수 있는 외부 출처를 명확히 인용하여 높은 투명성을 보입니다.",
+          "evidence": "Perplexity `스마트 TV` `sources`: 'The 6 Best TVs of 2025 - RTINGS.com' 및 'Best TVs of 2025, Tested by Our Experts - Consumer Reports' 등 다수의 권위 있는 출처가 인용됨."
+        },
+        {
+          "item": "최신 정보로 업데이트되어 있는가?",
+          "max_points": 7,
+          "awarded": 6,
+          "rationale": "Perplexity AI 요약에서 2025년 기준의 최신 모델(예: LG G5 OLED, LG C5 OLED)과 소비자 평가가 반복적으로 언급되어 정보의 최신성이 매우 높습니다.",
+          "evidence": "Perplexity Mentions (스마트 TV): 'Major Brands and Top Models (2025)', '- LG G5 OLED: Exceptional color performance...'와 같이 2025년 데이터가 자주 등장함."
+        },
+        {
+          "item": "연락처나 정책 정보가 있는가?",
+          "max_points": 5,
+          "awarded": 0,
+          "rationale": "제공된 검색 결과 스니펫이나 AI 요약에서는 대상 브랜드의 고객 서비스 연락처 또는 개인정보 보호 정책 정보 등을 확인할 수 없습니다.",
+          "evidence": "NormalizedIntake: 연락처 및 정책 정보에 대한 데이터 부재."
+        }
+      ]
+    },
+    {
+      "name": "오프사이트 권위",
+      "subtotal": 19.5,
+      "maxPoints": 30,
+      "items": [
+        {
+          "item": "미디어나 언론에서 언급되었는가?",
+          "max_points": 9,
+          "awarded": 7,
+          "rationale": "LG는 구글 검색 결과에서 국제적인 언론 매체인 가디언(The Guardian)과 위키미디어 프로젝트를 통해 주요 가전 브랜드로서 여러 차례 언급되었습니다.",
+          "evidence": "Google `스마트 TV` (9위): 'The Guardian' 도메인에서 LG 스마트 TV 데이터 수집에 대한 기사가 발견됨. '프리미엄 가전' (2위): 'commons.wikimedia.org'에 보도자료 파일 언급."
+        },
+        {
+          "item": "레딧, 커뮤니티에서 논의되고 있는가?",
+          "max_points": 7,
+          "awarded": 0,
+          "rationale": "제공된 데이터 내에 레딧, 포럼 또는 기타 사용자 기반 커뮤니티에서의 LG 제품 논의에 대한 증거가 포함되어 있지 않습니다.",
+          "evidence": "NormalizedIntake: 커뮤니티 및 소셜 데이터 부재."
+        },
+        {
+          "item": "전문가나 인플루언서가 인용했는가?",
+          "max_points": 9,
+          "awarded": 7.5,
+          "rationale": "Perplexity AI가 LG를 리뷰하면서 RTINGS.com, Consumer Reports 등 기술 및 소비자 평가 전문가들의 상세 리뷰와 비교 데이터를 기반으로 인용하고 있습니다.",
+          "evidence": "Perplexity Mentions (스마트 TV): LG OLED 모델이 RTINGS.com, Consumer Reports 인용 내용과 함께 경쟁 모델(Samsung QD-OLED)과 비교되는 맥락에서 언급됨."
+        },
+        {
+          "item": "브랜드 엔터티가 일관되게 사용되는가?",
+          "max_points": 5,
+          "awarded": 5,
+          "rationale": "모든 검색 엔진 및 AI 분석에서 'LG'라는 브랜드명이 핵심 엔터티로 명확하고 일관되게 인식 및 사용되고 있습니다.",
+          "evidence": "Google 및 Perplexity: 'LG', 'LG 전자'로 명확하게 식별되며, 경쟁 구도에서도 일관된 브랜드명 사용."
+        }
+      ]
+    },
+    {
+      "name": "기술 & 스키마",
+      "subtotal": 0,
+      "maxPoints": 15,
+      "items": [
+        {
+          "item": "Core Web Vitals가 양호한가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "LG의 웹사이트 Core Web Vitals 점수에 대한 성능 측정 데이터가 제공되지 않았습니다.",
+          "evidence": "NormalizedIntake: Core Web Vitals 데이터 부재."
+        },
+        {
+          "item": "모바일 최적화가 되어 있는가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "LG 웹사이트의 모바일 최적화 상태를 검증할 수 있는 기술 감사 데이터가 누락되었습니다.",
+          "evidence": "NormalizedIntake: 모바일 최적화 데이터 부재."
+        },
+        {
+          "item": "Organization/Article 스키마가 적용되어 있는가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "대상 브랜드 웹사이트에 Organization 또는 Article 스키마 마크업이 적용되었는지 여부를 판단할 정보가 없습니다.",
+          "evidence": "NormalizedIntake: 스키마 마크업 데이터 부재."
+        },
+        {
+          "item": "FAQ/HowTo/Product 스키마가 있는가?",
+          "max_points": 3,
+          "awarded": 0,
+          "rationale": "제품 정보 페이지에서 FAQ, HowTo, Product 스키마와 같은 상세 구조화 데이터가 사용되었는지 확인할 수 없습니다.",
+          "evidence": "NormalizedIntake: 구조화된 데이터(FAQ/Product) 적용 데이터 부재."
+        }
+      ]
+    },
+    {
+      "name": "직접 AEO 성과",
+      "subtotal": 9,
+      "maxPoints": 15,
+      "items": [
+        {
+          "item": "AI Overviews에 노출되었는가?",
+          "max_points": 4,
+          "awarded": 3.5,
+          "rationale": "LG는 Perplexity AI의 답변에서 '스마트 TV' 분야의 핵심 브랜드로 언급되어 주요 기술(OLED, webOS) 및 모델별 장점이 상세하게 요약되며 높은 노출도를 보입니다.",
+          "evidence": "Perplexity `스마트 TV`: LG가 'Major Brands and Top Models (2025)' 표에 포함되었으며, 6회 언급되어 AI 요약 내에서 높은 가시성을 확보함."
+        },
+        {
+          "item": "챗봇에서 추천되거나 언급되는가?",
+          "max_points": 3,
+          "awarded": 2.5,
+          "rationale": "'스마트 TV' 쿼리에서 LG는 Perplexity 경쟁 점수 59점으로 삼성과 함께 공동 1위를 차지하여 챗봇 환경에서 강력하게 추천되는 위치에 있습니다.",
+          "evidence": "Perplexity `스마트 TV` `ranking`: LG의 `combined` 점수 59점으로 1위를 기록, 주요 경쟁사와 동등한 최고 수준의 추천 위치."
+        },
+        {
+          "item": "브랜드 검색량이 증가하고 있는가?",
+          "max_points": 4,
+          "awarded": 0,
+          "rationale": "시간 경과에 따른 브랜드 검색량 추세 또는 구체적인 검색량 데이터가 입력으로 제공되지 않아 평가할 수 없습니다.",
+          "evidence": "NormalizedIntake: 브랜드 검색량 변화 데이터 부재."
+        },
+        {
+          "item": "관련 쿼리에서 상위 노출되는가?",
+          "max_points": 4,
+          "awarded": 3,
+          "rationale": "'프리미엄 가전' 쿼리에서는 구글 2위로 높은 노출을 보였으나, 주력 제품인 '스마트 TV'에서는 7위, 9위로 중하위권이며 '에어컨'에서는 노출되지 않아 키워드별 편차가 큽니다.",
+          "evidence": "Google `brandVisibility`: '프리미엄 가전' (2위, 100점), '스마트 TV' (7위, 60점), '에어컨' (0점)."
+        }
+      ]
+    }
+  ]
+}

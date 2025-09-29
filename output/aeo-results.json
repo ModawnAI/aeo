@@ -1,0 +1,2831 @@
+{
+  "timestamp": "2025-09-29T07:42:58.764Z",
+  "brand": "엘지",
+  "queries": [
+    "스마트 TV",
+    "프리미엄 가전",
+    "에어컨"
+  ],
+  "queryAnalysis": {
+    "스마트 TV": {
+      "google": {
+        "brandVisibility": {
+          "topPosition": 7,
+          "totalMentions": 2,
+          "averagePosition": 8,
+          "visibilityScore": 60
+        },
+        "competitorAnalysis": {
+          "directCompetitors": [
+            "Samsung",
+            "Sony",
+            "Panasonic"
+          ],
+          "competitorPositions": {
+            "Samsung": [
+              4,
+              7
+            ],
+            "Sony": [],
+            "Panasonic": []
+          },
+          "marketShare": 20
+        },
+        "results": [
+          {
+            "position": 1,
+            "title": "Smart TVs: HD & LED Smart TVs – Best Buy",
+            "url": "https://www.bestbuy.com/site/tvs/smart-tvs/pcmcat220700050011.c?id=pcmcat220700050011",
+            "snippet": "With a smart TV, you can access your streaming services directly through your television with no need for an additional streaming media player. You have ...",
+            "domain": "www.bestbuy.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 2,
+            "title": "Smart TV - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Smart_TV",
+            "snippet": "These devices allow viewers to find and play videos, movies, TV shows, photos, and other content from the Web, cable or satellite TV channels, or a local ...",
+            "domain": "en.wikipedia.org",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 3,
+            "title": "Screen Mirroring | Smart TV on the App Store",
+            "url": "https://apps.apple.com/tr/app/screen-mirroring-smart-tv/id1586624313",
+            "snippet": "Screen Mirroring app allows you to easily mirror your iPhone's screen to any smart TV in great quality and with no delays. Making a presentation?",
+            "domain": "apps.apple.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 4,
+            "title": "Smart TV - Develop | Samsung Developers",
+            "url": "https://developer.samsung.com/smarttv/develop",
+            "snippet": "Smart TV. Learn how to extend your apps to the big screen. Create seamless TV and mobile experiences with the latest Tizen TV SDK. Get Started Get Started ...",
+            "domain": "developer.samsung.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 5,
+            "title": "Watch YouTube on your smart TV by linking to your devices - Android",
+            "url": "https://support.google.com/youtube/answer/7640706?hl=en&co=GENIE.Platform%3DAndroid",
+            "snippet": "Open the YouTube app on your phone or tablet. Select the video that you want to watch and tap Cast in the video player. Choose the smart TV or streaming device ...",
+            "domain": "support.google.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 6,
+            "title": "Smart-TV Usability: Accessing Content is Key - NN/G",
+            "url": "https://www.nngroup.com/articles/smart-tv-usability/",
+            "snippet": "Sep 20, 2015 ... In this article we discuss the overarching principles that must be considered to address the top user tasks in this domain: browsing, locating, and accessing ...",
+            "domain": "www.nngroup.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 7,
+            "title": "Supported LG TV models | Disney+ Help Center | US",
+            "url": "https://help.disneyplus.com/article/disneyplus-lg-tv",
+            "snippet": "*Please note that streaming is not supported on the LG TV web browser application or LG TVs with NetCast OS. ... Supported Samsung Smart TV models. Need more help ...",
+            "domain": "help.disneyplus.com",
+            "brandMentioned": true,
+            "relevanceScore": 50
+          },
+          {
+            "position": 8,
+            "title": "Philips TV. Philips Smart TV | Philips",
+            "url": "https://www.philips.com/c-w/country-selectorpage/tv/smarttv.html",
+            "snippet": "Welcome to Philips Smart TV · Choose your country below · Europe · Latin America · Asia Pacific · Connect with Philips · Select site Philips. Consumer Products ...",
+            "domain": "www.philips.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 9,
+            "title": "Information commissioner investigates LG snooping smart TV data ...",
+            "url": "https://www.theguardian.com/technology/2013/nov/21/information-commissioner-investigates-lg-snooping-smart-tv-data-collection",
+            "snippet": "Nov 21, 2013 ... LG's smart TV sets send information back to the Korean company about what programmes you have watched, and even what files you may have stored on a USB disks ...",
+            "domain": "www.theguardian.com",
+            "brandMentioned": true,
+            "relevanceScore": 50
+          },
+          {
+            "position": 10,
+            "title": "Which Smart TV models are supported? | Plex Support",
+            "url": "https://support.plex.tv/articles/204080173-which-smart-tv-models-are-supported/",
+            "snippet": "Jan 21, 2025 ... Plex offers player apps across a wide range of smart TV manufacturers and models. These are broken out into two broad categories.",
+            "domain": "support.plex.tv",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          }
+        ]
+      },
+      "perplexity": {
+        "brandComparison": {
+          "targetBrandScore": {
+            "brandName": "LG",
+            "visibility": 100,
+            "sentiment": 83,
+            "recommendation": 0,
+            "authority": 40,
+            "mentionRank": 1,
+            "combined": 59
+          },
+          "competitorScores": [
+            {
+              "brandName": "Samsung",
+              "visibility": 100,
+              "sentiment": 83,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 2,
+              "combined": 59
+            },
+            {
+              "brandName": "Sony",
+              "visibility": 60,
+              "sentiment": 83,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 3,
+              "combined": 47
+            },
+            {
+              "brandName": "Panasonic",
+              "visibility": 20,
+              "sentiment": 100,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 4,
+              "combined": 39
+            }
+          ],
+          "ranking": [
+            {
+              "brandName": "LG",
+              "visibility": 100,
+              "sentiment": 83,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 1,
+              "combined": 59
+            },
+            {
+              "brandName": "Samsung",
+              "visibility": 100,
+              "sentiment": 83,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 2,
+              "combined": 59
+            },
+            {
+              "brandName": "Sony",
+              "visibility": 60,
+              "sentiment": 83,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 3,
+              "combined": 47
+            },
+            {
+              "brandName": "Panasonic",
+              "visibility": 20,
+              "sentiment": 100,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 4,
+              "combined": 39
+            }
+          ]
+        },
+        "overallScore": {
+          "searchVisibility": 60,
+          "aiVisibility": 70,
+          "authorityScore": 40,
+          "competitivePosition": 93,
+          "combined": 65.6
+        },
+        "aiEngines": [
+          {
+            "engine": "perplexity",
+            "targetBrand": {
+              "brandName": "LG",
+              "mentionCount": 6,
+              "firstMentionPosition": 1302,
+              "averagePosition": 2838.3333333333335,
+              "sentimentScore": 0.6666666666666666,
+              "recommendationContext": false,
+              "authorityScore": 40,
+              "mentions": [
+                {
+                  "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                  "position": 1302,
+                  "sentiment": "positive",
+                  "context": "general"
+                },
+                {
+                  "text": "presence[2]                |\n| **Toshiba**   | Fire TV Integration    | Affordable, seamless access to Amazon content | Fewer premium features[2]               |\n| **Sharp**     | AQUOS, smart features  | Color/contrast enhancement, energy efficiency | Lower market share[2]                   |\n| **Vizio**     | Affordable 4K, SmartCast| Value pricing, broad streaming support | Picture quality may lag behind premium brands[2] |\n\n---\n\n**Top-Rated Models (2025):**\n\n- **LG G5 OLED:** Exceptional color performance, deep blacks, but picture quality can vary with settings[5]",
+                  "position": 2164,
+                  "sentiment": "positive",
+                  "context": "general"
+                },
+                {
+                  "text": "- **LG C5 OLED:** Strong in bright rooms; Samsung S90F OLED preferred for vivid colors/gaming[5]",
+                  "position": 2870,
+                  "sentiment": "positive",
+                  "context": "general"
+                },
+                {
+                  "text": "- **Samsung S85F OLED:** Most affordable QD-OLED; better color than LG B4 OLED, but LG is more accurate and versatile in different regions[5]",
+                  "position": 2968,
+                  "sentiment": "neutral",
+                  "context": "general"
+                },
+                {
+                  "text": "- **Customer Trust:** According to 2025 consumer ratings, Sony leads in trust and perceived quality, with Samsung and LG also highly rated[2]",
+                  "position": 3476,
+                  "sentiment": "neutral",
+                  "context": "general"
+                },
+                {
+                  "text": "---\n\n**Summary Table: Comparison of Leading Smart TV Options**\n\n| Brand      | Tech Highlights      | OS/Platform | Best For             | Typical Price Tier |\n|------------|---------------------|-------------|----------------------|--------------------|\n| Sony       | OLED, X1 Ultimate   | Google TV   | Cinephiles, premium seekers | High           |\n| Samsung    | QLED, OLED          | Tizen       | Bright rooms, smart home users | Mid-High      |\n| LG         | OLED",
+                  "position": 4250,
+                  "sentiment": "positive",
+                  "context": "general"
+                }
+              ]
+            },
+            "competitors": [
+              {
+                "brandName": "Samsung",
+                "mentionCount": 6,
+                "firstMentionPosition": 1302,
+                "averagePosition": 2934.3333333333335,
+                "sentimentScore": 0.6666666666666666,
+                "recommendationContext": false,
+                "authorityScore": 40,
+                "mentions": [
+                  {
+                    "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                    "position": 1302,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Samsung S95F OLED:** Better in bright rooms, consistent image quality, vibrant colors; generally preferred for most users[5]",
+                    "position": 2740,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **LG C5 OLED:** Strong in bright rooms; Samsung S90F OLED preferred for vivid colors/gaming[5]",
+                    "position": 2870,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Samsung S85F OLED:** Most affordable QD-OLED; better color than LG B4 OLED, but LG is more accurate and versatile in different regions[5]",
+                    "position": 2968,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Customer Trust:** According to 2025 consumer ratings, Sony leads in trust and perceived quality, with Samsung and LG also highly rated[2]",
+                    "position": 3476,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "---\n\n**Summary Table: Comparison of Leading Smart TV Options**\n\n| Brand      | Tech Highlights      | OS/Platform | Best For             | Typical Price Tier |\n|------------|---------------------|-------------|----------------------|--------------------|\n| Sony       | OLED, X1 Ultimate   | Google TV   | Cinephiles, premium seekers | High           |\n| Samsung    | QLED, OLED          | Tizen       | Bright rooms, smart home users | Mid-High      |\n| LG         | OLED",
+                    "position": 4250,
+                    "sentiment": "positive",
+                    "context": "general"
+                  }
+                ]
+              },
+              {
+                "brandName": "Sony",
+                "mentionCount": 3,
+                "firstMentionPosition": 1302,
+                "averagePosition": 3009.3333333333335,
+                "sentimentScore": 0.6666666666666666,
+                "recommendationContext": false,
+                "authorityScore": 40,
+                "mentions": [
+                  {
+                    "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                    "position": 1302,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Customer Trust:** According to 2025 consumer ratings, Sony leads in trust and perceived quality, with Samsung and LG also highly rated[2]",
+                    "position": 3476,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "---\n\n**Summary Table: Comparison of Leading Smart TV Options**\n\n| Brand      | Tech Highlights      | OS/Platform | Best For             | Typical Price Tier |\n|------------|---------------------|-------------|----------------------|--------------------|\n| Sony       | OLED, X1 Ultimate   | Google TV   | Cinephiles, premium seekers | High           |\n| Samsung    | QLED, OLED          | Tizen       | Bright rooms, smart home users | Mid-High      |\n| LG         | OLED",
+                    "position": 4250,
+                    "sentiment": "positive",
+                    "context": "general"
+                  }
+                ]
+              },
+              {
+                "brandName": "Panasonic",
+                "mentionCount": 1,
+                "firstMentionPosition": 1302,
+                "averagePosition": 1302,
+                "sentimentScore": 1,
+                "recommendationContext": false,
+                "authorityScore": 40,
+                "mentions": [
+                  {
+                    "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                    "position": 1302,
+                    "sentiment": "positive",
+                    "context": "general"
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://www.renub.com/united-states-smart-tv-market-p.php",
+                "title": "United States Smart TV Market Size and Forecast 2025–2033",
+                "cited": true
+              },
+              {
+                "url": "https://www.lifestoryresearch.com/2025-best-television-ranking-review",
+                "title": "Top 7 Television Brands - Ranked by Customer Ratings",
+                "cited": true
+              },
+              {
+                "url": "http://www.aipbl.co.kr/576",
+                "title": "AI 시대, 당신의 길잡이 - AI 멀티버스 학습포털",
+                "cited": true
+              },
+              {
+                "url": "https://www.imarcgroup.com/united-states-smart-tv-market",
+                "title": "U.S. Smart TV Market Size, Share, Growth, Outlook 2033",
+                "cited": true
+              },
+              {
+                "url": "https://www.rtings.com/tv/reviews/best/tvs-on-the-market",
+                "title": "The 6 Best TVs of 2025 - RTINGS.com",
+                "cited": true
+              },
+              {
+                "url": "https://qanthropicjp.imweb.me/576",
+                "title": "AI 시대, 당신의 길잡이 - Qanthropic",
+                "cited": true
+              },
+              {
+                "url": "https://www.globenewswire.com/news-release/2025/09/01/3142092/28124/en/North-America-Smart-TV-Market-Report-2025-2033-High-Speed-Internet-and-OTT-Platforms-Drive-Demand.html",
+                "title": "North America Smart TV Market Report 2025-2033 | High-Speed",
+                "cited": true
+              },
+              {
+                "url": "https://www.tomsguide.com/us/best-tvs,review-2224.html",
+                "title": "Best TVs of 2025 tested: top OLEDs, Mini-LEDs and QLEDs for ...",
+                "cited": true
+              },
+              {
+                "url": "http://www.motie.go.kr/search/search.do?site=main&category=&reSrchFlag=&currentPage=1&detailSearch=&srchFd=&sort=%24pram.sort&date=&startDate=&endDate=&preCondi=&rowPerPage=10&fdTot=%24param.fdTot&fdTitle=%24param.fdTitle&fdContent=%24param.fdContent&fdFile=%24param.fdFile&fdNotice=%24param.fdNotice",
+                "title": "'korea-china fta'에 대한 검색결과 306 건 입니다 - 산업통상자원부",
+                "cited": true
+              },
+              {
+                "url": "https://www.marketbusinessinsights.com/smart-tv-market",
+                "title": "Smart TV Market Size, Growth Projections And Insights 2025-2035",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=qhoTH1kAdmM",
+                "title": "We found it! Best TV Brands in 2025 - YouTube",
+                "cited": true
+              },
+              {
+                "url": "https://www.grandviewresearch.com/industry-analysis/smart-tv-industry",
+                "title": "Smart TV Market Size, Share, Growth | Industry Report, 2030",
+                "cited": true
+              },
+              {
+                "url": "https://www.techradar.com/news/best-tv",
+                "title": "The best TV, chosen by our reviewers for all budgets - TechRadar",
+                "cited": true
+              },
+              {
+                "url": "https://www.forinsightsconsultancy.com/reports/smart-tv-market",
+                "title": "Smart TV Market Trends, Size, and Growth Outlook from 2025-34",
+                "cited": true
+              },
+              {
+                "url": "https://www.consumerreports.org/electronics-computers/tvs/best-tvs-of-the-year-a3862868628/",
+                "title": "Best TVs of 2025, Tested by Our Experts - Consumer Reports",
+                "cited": true
+              },
+              {
+                "url": "https://scoop.market.us/smart-tv-statistics/",
+                "title": "Smart TV Statistics and Facts (2025) - Market.us Scoop",
+                "cited": true
+              },
+              {
+                "url": "https://www.accio.com/plp/tv-brands-in-us",
+                "title": "Top TV Brands in the US: Compare Samsung, Sony & Smart 4K/8K ...",
+                "cited": true
+              },
+              {
+                "url": "https://deepmarketinsights.com/vista/insights/smart-tv-market/north-america",
+                "title": "North America Smart TV Market Size & Outlook, 2025-2033",
+                "cited": true
+              },
+              {
+                "url": "https://www.newscaststudio.com/2025/07/01/smart-tv-ownership-rises-as-roku-and-firetv-gain-traction-in-u-s-homes/",
+                "title": "Smart TV ownership rises as Roku and Fire TV gain traction in U.S. ...",
+                "cited": true
+              }
+            ],
+            "timestamp": "2025-09-29T03:02:15.575Z"
+          }
+        ]
+      }
+    },
+    "프리미엄 가전": {
+      "google": {
+        "brandVisibility": {
+          "topPosition": 2,
+          "totalMentions": 1,
+          "averagePosition": 2,
+          "visibilityScore": 100
+        },
+        "competitorAnalysis": {
+          "directCompetitors": [
+            "Samsung",
+            "Sony",
+            "Panasonic"
+          ],
+          "competitorPositions": {
+            "Samsung": [],
+            "Sony": [],
+            "Panasonic": []
+          },
+          "marketShare": 10
+        },
+        "results": [
+          {
+            "position": 1,
+            "title": "Products",
+            "url": "https://hswus.com/en/collections/all",
+            "snippet": "주방가전; 주방가전 > 냉장고; 주방가전 > 믹서기; 주방가전 > 밥솥; 주방가전 > 밥솥 > IH전기압력; 주방가전 > 밥솥 > 일반압력; 주방가전 > 밥솥 > 전기보온; 주방가전 ...",
+            "domain": "hswus.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 2,
+            "title": "File:LG전자, 미국 프리미엄 가전시장 공략 강화 - 14262405138.jpg ...",
+            "url": "https://commons.wikimedia.org/wiki/File:LG%EC%A0%84%EC%9E%90,_%EB%AF%B8%EA%B5%AD_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EA%B0%80%EC%A0%84%EC%8B%9C%EC%9E%A5_%EA%B3%B5%EB%9E%B5_%EA%B0%95%ED%99%94_-_14262405138.jpg",
+            "snippet": "Jun 17, 2014 ... ... 프리미엄 가전 시장을 지속 선도해 나갈 것”이라고 강조. ※ Social LG전자 (social.lge.co.kr/newsroom) 에서 관련 보도자료를 확인하실 수 있습니다 ...",
+            "domain": "commons.wikimedia.org",
+            "brandMentioned": true,
+            "relevanceScore": 100
+          },
+          {
+            "position": 3,
+            "title": ". 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복 ...",
+            "url": "https://www.instagram.com/p/DKRTWz_yCjR/",
+            "snippet": "May 30, 2025 ... . 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복합니다 #블라우풍트 ... Photo by 유이 (Uie) on September 25, 2025. May be an ...",
+            "domain": "www.instagram.com",
+            "brandMentioned": false,
+            "relevanceScore": 50
+          },
+          {
+            "position": 4,
+            "title": "멀티쿠커",
+            "url": "https://cuckooamerica.com/ko/collections/multi-cookers",
+            "snippet": "주방가전. 주방가전. 커피메이커&전기주전자 · 에어프라이어&제빵기 · 믹서기&얼음 ... 5쿼트 프리미엄 멀티압력밥솥 (CMC-QSB501S). $199.99. 5.0. 6쿼트 8-in-1 압력밥솥 ...",
+            "domain": "cuckooamerica.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 5,
+            "title": "대구 범어 STX칸 model. CCE84751FB (사진 무단배포 사용을 엄격히 ...",
+            "url": "https://www.instagram.com/p/DOsNG8EkuPP/",
+            "snippet": "Sep 16, 2025 ... Photo by AEG 독일 프리미엄 가전 정품 판매 on September 15, 2025. May be.",
+            "domain": "www.instagram.com",
+            "brandMentioned": false,
+            "relevanceScore": 20
+          },
+          {
+            "position": 6,
+            "title": "MissyShop |",
+            "url": "https://kmarket365.com/me/prod_cat_list.asp?cat_code=49&oby=3",
+            "snippet": "주방가전 · 계절/생활가전 · 건강가전 · 주방 · 명품식기브랜드 · 보관용기 · 조리용품 · 주방소품 · 식품 · 즉석가공식품 · 쌀/잡곡/면류 · 양념/소스/가루 · 건조식품.",
+            "domain": "kmarket365.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 7,
+            "title": "Fissler - MissyShop",
+            "url": "https://www.kmarket365.com/me/prod_cat_list.asp?cat_code=140249",
+            "snippet": "주방가전 · 계절/생활가전 · 건강가전 · 주방 · 명품식기브랜드 · 보관용기 · 조리용품 · 주방소품 · 식품 · 즉석가공식품 · 쌀/잡곡/면류 · 양념/소스/가루 · 건조식품.",
+            "domain": "www.kmarket365.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 8,
+            "title": "최고의 가치를 실현하는 기업 - (주)리홈쿠첸",
+            "url": "https://www.bizntech.co.kr/eng/business/living.jsp",
+            "snippet": "생활을 바꾸는 스타일가전 프리미엄 생활, 주방가전 브랜드. Business Introduction. LiHOM. A stylish home appliance that changes a way of lifestyle. LiHOM is a ...",
+            "domain": "www.bizntech.co.kr",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 9,
+            "title": "Free 주방가전 Logo/profile Templates | MiriCanvas",
+            "url": "https://www.miricanvas.com/en/template/logo/%EC%A3%BC%EB%B0%A9%EA%B0%80%EC%A0%84",
+            "snippet": "Find a unique, distinctive 주방가전 Logo/profile template perfect for your needs at MiriCanvas.",
+            "domain": "www.miricanvas.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          },
+          {
+            "position": 10,
+            "title": "BUBANG",
+            "url": "http://bubang.com/eng/business/cuchen.jsp",
+            "snippet": "리빙사업부. 생활을 바꾸는 스타일가전 프리미엄 생활, 주방가전 브랜드 ...",
+            "domain": "bubang.com",
+            "brandMentioned": false,
+            "relevanceScore": 0
+          }
+        ]
+      },
+      "perplexity": {
+        "brandComparison": {
+          "targetBrandScore": {
+            "brandName": "LG",
+            "visibility": 40,
+            "sentiment": 50,
+            "recommendation": 0,
+            "authority": 40,
+            "mentionRank": 2,
+            "combined": 33
+          },
+          "competitorScores": [
+            {
+              "brandName": "Samsung",
+              "visibility": 60,
+              "sentiment": 67,
+              "recommendation": 0,
+              "authority": 60,
+              "mentionRank": 1,
+              "combined": 47
+            },
+            {
+              "brandName": "Sony",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 3,
+              "combined": 13
+            },
+            {
+              "brandName": "Panasonic",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 4,
+              "combined": 13
+            }
+          ],
+          "ranking": [
+            {
+              "brandName": "Samsung",
+              "visibility": 60,
+              "sentiment": 67,
+              "recommendation": 0,
+              "authority": 60,
+              "mentionRank": 1,
+              "combined": 47
+            },
+            {
+              "brandName": "LG",
+              "visibility": 40,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 2,
+              "combined": 33
+            },
+            {
+              "brandName": "Sony",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 3,
+              "combined": 13
+            },
+            {
+              "brandName": "Panasonic",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 4,
+              "combined": 13
+            }
+          ]
+        },
+        "overallScore": {
+          "searchVisibility": 0,
+          "aiVisibility": 70,
+          "authorityScore": 40,
+          "competitivePosition": 0,
+          "combined": 29
+        },
+        "aiEngines": [
+          {
+            "engine": "perplexity",
+            "targetBrand": {
+              "brandName": "LG",
+              "mentionCount": 2,
+              "firstMentionPosition": 1763,
+              "averagePosition": 3251,
+              "sentimentScore": 0,
+              "recommendationContext": false,
+              "authorityScore": 40,
+              "mentions": [
+                {
+                  "text": "presence| Smart refrigerators (Bespoke), washers, integrated IoT     | High-tech, design-focused, competitive price|\n| **LG**        | South Korea      | Energy efficiency, smart controls, reliable quality | ThinQ smart control, ENERGY STAR efficiency, modern design | Energy-saving, user-friendly, broad appeal  |\n| **Whirlpool** | U",
+                  "position": 1763,
+                  "sentiment": "neutral",
+                  "context": "general"
+                },
+                {
+                  "text": "market sees intense competition between domestic and global brands, each leveraging different strengths such as innovation (Samsung, LG), engineering (Bosch, Miele), or heritage (Whirlpool, GE)[2]",
+                  "position": 4739,
+                  "sentiment": "neutral",
+                  "context": "general"
+                }
+              ]
+            },
+            "competitors": [
+              {
+                "brandName": "Samsung",
+                "mentionCount": 3,
+                "firstMentionPosition": 1284,
+                "averagePosition": 3371.3333333333335,
+                "sentimentScore": 0.3333333333333333,
+                "recommendationContext": false,
+                "authorityScore": 60,
+                "mentions": [
+                  {
+                    "text": "| Brand         | Country of Origin | Notable Strengths                                   | Product Focus & Features                                   | Distinct Market Position                    |\n|---------------|------------------|-----------------------------------------------------|------------------------------------------------------------|---------------------------------------------|\n| **Samsung**   | South Korea      | Smart tech, innovation, design, robust U",
+                    "position": 1284,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Customization**: Brands like Samsung (Bespoke) and KitchenAid offer customizable colors and configurations to match personal and interior design preferences[2]",
+                    "position": 4091,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "market sees intense competition between domestic and global brands, each leveraging different strengths such as innovation (Samsung, LG), engineering (Bosch, Miele), or heritage (Whirlpool, GE)[2]",
+                    "position": 4739,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://www.futuredatastats.com/premium-kitchen-appliances-market",
+                "title": "Premium Kitchen Appliances Market Size & Industry Growth 2030",
+                "cited": true
+              },
+              {
+                "url": "https://stephan-review.tistory.com/entry/%EC%A0%84%EB%9E%B5-%EB%AF%B8%EA%B5%AD-%EA%B0%80%EC%A0%84-%EC%B5%9C%EA%B3%A0%EB%B8%8C%EB%9E%9C%EB%93%9C-Top10-Best-White-Goods-Brand-Top10",
+                "title": "미국 가전 추천 브랜드 TOP10｜2025년 최신 트렌드, 이거 사면 ...",
+                "cited": true
+              },
+              {
+                "url": "https://www.gminsights.com/industry-analysis/us-premium-outdoor-appliances-market",
+                "title": "U.S. Premium Outdoor Appliances Market Size Report, 2032",
+                "cited": true
+              },
+              {
+                "url": "https://www.fortunebusinessinsights.com/ko/home-appliances-market-107020",
+                "title": "가정 기기 시장 규모, 점유율, 성장 | 예측 [2032]",
+                "cited": true
+              },
+              {
+                "url": "https://www.mordorintelligence.com/industry-reports/north-america-luxury-appliances-market",
+                "title": "North America Luxury Appliances Market Size & Share Analysis",
+                "cited": true
+              },
+              {
+                "url": "https://www.sphericalinsights.com/ko/reports/united-states-appliances-market",
+                "title": "United States Appliances Market Size, Outlook, 통계",
+                "cited": true
+              },
+              {
+                "url": "https://www.metastatinsight.com/report/north-america-luxury-kitchen-appliances-market",
+                "title": "North America Luxury Kitchen Appliances Market Size by 2032",
+                "cited": true
+              },
+              {
+                "url": "https://www.hashtap.com/soujika.yasaki/%EA%B3%A0%EA%B8%89-%EC%A3%BC%EB%B0%A9-%EA%B0%80%EC%A0%84-%EC%8B%9C%EC%9E%A5-%EB%B6%84%EC%84%9D-2021-%EC%BD%94%EB%A1%9C%EB%82%98-19-2021-2026-%EC%9D%98-%EC%98%81%ED%96%A5-%EA%B0%95%EC%A1%B0-whirlpool-corporation-ab-electrolux-samsung-electronics-lg-electr-Z2gadXzbQBlG",
+                "title": "고급 주방 가전 시장 분석 2021 : 코로나 19 (2021-2026)의 영향 강조 | Whirlpool Corporation, AB Electrolux, Samsung Electronics, LG Electronics — soujika yasaki",
+                "cited": true
+              },
+              {
+                "url": "https://www.hyxion.com/ko/10-made-in-usa-kitchen-appliance-brands",
+                "title": "미국에서 만든 10대 주방 가전 브랜드 - Hyxion",
+                "cited": true
+              },
+              {
+                "url": "https://www.fortunebusinessinsights.com/ko/u-s-refrigerator-market-107670",
+                "title": "미국 냉장고 시장 점유율 및 동향 | 성장 분석, 2032",
+                "cited": true
+              },
+              {
+                "url": "https://www.donsappliances.com/blog/luxury-appliance-brands-compared",
+                "title": "Luxury Appliance Brands vs. Premium Brands: What's the Real ...",
+                "cited": true
+              },
+              {
+                "url": "https://www.aztecappliance.com/blog/premium-kitchen-appliance-brands",
+                "title": "Aztec's Guide to Premium Kitchen Brands [LG, Samsung Appliances ...",
+                "cited": true
+              },
+              {
+                "url": "https://uptownappliancerepair.com/luxury-appliances-a-guide-to-choosing-maintaining-and-repairing-premium-appliances/",
+                "title": "Luxury Appliances: A Guide to Choosing, Maintaining, and ...",
+                "cited": true
+              },
+              {
+                "url": "https://www.businessresearchinsights.com/market-reports/luxury-kitchen-appliances-market-118378",
+                "title": "Luxury Kitchen Appliances Market Size & Growth [2035]",
+                "cited": true
+              }
+            ],
+            "timestamp": "2025-09-29T03:02:41.492Z"
+          }
+        ]
+      }
+    },
+    "에어컨": {
+      "perplexity": {
+        "brandComparison": {
+          "targetBrandScore": {
+            "brandName": "LG",
+            "visibility": 0,
+            "sentiment": 50,
+            "recommendation": 0,
+            "authority": 0,
+            "mentionRank": 1,
+            "combined": 13
+          },
+          "competitorScores": [
+            {
+              "brandName": "Samsung",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 2,
+              "combined": 13
+            },
+            {
+              "brandName": "Sony",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 3,
+              "combined": 13
+            },
+            {
+              "brandName": "Panasonic",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 4,
+              "combined": 13
+            }
+          ],
+          "ranking": [
+            {
+              "brandName": "LG",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 1,
+              "combined": 13
+            },
+            {
+              "brandName": "Samsung",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 2,
+              "combined": 13
+            },
+            {
+              "brandName": "Sony",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 3,
+              "combined": 13
+            },
+            {
+              "brandName": "Panasonic",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 4,
+              "combined": 13
+            }
+          ]
+        },
+        "overallScore": {
+          "searchVisibility": 100,
+          "aiVisibility": 0,
+          "authorityScore": 0,
+          "competitivePosition": 97,
+          "combined": 49.400000000000006
+        },
+        "aiEngines": [
+          {
+            "engine": "perplexity",
+            "targetBrand": null,
+            "competitors": [],
+            "sources": [
+              {
+                "url": "https://www.meticulousresearch.com/product/north-america-air-conditioners-market-5632",
+                "title": "North America Air Conditioners Market Size, Share & Trends Analysis",
+                "cited": true
+              },
+              {
+                "url": "https://everestmechanical.com/americas-top-10-air-conditioner-brands/",
+                "title": "Top 10 Air Conditioner Brands In America - Everest Mechanical",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=v8T0TVSzlZk",
+                "title": "Window AC Vs Portable AC? Home Air Conditioners Compared For ...",
+                "cited": true
+              },
+              {
+                "url": "https://www.grandviewresearch.com/industry-analysis/north-america-air-conditioning-systems-market",
+                "title": "North America Air Conditioning Systems Market Report, 2033",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=x3khwp4NiCQ",
+                "title": "Best Air Conditioner Brands 2025 - YouTube",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=3Pu1doe2Nso",
+                "title": "Best Air Conditioner Brands 2025: Price, Efficiency & Real Reviews",
+                "cited": true
+              },
+              {
+                "url": "https://www.servicetitan.com/blog/hvac-statistics",
+                "title": "HVAC Statistics: The Data You Need to Know for 2025 - ServiceTitan",
+                "cited": true
+              },
+              {
+                "url": "https://cielowigle.com/blog/types-of-air-conditioners/",
+                "title": "9 Types of Air Conditioners: Choose the Best for Your Home",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=x2ryistzwes",
+                "title": "The Best Portable Air Conditioner We've Tested - A Buying Guide",
+                "cited": true
+              },
+              {
+                "url": "https://www.startus-insights.com/innovators-guide/air-conditioning-market-report/",
+                "title": "Air Conditioning Market Report 2025 | StartUs Insights",
+                "cited": true
+              },
+              {
+                "url": "https://modernize.com/hvac/best-air-conditioner-brands",
+                "title": "Best Air Conditioner Brands of 2025: Costs, SEER Ratings, and More!",
+                "cited": true
+              },
+              {
+                "url": "https://www.energy.gov/energysaver/air-conditioning",
+                "title": "Air Conditioning - Department of Energy",
+                "cited": true
+              },
+              {
+                "url": "https://qualityheating.com/air-conditioner-replacement-cost/",
+                "title": "Cost of an Air Conditioner in 2025: What Homeowners Need to Know",
+                "cited": true
+              },
+              {
+                "url": "https://www.consumerreports.org/appliances/central-air-conditioning/buying-guide/",
+                "title": "Best Central Air Conditioning Buying Guide - Consumer Reports",
+                "cited": true
+              },
+              {
+                "url": "https://www.energystar.gov/products/central_air_conditioners",
+                "title": "Central Air Conditioner | ENERGY STAR",
+                "cited": true
+              },
+              {
+                "url": "https://www.technavio.com/report/air-conditioning-market-industry-analysis",
+                "title": "Air Conditioning (AC) Market Analysis, Size, and Forecast 2025-2029",
+                "cited": true
+              },
+              {
+                "url": "https://www.bluedotmd.com/blog/types-of-air-conditioners/",
+                "title": "Types of Air Conditioning Units: Your Expert Guide - Blue Dot",
+                "cited": true
+              },
+              {
+                "url": "https://www.homeworksenergy.com/the-history-of-the-air-conditioner-as-we-know-it/",
+                "title": "The History of the Air Conditioner as We Know It - HomeWorks Energy",
+                "cited": true
+              },
+              {
+                "url": "https://www.cognitivemarketresearch.com/air-conditioning-market-report",
+                "title": "Air Conditioning Market Report 2025 (Global Edition)",
+                "cited": true
+              },
+              {
+                "url": "https://fieldcomplete.com/blog/general/comparing-air-conditioner-manufacturing-companies-features-and-prices",
+                "title": "Comparing Air Conditioner Manufacturing Companies: Features and ...",
+                "cited": true
+              },
+              {
+                "url": "https://www.energy.gov/energysaver/central-air-conditioning",
+                "title": "Central Air Conditioning | Department of Energy",
+                "cited": true
+              },
+              {
+                "url": "https://www.thebusinessresearchcompany.com/report/airconditioning-equipment-global-market-report",
+                "title": "Air-Conditioning Equipment Market Statistics & Analysis By 2025",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=v9758rY-sO0",
+                "title": "Top 6 BEST Air Conditioner Brands in 2024 - YouTube",
+                "cited": true
+              },
+              {
+                "url": "https://www.prnewswire.com/news-releases/residential-hvac-market-to-grow-by-usd-39-62-billion-2025-2029-driven-by-hvac-demand-in-construction-and-ais-impact-on-market-trends---technavio-302342954.html",
+                "title": "Residential HVAC Market to Grow by USD 39.62 Billion (2025-2029 ...",
+                "cited": true
+              },
+              {
+                "url": "https://www.youtube.com/watch?v=UqmvUV0UdRo",
+                "title": "9 Benefits of Buying a New Air Conditioner - YouTube",
+                "cited": true
+              }
+            ],
+            "timestamp": "2025-09-29T03:02:58.081Z"
+          }
+        ]
+      }
+    }
+  },
+  "pageAudits": {
+    "스마트 TV": [
+      {
+        "url": "https://www.bestbuy.com/site/tvs/smart-tvs/pcmcat220700050011.c?id=pcmcat220700050011",
+        "signals": {
+          "title": "",
+          "metaDescription": "",
+          "h1": "",
+          "h2Questions": [],
+          "answerFirstBlocks": [],
+          "faq": [],
+          "schemaTypes": [],
+          "headings": [],
+          "paragraphs": [],
+          "rawContent": "",
+          "error": "timeout of 15000ms exceeded",
+          "domain": "www.bestbuy.com",
+          "fallbackUsed": false
+        },
+        "whyItRanks": "Could not analyze: timeout of 15000ms exceeded",
+        "parseTime": 48036,
+        "query": "스마트 TV",
+        "position": 1,
+        "title": "Smart TVs: HD & LED Smart TVs – Best Buy",
+        "domain": "www.bestbuy.com"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Smart_TV",
+        "signals": {
+          "title": "Smart TV - Wikipedia",
+          "metaDescription": "",
+          "h1": "Smart TV",
+          "h2Questions": [],
+          "answerFirstBlocks": [],
+          "faq": [],
+          "schemaTypes": [
+            "Article",
+            "Organization",
+            "ImageObject"
+          ],
+          "wordCount": 4132,
+          "domain": "en.wikipedia.org",
+          "images": 14,
+          "videos": 0,
+          "internalLinks": 554
+        },
+        "whyItRanks": "Likely ranks due to: structured data (Article, Organization, ImageObject), encyclopedia authority (Wikipedia), comprehensive content (4132 words), 14 images, strong internal linking (554 links).",
+        "parseTime": 403,
+        "query": "스마트 TV",
+        "position": 2,
+        "title": "Smart TV - Wikipedia",
+        "domain": "en.wikipedia.org"
+      },
+      {
+        "url": "https://apps.apple.com/tr/app/screen-mirroring-smart-tv/id1586624313",
+        "signals": {
+          "title": "‎Screen Mirroring | Smart TV on the App Store",
+          "metaDescription": "Screen Mirroring app allows you to easily mirror your iPhone's screen to any smart TV in great quality and with no delays. \n\nMaking a presentation?\nWith Screen…",
+          "h1": "Screen Mirroring | Smart TV\n\n              \n                16+",
+          "h2Questions": [
+            "What’s New"
+          ],
+          "answerFirstBlocks": [
+            "The following data may be used to track you across apps and websites owned by other companies:",
+            "The following data may be collected but it is not linked to your identity:"
+          ],
+          "faq": [],
+          "schemaTypes": [
+            "SoftwareApplication",
+            "Person",
+            "AggregateRating",
+            "Offer",
+            "Organization"
+          ],
+          "wordCount": 14657,
+          "domain": "apps.apple.com",
+          "images": 14,
+          "videos": 0,
+          "internalLinks": 9
+        },
+        "whyItRanks": "Likely ranks due to: 1 question-based headings, 2 answer-first content blocks, structured data (SoftwareApplication, Person, AggregateRating, Offer, Organization), comprehensive content (14657 words), 14 images.",
+        "parseTime": 666,
+        "query": "스마트 TV",
+        "position": 3,
+        "title": "Screen Mirroring | Smart TV on the App Store",
+        "domain": "apps.apple.com"
+      }
+    ],
+    "프리미엄 가전": [
+      {
+        "url": "https://hswus.com/en/collections/all",
+        "signals": {
+          "title": "ProductsAmazonAmerican ExpressApple PayDiscoverGoogle PayMastercardPayPalShop PayVisa",
+          "metaDescription": "Retail store selling goods like health supplements, cosmetics, personal care goods, foods, electronics, cookwares, kitchenwares and etc. Home Shopping World LA Buena Park Los Angeles homeshopping homeshoppingworld USA 3071 olympic",
+          "h1": "",
+          "h2Questions": [],
+          "answerFirstBlocks": [],
+          "faq": [],
+          "schemaTypes": [
+            "BreadcrumbList",
+            "ListItem"
+          ],
+          "wordCount": 14980,
+          "domain": "hswus.com",
+          "images": 57,
+          "videos": 0,
+          "internalLinks": 87
+        },
+        "whyItRanks": "Likely ranks due to: structured data (BreadcrumbList, ListItem), comprehensive content (14980 words), 57 images, strong internal linking (87 links).",
+        "parseTime": 820,
+        "query": "프리미엄 가전",
+        "position": 1,
+        "title": "Products",
+        "domain": "hswus.com"
+      },
+      {
+        "url": "https://www.instagram.com/p/DKRTWz_yCjR/",
+        "signals": {
+          "title": "Instagram",
+          "metaDescription": "",
+          "h1": "",
+          "h2Questions": [],
+          "answerFirstBlocks": [],
+          "faq": [],
+          "schemaTypes": [],
+          "wordCount": 1480,
+          "domain": "www.instagram.com",
+          "images": 2,
+          "videos": 0,
+          "internalLinks": 0
+        },
+        "whyItRanks": "Standard content structure without obvious AEO optimizations.",
+        "parseTime": 425,
+        "query": "프리미엄 가전",
+        "position": 3,
+        "title": ". 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복 ...",
+        "domain": "www.instagram.com"
+      },
+      {
+        "url": "https://cuckooamerica.com/ko/collections/multi-cookers",
+        "signals": {
+          "title": "멀티쿠커 – CUCKOO America",
+          "metaDescription": "Shop CUCKOO® Multi Cookers, ideal for rice, porridge, slow-cooked dishes, and quinoa. With all-in-one electric pressure technology, prepare meals up to 15 hours in advance and enjoy delicious results for the whole family.",
+          "h1": "멀티쿠커",
+          "h2Questions": [],
+          "answerFirstBlocks": [],
+          "faq": [],
+          "schemaTypes": [
+            "CollectionPage",
+            "ImageObject"
+          ],
+          "wordCount": 9468,
+          "domain": "cuckooamerica.com",
+          "images": 16,
+          "videos": 0,
+          "internalLinks": 143
+        },
+        "whyItRanks": "Likely ranks due to: structured data (CollectionPage, ImageObject), comprehensive content (9468 words), 16 images, strong internal linking (143 links).",
+        "parseTime": 390,
+        "query": "프리미엄 가전",
+        "position": 4,
+        "title": "멀티쿠커",
+        "domain": "cuckooamerica.com"
+      }
+    ]
+  },
+  "steps": {
+    "normalizedIntake": {
+      "brand": "엘지",
+      "domain": null,
+      "productService": "스마트 TV, 프리미엄 가전, 에어컨",
+      "targetRegion": null,
+      "locale": null,
+      "targetQueries": [
+        "스마트 TV",
+        "프리미엄 가전",
+        "에어컨"
+      ],
+      "issues": [],
+      "competitors": [
+        {
+          "브랜드명": "삼성",
+          "정규화된도메인": [
+            "samsung.com"
+          ]
+        },
+        {
+          "브랜드명": "소니",
+          "정규화된도메인": []
+        },
+        {
+          "브랜드명": "파나소닉",
+          "정규화된도메인": []
+        },
+        {
+          "브랜드명": "필립스",
+          "정규화된도메인": [
+            "philips.com"
+          ]
+        },
+        {
+          "브랜드명": "쿠쿠",
+          "정규화된도메인": [
+            "cuckooamerica.com"
+          ]
+        },
+        {
+          "브랜드명": "비지오",
+          "정규화된도메인": []
+        },
+        {
+          "브랜드명": "블라우풍트",
+          "정규화된도메인": []
+        },
+        {
+          "브랜드명": "AEG",
+          "정규화된도메인": []
+        }
+      ],
+      "brandPresence": {
+        "스마트 TV": {
+          "googleVisibilityScore": 60,
+          "perplexityVisibilityScore": 100,
+          "summary": "구글 검색 결과에서 중간 위치(7, 9위)에 언급되었으며, Perplexity 분석에서는 주요 경쟁사 중 하나로 높은 가시성을 보임. 특히 OLED 분야에서 긍정적으로 평가됨."
+        },
+        "프리미엄 가전": {
+          "googleVisibilityScore": 100,
+          "perplexityVisibilityScore": 40,
+          "summary": "구글 결과에서 최상위(2위)에 직접 언급되어 높은 가시성을 확보했으나, Perplexity AI 분석에서는 삼성에 비해 낮은 가시성(2위)을 보였으며 중립적인 감성을 가짐."
+        },
+        "에어컨": {
+          "googleVisibilityScore": 0,
+          "perplexityVisibilityScore": 0,
+          "summary": "구글 검색 결과가 제공되지 않았고, Perplexity AI 분석에서도 브랜드 언급이 전혀 감지되지 않아 이 키워드에 대한 가시성은 매우 낮음."
+        }
+      },
+      "google": [
+        {
+          "query": "스마트 TV",
+          "searchEngine": "google",
+          "brandName": "LG",
+          "results": [
+            {
+              "position": 1,
+              "title": "Smart TVs: HD & LED Smart TVs – Best Buy",
+              "url": "https://www.bestbuy.com/site/tvs/smart-tvs/pcmcat220700050011.c?id=pcmcat220700050011",
+              "snippet": "With a smart TV, you can access your streaming services directly through your television with no need for an additional streaming media player. You have ...",
+              "domain": "www.bestbuy.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 2,
+              "title": "Smart TV - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Smart_TV",
+              "snippet": "These devices allow viewers to find and play videos, movies, TV shows, photos, and other content from the Web, cable or satellite TV channels, or a local ...",
+              "domain": "en.wikipedia.org",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 3,
+              "title": "Screen Mirroring | Smart TV on the App Store",
+              "url": "https://apps.apple.com/tr/app/screen-mirroring-smart-tv/id1586624313",
+              "snippet": "Screen Mirroring app allows you to easily mirror your iPhone's screen to any smart TV in great quality and with no delays. Making a presentation?",
+              "domain": "apps.apple.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 4,
+              "title": "Smart TV - Develop | Samsung Developers",
+              "url": "https://developer.samsung.com/smarttv/develop",
+              "snippet": "Smart TV. Learn how to extend your apps to the big screen. Create seamless TV and mobile experiences with the latest Tizen TV SDK. Get Started Get Started ...",
+              "domain": "developer.samsung.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 5,
+              "title": "Watch YouTube on your smart TV by linking to your devices - Android",
+              "url": "https://support.google.com/youtube/answer/7640706?hl=en&co=GENIE.Platform%3DAndroid",
+              "snippet": "Open the YouTube app on your phone or tablet. Select the video that you want to watch and tap Cast in the video player. Choose the smart TV or streaming device ...",
+              "domain": "support.google.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 6,
+              "title": "Smart-TV Usability: Accessing Content is Key - NN/G",
+              "url": "https://www.nngroup.com/articles/smart-tv-usability/",
+              "snippet": "Sep 20, 2015 ... In this article we discuss the overarching principles that must be considered to address the top user tasks in this domain: browsing, locating, and accessing ...",
+              "domain": "www.nngroup.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 7,
+              "title": "Supported LG TV models | Disney+ Help Center | US",
+              "url": "https://help.disneyplus.com/article/disneyplus-lg-tv",
+              "snippet": "*Please note that streaming is not supported on the LG TV web browser application or LG TVs with NetCast OS. ... Supported Samsung Smart TV models. Need more help ...",
+              "domain": "help.disneyplus.com",
+              "brandMentioned": true,
+              "relevanceScore": 50
+            },
+            {
+              "position": 8,
+              "title": "Philips TV. Philips Smart TV | Philips",
+              "url": "https://www.philips.com/c-w/country-selectorpage/tv/smarttv.html",
+              "snippet": "Welcome to Philips Smart TV · Choose your country below · Europe · Latin America · Asia Pacific · Connect with Philips · Select site Philips. Consumer Products ...",
+              "domain": "www.philips.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 9,
+              "title": "Information commissioner investigates LG snooping smart TV data ...",
+              "url": "https://www.theguardian.com/technology/2013/nov/21/information-commissioner-investigates-lg-snooping-smart-tv-data-collection",
+              "snippet": "Nov 21, 2013 ... LG's smart TV sets send information back to the Korean company about what programmes you have watched, and even what files you may have stored on a USB disks ...",
+              "domain": "www.theguardian.com",
+              "brandMentioned": true,
+              "relevanceScore": 50
+            },
+            {
+              "position": 10,
+              "title": "Which Smart TV models are supported? | Plex Support",
+              "url": "https://support.plex.tv/articles/204080173-which-smart-tv-models-are-supported/",
+              "snippet": "Jan 21, 2025 ... Plex offers player apps across a wide range of smart TV manufacturers and models. These are broken out into two broad categories.",
+              "domain": "support.plex.tv",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            }
+          ],
+          "brandVisibility": {
+            "topPosition": 7,
+            "totalMentions": 2,
+            "averagePosition": 8,
+            "visibilityScore": 60
+          },
+          "competitorAnalysis": {
+            "directCompetitors": [
+              "Samsung",
+              "Sony",
+              "Panasonic"
+            ],
+            "competitorPositions": {
+              "Samsung": [
+                4,
+                7
+              ],
+              "Sony": [],
+              "Panasonic": []
+            },
+            "marketShare": 20
+          }
+        },
+        {
+          "query": "프리미엄 가전",
+          "searchEngine": "google",
+          "brandName": "LG",
+          "results": [
+            {
+              "position": 1,
+              "title": "Products",
+              "url": "https://hswus.com/en/collections/all",
+              "snippet": "주방가전; 주방가전 > 냉장고; 주방가전 > 믹서기; 주방가전 > 밥솥; 주방가전 > 밥솥 > IH전기압력; 주방가전 > 밥솥 > 일반압력; 주방가전 > 밥솥 > 전기보온; 주방가전 ...",
+              "domain": "hswus.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 2,
+              "title": "File:LG전자, 미국 프리미엄 가전시장 공략 강화 - 14262405138.jpg ...",
+              "url": "https://commons.wikimedia.org/wiki/File:LG%EC%A0%84%EC%9E%90,_%EB%AF%B8%EA%B5%AD_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EA%B0%80%EC%A0%84%EC%8B%9C%EC%9E%A5_%EA%B3%B5%EB%9E%B5_%EA%B0%95%ED%99%94_-_14262405138.jpg",
+              "snippet": "Jun 17, 2014 ... ... 프리미엄 가전 시장을 지속 선도해 나갈 것”이라고 강조. ※ Social LG전자 (social.lge.co.kr/newsroom) 에서 관련 보도자료를 확인하실 수 있습니다 ...",
+              "domain": "commons.wikimedia.org",
+              "brandMentioned": true,
+              "relevanceScore": 100
+            },
+            {
+              "position": 3,
+              "title": ". 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복 ...",
+              "url": "https://www.instagram.com/p/DKRTWz_yCjR/",
+              "snippet": "May 30, 2025 ... . 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복합니다 #블라우풍트 ... Photo by 유이 (Uie) on September 25, 2025. May be an ...",
+              "domain": "www.instagram.com",
+              "brandMentioned": false,
+              "relevanceScore": 50
+            },
+            {
+              "position": 4,
+              "title": "멀티쿠커",
+              "url": "https://cuckooamerica.com/ko/collections/multi-cookers",
+              "snippet": "주방가전. 주방가전. 커피메이커&전기주전자 · 에어프라이어&제빵기 · 믹서기&얼음 ... 5쿼트 프리미엄 멀티압력밥솥 (CMC-QSB501S). $199.99. 5.0. 6쿼트 8-in-1 압력밥솥 ...",
+              "domain": "cuckooamerica.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 5,
+              "title": "대구 범어 STX칸 model. CCE84751FB (사진 무단배포 사용을 엄격히 ...",
+              "url": "https://www.instagram.com/p/DOsNG8EkuPP/",
+              "snippet": "Sep 16, 2025 ... Photo by AEG 독일 프리미엄 가전 정품 판매 on September 15, 2025. May be.",
+              "domain": "www.instagram.com",
+              "brandMentioned": false,
+              "relevanceScore": 20
+            },
+            {
+              "position": 6,
+              "title": "MissyShop |",
+              "url": "https://kmarket365.com/me/prod_cat_list.asp?cat_code=49&oby=3",
+              "snippet": "주방가전 · 계절/생활가전 · 건강가전 · 주방 · 명품식기브랜드 · 보관용기 · 조리용품 · 주방소품 · 식품 · 즉석가공식품 · 쌀/잡곡/면류 · 양념/소스/가루 · 건조식품.",
+              "domain": "kmarket365.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 7,
+              "title": "Fissler - MissyShop",
+              "url": "https://www.kmarket365.com/me/prod_cat_list.asp?cat_code=140249",
+              "snippet": "주방가전 · 계절/생활가전 · 건강가전 · 주방 · 명품식기브랜드 · 보관용기 · 조리용품 · 주방소품 · 식품 · 즉석가공식품 · 쌀/잡곡/면류 · 양념/소스/가루 · 건조식품.",
+              "domain": "www.kmarket365.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 8,
+              "title": "최고의 가치를 실현하는 기업 - (주)리홈쿠첸",
+              "url": "https://www.bizntech.co.kr/eng/business/living.jsp",
+              "snippet": "생활을 바꾸는 스타일가전 프리미엄 생활, 주방가전 브랜드. Business Introduction. LiHOM. A stylish home appliance that changes a way of lifestyle. LiHOM is a ...",
+              "domain": "www.bizntech.co.kr",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 9,
+              "title": "Free 주방가전 Logo/profile Templates | MiriCanvas",
+              "url": "https://www.miricanvas.com/en/template/logo/%EC%A3%BC%EB%B0%A9%EA%B0%80%EC%A0%84",
+              "snippet": "Find a unique, distinctive 주방가전 Logo/profile template perfect for your needs at MiriCanvas.",
+              "domain": "www.miricanvas.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            },
+            {
+              "position": 10,
+              "title": "BUBANG",
+              "url": "http://bubang.com/eng/business/cuchen.jsp",
+              "snippet": "리빙사업부. 생활을 바꾸는 스타일가전 프리미엄 생활, 주방가전 브랜드 ...",
+              "domain": "bubang.com",
+              "brandMentioned": false,
+              "relevanceScore": 0
+            }
+          ],
+          "brandVisibility": {
+            "topPosition": 2,
+            "totalMentions": 1,
+            "averagePosition": 2,
+            "visibilityScore": 100
+          },
+          "competitorAnalysis": {
+            "directCompetitors": [
+              "Samsung",
+              "Sony",
+              "Panasonic"
+            ],
+            "competitorPositions": {
+              "Samsung": [],
+              "Sony": [],
+              "Panasonic": []
+            },
+            "marketShare": 10
+          }
+        }
+      ],
+      "perplexity": [
+        {
+          "query": "스마트 TV",
+          "aiEngines": [
+            {
+              "engine": "perplexity",
+              "targetBrand": {
+                "brandName": "LG",
+                "mentionCount": 6,
+                "firstMentionPosition": 1302,
+                "averagePosition": 2838.3333333333335,
+                "sentimentScore": 0.6666666666666666,
+                "recommendationContext": false,
+                "authorityScore": 40,
+                "mentions": [
+                  {
+                    "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                    "position": 1302,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "presence[2]                |\n| **Toshiba**   | Fire TV Integration    | Affordable, seamless access to Amazon content | Fewer premium features[2]               |\n| **Sharp**     | AQUOS, smart features  | Color/contrast enhancement, energy efficiency | Lower market share[2]                   |\n| **Vizio**     | Affordable 4K, SmartCast| Value pricing, broad streaming support | Picture quality may lag behind premium brands[2] |\n\n---\n\n**Top-Rated Models (2025):**\n\n- **LG G5 OLED:** Exceptional color performance, deep blacks, but picture quality can vary with settings[5]",
+                    "position": 2164,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **LG C5 OLED:** Strong in bright rooms; Samsung S90F OLED preferred for vivid colors/gaming[5]",
+                    "position": 2870,
+                    "sentiment": "positive",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Samsung S85F OLED:** Most affordable QD-OLED; better color than LG B4 OLED, but LG is more accurate and versatile in different regions[5]",
+                    "position": 2968,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "- **Customer Trust:** According to 2025 consumer ratings, Sony leads in trust and perceived quality, with Samsung and LG also highly rated[2]",
+                    "position": 3476,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "---\n\n**Summary Table: Comparison of Leading Smart TV Options**\n\n| Brand      | Tech Highlights      | OS/Platform | Best For             | Typical Price Tier |\n|------------|---------------------|-------------|----------------------|--------------------|\n| Sony       | OLED, X1 Ultimate   | Google TV   | Cinephiles, premium seekers | High           |\n| Samsung    | QLED, OLED          | Tizen       | Bright rooms, smart home users | Mid-High      |\n| LG         | OLED",
+                    "position": 4250,
+                    "sentiment": "positive",
+                    "context": "general"
+                  }
+                ]
+              },
+              "competitors": [
+                {
+                  "brandName": "Samsung",
+                  "mentionCount": 6,
+                  "firstMentionPosition": 1302,
+                  "averagePosition": 2934.3333333333335,
+                  "sentimentScore": 0.6666666666666666,
+                  "recommendationContext": false,
+                  "authorityScore": 40,
+                  "mentions": [
+                    {
+                      "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                      "position": 1302,
+                      "sentiment": "positive",
+                      "context": "general"
+                    },
+                    {
+                      "text": "- **Samsung S95F OLED:** Better in bright rooms, consistent image quality, vibrant colors; generally preferred for most users[5]",
+                      "position": 2740,
+                      "sentiment": "positive",
+                      "context": "general"
+                    },
+                    {
+                      "text": "- **LG C5 OLED:** Strong in bright rooms; Samsung S90F OLED preferred for vivid colors/gaming[5]",
+                      "position": 2870,
+                      "sentiment": "positive",
+                      "context": "general"
+                    },
+                    {
+                      "text": "- **Samsung S85F OLED:** Most affordable QD-OLED; better color than LG B4 OLED, but LG is more accurate and versatile in different regions[5]",
+                      "position": 2968,
+                      "sentiment": "neutral",
+                      "context": "general"
+                    },
+                    {
+                      "text": "- **Customer Trust:** According to 2025 consumer ratings, Sony leads in trust and perceived quality, with Samsung and LG also highly rated[2]",
+                      "position": 3476,
+                      "sentiment": "neutral",
+                      "context": "general"
+                    },
+                    {
+                      "text": "---\n\n**Summary Table: Comparison of Leading Smart TV Options**\n\n| Brand      | Tech Highlights      | OS/Platform | Best For             | Typical Price Tier |\n|------------|---------------------|-------------|----------------------|--------------------|\n| Sony       | OLED, X1 Ultimate   | Google TV   | Cinephiles, premium seekers | High           |\n| Samsung    | QLED, OLED          | Tizen       | Bright rooms, smart home users | Mid-High      |\n| LG         | OLED",
+                      "position": 4250,
+                      "sentiment": "positive",
+                      "context": "general"
+                    }
+                  ]
+                },
+                {
+                  "brandName": "Sony",
+                  "mentionCount": 3,
+                  "firstMentionPosition": 1302,
+                  "averagePosition": 3009.3333333333335,
+                  "sentimentScore": 0.6666666666666666,
+                  "recommendationContext": false,
+                  "authorityScore": 40,
+                  "mentions": [
+                    {
+                      "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                      "position": 1302,
+                      "sentiment": "positive",
+                      "context": "general"
+                    },
+                    {
+                      "text": "- **Customer Trust:** According to 2025 consumer ratings, Sony leads in trust and perceived quality, with Samsung and LG also highly rated[2]",
+                      "position": 3476,
+                      "sentiment": "neutral",
+                      "context": "general"
+                    },
+                    {
+                      "text": "---\n\n**Summary Table: Comparison of Leading Smart TV Options**\n\n| Brand      | Tech Highlights      | OS/Platform | Best For             | Typical Price Tier |\n|------------|---------------------|-------------|----------------------|--------------------|\n| Sony       | OLED, X1 Ultimate   | Google TV   | Cinephiles, premium seekers | High           |\n| Samsung    | QLED, OLED          | Tizen       | Bright rooms, smart home users | Mid-High      |\n| LG         | OLED",
+                      "position": 4250,
+                      "sentiment": "positive",
+                      "context": "general"
+                    }
+                  ]
+                },
+                {
+                  "brandName": "Panasonic",
+                  "mentionCount": 1,
+                  "firstMentionPosition": 1302,
+                  "averagePosition": 1302,
+                  "sentimentScore": 1,
+                  "recommendationContext": false,
+                  "authorityScore": 40,
+                  "mentions": [
+                    {
+                      "text": "---\n\n**Major Brands and Top Models (2025):**\n\n| Brand         | Notable Technology      | Strengths                 | Weaknesses/Considerations                |\n|---------------|------------------------|---------------------------|------------------------------------------|\n| **Sony**      | OLED, X1 Ultimate      | Highest consumer trust, excellent color accuracy and image processing | Premium pricing[2]                      |\n| **Samsung**   | QLED, Tizen OS         | High brightness, vibrant colors, wide app support, smart home integration | QLED can have less deep blacks than OLED[2][5] |\n| **LG**        | OLED, webOS            | Deep blacks, wide viewing angles, user-friendly interface | Some models less consistent in picture modes[2][5] |\n| **Panasonic** | OLED, 4K HDR           | Cinematic experience, professional calibration | Limited U",
+                      "position": 1302,
+                      "sentiment": "positive",
+                      "context": "general"
+                    }
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "url": "https://www.renub.com/united-states-smart-tv-market-p.php",
+                  "title": "United States Smart TV Market Size and Forecast 2025–2033",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.lifestoryresearch.com/2025-best-television-ranking-review",
+                  "title": "Top 7 Television Brands - Ranked by Customer Ratings",
+                  "cited": true
+                },
+                {
+                  "url": "http://www.aipbl.co.kr/576",
+                  "title": "AI 시대, 당신의 길잡이 - AI 멀티버스 학습포털",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.imarcgroup.com/united-states-smart-tv-market",
+                  "title": "U.S. Smart TV Market Size, Share, Growth, Outlook 2033",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.rtings.com/tv/reviews/best/tvs-on-the-market",
+                  "title": "The 6 Best TVs of 2025 - RTINGS.com",
+                  "cited": true
+                },
+                {
+                  "url": "https://qanthropicjp.imweb.me/576",
+                  "title": "AI 시대, 당신의 길잡이 - Qanthropic",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.globenewswire.com/news-release/2025/09/01/3142092/28124/en/North-America-Smart-TV-Market-Report-2025-2033-High-Speed-Internet-and-OTT-Platforms-Drive-Demand.html",
+                  "title": "North America Smart TV Market Report 2025-2033 | High-Speed",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.tomsguide.com/us/best-tvs,review-2224.html",
+                  "title": "Best TVs of 2025 tested: top OLEDs, Mini-LEDs and QLEDs for ...",
+                  "cited": true
+                },
+                {
+                  "url": "http://www.motie.go.kr/search/search.do?site=main&category=&reSrchFlag=&currentPage=1&detailSearch=&srchFd=&sort=%24pram.sort&date=&startDate=&endDate=&preCondi=&rowPerPage=10&fdTot=%24param.fdTot&fdTitle=%24param.fdTitle&fdContent=%24param.fdContent&fdFile=%24param.fdFile&fdNotice=%24param.fdNotice",
+                  "title": "'korea-china fta'에 대한 검색결과 306 건 입니다 - 산업통상자원부",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.marketbusinessinsights.com/smart-tv-market",
+                  "title": "Smart TV Market Size, Growth Projections And Insights 2025-2035",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=qhoTH1kAdmM",
+                  "title": "We found it! Best TV Brands in 2025 - YouTube",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.grandviewresearch.com/industry-analysis/smart-tv-industry",
+                  "title": "Smart TV Market Size, Share, Growth | Industry Report, 2030",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.techradar.com/news/best-tv",
+                  "title": "The best TV, chosen by our reviewers for all budgets - TechRadar",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.forinsightsconsultancy.com/reports/smart-tv-market",
+                  "title": "Smart TV Market Trends, Size, and Growth Outlook from 2025-34",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.consumerreports.org/electronics-computers/tvs/best-tvs-of-the-year-a3862868628/",
+                  "title": "Best TVs of 2025, Tested by Our Experts - Consumer Reports",
+                  "cited": true
+                },
+                {
+                  "url": "https://scoop.market.us/smart-tv-statistics/",
+                  "title": "Smart TV Statistics and Facts (2025) - Market.us Scoop",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.accio.com/plp/tv-brands-in-us",
+                  "title": "Top TV Brands in the US: Compare Samsung, Sony & Smart 4K/8K ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://deepmarketinsights.com/vista/insights/smart-tv-market/north-america",
+                  "title": "North America Smart TV Market Size & Outlook, 2025-2033",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.newscaststudio.com/2025/07/01/smart-tv-ownership-rises-as-roku-and-firetv-gain-traction-in-u-s-homes/",
+                  "title": "Smart TV ownership rises as Roku and Fire TV gain traction in U.S. ...",
+                  "cited": true
+                }
+              ],
+              "timestamp": "2025-09-29T03:02:15.575Z"
+            }
+          ],
+          "brandComparison": {
+            "targetBrandScore": {
+              "brandName": "LG",
+              "visibility": 100,
+              "sentiment": 83,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 1,
+              "combined": 59
+            },
+            "competitorScores": [
+              {
+                "brandName": "Samsung",
+                "visibility": 100,
+                "sentiment": 83,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 2,
+                "combined": 59
+              },
+              {
+                "brandName": "Sony",
+                "visibility": 60,
+                "sentiment": 83,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 3,
+                "combined": 47
+              },
+              {
+                "brandName": "Panasonic",
+                "visibility": 20,
+                "sentiment": 100,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 4,
+                "combined": 39
+              }
+            ],
+            "ranking": [
+              {
+                "brandName": "LG",
+                "visibility": 100,
+                "sentiment": 83,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 1,
+                "combined": 59
+              },
+              {
+                "brandName": "Samsung",
+                "visibility": 100,
+                "sentiment": 83,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 2,
+                "combined": 59
+              },
+              {
+                "brandName": "Sony",
+                "visibility": 60,
+                "sentiment": 83,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 3,
+                "combined": 47
+              },
+              {
+                "brandName": "Panasonic",
+                "visibility": 20,
+                "sentiment": 100,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 4,
+                "combined": 39
+              }
+            ]
+          },
+          "overallScore": {
+            "searchVisibility": 60,
+            "aiVisibility": 70,
+            "authorityScore": 40,
+            "competitivePosition": 93,
+            "combined": 65.6
+          }
+        },
+        {
+          "query": "프리미엄 가전",
+          "aiEngines": [
+            {
+              "engine": "perplexity",
+              "targetBrand": {
+                "brandName": "LG",
+                "mentionCount": 2,
+                "firstMentionPosition": 1763,
+                "averagePosition": 3251,
+                "sentimentScore": 0,
+                "recommendationContext": false,
+                "authorityScore": 40,
+                "mentions": [
+                  {
+                    "text": "presence| Smart refrigerators (Bespoke), washers, integrated IoT     | High-tech, design-focused, competitive price|\n| **LG**        | South Korea      | Energy efficiency, smart controls, reliable quality | ThinQ smart control, ENERGY STAR efficiency, modern design | Energy-saving, user-friendly, broad appeal  |\n| **Whirlpool** | U",
+                    "position": 1763,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  },
+                  {
+                    "text": "market sees intense competition between domestic and global brands, each leveraging different strengths such as innovation (Samsung, LG), engineering (Bosch, Miele), or heritage (Whirlpool, GE)[2]",
+                    "position": 4739,
+                    "sentiment": "neutral",
+                    "context": "general"
+                  }
+                ]
+              },
+              "competitors": [
+                {
+                  "brandName": "Samsung",
+                  "mentionCount": 3,
+                  "firstMentionPosition": 1284,
+                  "averagePosition": 3371.3333333333335,
+                  "sentimentScore": 0.3333333333333333,
+                  "recommendationContext": false,
+                  "authorityScore": 60,
+                  "mentions": [
+                    {
+                      "text": "| Brand         | Country of Origin | Notable Strengths                                   | Product Focus & Features                                   | Distinct Market Position                    |\n|---------------|------------------|-----------------------------------------------------|------------------------------------------------------------|---------------------------------------------|\n| **Samsung**   | South Korea      | Smart tech, innovation, design, robust U",
+                      "position": 1284,
+                      "sentiment": "neutral",
+                      "context": "general"
+                    },
+                    {
+                      "text": "- **Customization**: Brands like Samsung (Bespoke) and KitchenAid offer customizable colors and configurations to match personal and interior design preferences[2]",
+                      "position": 4091,
+                      "sentiment": "positive",
+                      "context": "general"
+                    },
+                    {
+                      "text": "market sees intense competition between domestic and global brands, each leveraging different strengths such as innovation (Samsung, LG), engineering (Bosch, Miele), or heritage (Whirlpool, GE)[2]",
+                      "position": 4739,
+                      "sentiment": "neutral",
+                      "context": "general"
+                    }
+                  ]
+                }
+              ],
+              "sources": [
+                {
+                  "url": "https://www.futuredatastats.com/premium-kitchen-appliances-market",
+                  "title": "Premium Kitchen Appliances Market Size & Industry Growth 2030",
+                  "cited": true
+                },
+                {
+                  "url": "https://stephan-review.tistory.com/entry/%EC%A0%84%EB%9E%B5-%EB%AF%B8%EA%B5%AD-%EA%B0%80%EC%A0%84-%EC%B5%9C%EA%B3%A0%EB%B8%8C%EB%9E%9C%EB%93%9C-Top10-Best-White-Goods-Brand-Top10",
+                  "title": "미국 가전 추천 브랜드 TOP10｜2025년 최신 트렌드, 이거 사면 ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.gminsights.com/industry-analysis/us-premium-outdoor-appliances-market",
+                  "title": "U.S. Premium Outdoor Appliances Market Size Report, 2032",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.fortunebusinessinsights.com/ko/home-appliances-market-107020",
+                  "title": "가정 기기 시장 규모, 점유율, 성장 | 예측 [2032]",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.mordorintelligence.com/industry-reports/north-america-luxury-appliances-market",
+                  "title": "North America Luxury Appliances Market Size & Share Analysis",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.sphericalinsights.com/ko/reports/united-states-appliances-market",
+                  "title": "United States Appliances Market Size, Outlook, 통계",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.metastatinsight.com/report/north-america-luxury-kitchen-appliances-market",
+                  "title": "North America Luxury Kitchen Appliances Market Size by 2032",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.hashtap.com/soujika.yasaki/%EA%B3%A0%EA%B8%89-%EC%A3%BC%EB%B0%A9-%EA%B0%80%EC%A0%84-%EC%8B%9C%EC%9E%A5-%EB%B6%84%EC%84%9D-2021-%EC%BD%94%EB%A1%9C%EB%82%98-19-2021-2026-%EC%9D%98-%EC%98%81%ED%96%A5-%EA%B0%95%EC%A1%B0-whirlpool-corporation-ab-electrolux-samsung-electronics-lg-electr-Z2gadXzbQBlG",
+                  "title": "고급 주방 가전 시장 분석 2021 : 코로나 19 (2021-2026)의 영향 강조 | Whirlpool Corporation, AB Electrolux, Samsung Electronics, LG Electronics — soujika yasaki",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.hyxion.com/ko/10-made-in-usa-kitchen-appliance-brands",
+                  "title": "미국에서 만든 10대 주방 가전 브랜드 - Hyxion",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.fortunebusinessinsights.com/ko/u-s-refrigerator-market-107670",
+                  "title": "미국 냉장고 시장 점유율 및 동향 | 성장 분석, 2032",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.donsappliances.com/blog/luxury-appliance-brands-compared",
+                  "title": "Luxury Appliance Brands vs. Premium Brands: What's the Real ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.aztecappliance.com/blog/premium-kitchen-appliance-brands",
+                  "title": "Aztec's Guide to Premium Kitchen Brands [LG, Samsung Appliances ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://uptownappliancerepair.com/luxury-appliances-a-guide-to-choosing-maintaining-and-repairing-premium-appliances/",
+                  "title": "Luxury Appliances: A Guide to Choosing, Maintaining, and ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.businessresearchinsights.com/market-reports/luxury-kitchen-appliances-market-118378",
+                  "title": "Luxury Kitchen Appliances Market Size & Growth [2035]",
+                  "cited": true
+                }
+              ],
+              "timestamp": "2025-09-29T03:02:41.492Z"
+            }
+          ],
+          "brandComparison": {
+            "targetBrandScore": {
+              "brandName": "LG",
+              "visibility": 40,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 40,
+              "mentionRank": 2,
+              "combined": 33
+            },
+            "competitorScores": [
+              {
+                "brandName": "Samsung",
+                "visibility": 60,
+                "sentiment": 67,
+                "recommendation": 0,
+                "authority": 60,
+                "mentionRank": 1,
+                "combined": 47
+              },
+              {
+                "brandName": "Sony",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 3,
+                "combined": 13
+              },
+              {
+                "brandName": "Panasonic",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 4,
+                "combined": 13
+              }
+            ],
+            "ranking": [
+              {
+                "brandName": "Samsung",
+                "visibility": 60,
+                "sentiment": 67,
+                "recommendation": 0,
+                "authority": 60,
+                "mentionRank": 1,
+                "combined": 47
+              },
+              {
+                "brandName": "LG",
+                "visibility": 40,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 40,
+                "mentionRank": 2,
+                "combined": 33
+              },
+              {
+                "brandName": "Sony",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 3,
+                "combined": 13
+              },
+              {
+                "brandName": "Panasonic",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 4,
+                "combined": 13
+              }
+            ]
+          },
+          "overallScore": {
+            "searchVisibility": 0,
+            "aiVisibility": 70,
+            "authorityScore": 40,
+            "competitivePosition": 0,
+            "combined": 29
+          }
+        },
+        {
+          "query": "에어컨",
+          "aiEngines": [
+            {
+              "engine": "perplexity",
+              "targetBrand": null,
+              "competitors": [],
+              "sources": [
+                {
+                  "url": "https://www.meticulousresearch.com/product/north-america-air-conditioners-market-5632",
+                  "title": "North America Air Conditioners Market Size, Share & Trends Analysis",
+                  "cited": true
+                },
+                {
+                  "url": "https://everestmechanical.com/americas-top-10-air-conditioner-brands/",
+                  "title": "Top 10 Air Conditioner Brands In America - Everest Mechanical",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=v8T0TVSzlZk",
+                  "title": "Window AC Vs Portable AC? Home Air Conditioners Compared For ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.grandviewresearch.com/industry-analysis/north-america-air-conditioning-systems-market",
+                  "title": "North America Air Conditioning Systems Market Report, 2033",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=x3khwp4NiCQ",
+                  "title": "Best Air Conditioner Brands 2025 - YouTube",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=3Pu1doe2Nso",
+                  "title": "Best Air Conditioner Brands 2025: Price, Efficiency & Real Reviews",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.servicetitan.com/blog/hvac-statistics",
+                  "title": "HVAC Statistics: The Data You Need to Know for 2025 - ServiceTitan",
+                  "cited": true
+                },
+                {
+                  "url": "https://cielowigle.com/blog/types-of-air-conditioners/",
+                  "title": "9 Types of Air Conditioners: Choose the Best for Your Home",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=x2ryistzwes",
+                  "title": "The Best Portable Air Conditioner We've Tested - A Buying Guide",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.startus-insights.com/innovators-guide/air-conditioning-market-report/",
+                  "title": "Air Conditioning Market Report 2025 | StartUs Insights",
+                  "cited": true
+                },
+                {
+                  "url": "https://modernize.com/hvac/best-air-conditioner-brands",
+                  "title": "Best Air Conditioner Brands of 2025: Costs, SEER Ratings, and More!",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.energy.gov/energysaver/air-conditioning",
+                  "title": "Air Conditioning - Department of Energy",
+                  "cited": true
+                },
+                {
+                  "url": "https://qualityheating.com/air-conditioner-replacement-cost/",
+                  "title": "Cost of an Air Conditioner in 2025: What Homeowners Need to Know",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.consumerreports.org/appliances/central-air-conditioning/buying-guide/",
+                  "title": "Best Central Air Conditioning Buying Guide - Consumer Reports",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.energystar.gov/products/central_air_conditioners",
+                  "title": "Central Air Conditioner | ENERGY STAR",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.technavio.com/report/air-conditioning-market-industry-analysis",
+                  "title": "Air Conditioning (AC) Market Analysis, Size, and Forecast 2025-2029",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.bluedotmd.com/blog/types-of-air-conditioners/",
+                  "title": "Types of Air Conditioning Units: Your Expert Guide - Blue Dot",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.homeworksenergy.com/the-history-of-the-air-conditioner-as-we-know-it/",
+                  "title": "The History of the Air Conditioner as We Know It - HomeWorks Energy",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.cognitivemarketresearch.com/air-conditioning-market-report",
+                  "title": "Air Conditioning Market Report 2025 (Global Edition)",
+                  "cited": true
+                },
+                {
+                  "url": "https://fieldcomplete.com/blog/general/comparing-air-conditioner-manufacturing-companies-features-and-prices",
+                  "title": "Comparing Air Conditioner Manufacturing Companies: Features and ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.energy.gov/energysaver/central-air-conditioning",
+                  "title": "Central Air Conditioning | Department of Energy",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.thebusinessresearchcompany.com/report/airconditioning-equipment-global-market-report",
+                  "title": "Air-Conditioning Equipment Market Statistics & Analysis By 2025",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=v9758rY-sO0",
+                  "title": "Top 6 BEST Air Conditioner Brands in 2024 - YouTube",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.prnewswire.com/news-releases/residential-hvac-market-to-grow-by-usd-39-62-billion-2025-2029-driven-by-hvac-demand-in-construction-and-ais-impact-on-market-trends---technavio-302342954.html",
+                  "title": "Residential HVAC Market to Grow by USD 39.62 Billion (2025-2029 ...",
+                  "cited": true
+                },
+                {
+                  "url": "https://www.youtube.com/watch?v=UqmvUV0UdRo",
+                  "title": "9 Benefits of Buying a New Air Conditioner - YouTube",
+                  "cited": true
+                }
+              ],
+              "timestamp": "2025-09-29T03:02:58.081Z"
+            }
+          ],
+          "brandComparison": {
+            "targetBrandScore": {
+              "brandName": "LG",
+              "visibility": 0,
+              "sentiment": 50,
+              "recommendation": 0,
+              "authority": 0,
+              "mentionRank": 1,
+              "combined": 13
+            },
+            "competitorScores": [
+              {
+                "brandName": "Samsung",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 2,
+                "combined": 13
+              },
+              {
+                "brandName": "Sony",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 3,
+                "combined": 13
+              },
+              {
+                "brandName": "Panasonic",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 4,
+                "combined": 13
+              }
+            ],
+            "ranking": [
+              {
+                "brandName": "LG",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 1,
+                "combined": 13
+              },
+              {
+                "brandName": "Samsung",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 2,
+                "combined": 13
+              },
+              {
+                "brandName": "Sony",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 3,
+                "combined": 13
+              },
+              {
+                "brandName": "Panasonic",
+                "visibility": 0,
+                "sentiment": 50,
+                "recommendation": 0,
+                "authority": 0,
+                "mentionRank": 4,
+                "combined": 13
+              }
+            ]
+          },
+          "overallScore": {
+            "searchVisibility": 100,
+            "aiVisibility": 0,
+            "authorityScore": 0,
+            "competitivePosition": 97,
+            "combined": 49.400000000000006
+          }
+        }
+      ]
+    },
+    "aeoHeuristics": {
+      "AEOHeuristics": {
+        "pillars": [
+          {
+            "name": "온페이지 구조",
+            "maxPoints": 15,
+            "checks": [
+              "제목이 직접적인 질문인가?",
+              "H2/H3 다음에 40-60자 답변이 있는가?",
+              "표나 목록으로 구조화되어 있는가?",
+              "숫자, 날짜, 통계 등 사실이 포함되어 있는가?"
+            ]
+          },
+          {
+            "name": "E-E-A-T & 콘텐츠 품질",
+            "maxPoints": 25,
+            "checks": [
+              "작가 프로필이나 전문성이 명시되어 있는가?",
+              "출처나 인용이 명확한가?",
+              "최신 정보로 업데이트되어 있는가?",
+              "연락처나 정책 정보가 있는가?"
+            ]
+          },
+          {
+            "name": "오프사이트 권위",
+            "maxPoints": 30,
+            "checks": [
+              "미디어나 언론에서 언급되었는가?",
+              "레딧, 커뮤니티에서 논의되고 있는가?",
+              "전문가나 인플루언서가 인용했는가?",
+              "브랜드 엔터티가 일관되게 사용되는가?"
+            ]
+          },
+          {
+            "name": "기술 & 스키마",
+            "maxPoints": 15,
+            "checks": [
+              "Core Web Vitals가 양호한가?",
+              "모바일 최적화가 되어 있는가?",
+              "Organization/Article 스키마가 적용되어 있는가?",
+              "FAQ/HowTo/Product 스키마가 있는가?"
+            ]
+          },
+          {
+            "name": "직접 AEO 성과",
+            "maxPoints": 15,
+            "checks": [
+              "AI Overviews에 노출되었는가?",
+              "챗봇에서 추천되거나 언급되는가?",
+              "브랜드 검색량이 증가하고 있는가?",
+              "관련 쿼리에서 상위 노출되는가?"
+            ]
+          }
+        ]
+      }
+    },
+    "aeoScore": {
+      "totalScore": 43,
+      "maxScore": 100,
+      "pillars": [
+        {
+          "name": "온페이지 구조",
+          "subtotal": 1.5,
+          "maxPoints": 15,
+          "items": [
+            {
+              "item": "제목이 직접적인 질문인가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "구글 검색 결과에서 대상 브랜드와 관련된 상위 노출 페이지의 제목들이 직접적인 질문 형태를 사용하지 않고 선언적인 문구를 사용하고 있습니다.",
+              "evidence": "Google results: 제목들이 'Smart TVs: HD & LED Smart TVs – Best Buy' 또는 'Smart TV - Wikipedia' 등 선언적 형태임."
+            },
+            {
+              "item": "H2/H3 다음에 40-60자 답변이 있는가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "제공된 스니펫 정보만으로는 LG 웹사이트의 원본 페이지 구조(H2/H3 사용 여부 및 후속 답변 길이)를 확인할 수 없으므로 점수를 부여할 수 없습니다.",
+              "evidence": "NormalizedIntake: 대상 브랜드의 온페이지 HTML 구조에 대한 직접적인 데이터 부재."
+            },
+            {
+              "item": "표나 목록으로 구조화되어 있는가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "구글 스니펫이나 AI 요약 내용에서 대상 브랜드 콘텐츠가 표나 목록 형태로 명확하게 구조화되었다는 증거를 찾을 수 없습니다.",
+              "evidence": "NormalizedIntake: 스니펫에서 표/목록 구조를 암시하는 포맷 미확인."
+            },
+            {
+              "item": "숫자, 날짜, 통계 등 사실이 포함되어 있는가?",
+              "max_points": 3,
+              "awarded": 1.5,
+              "rationale": "LG에 대한 구글 검색 결과 중 하나(프리미엄 가전 2위)는 아카이브된 이미지 파일과 함께 특정 날짜(2014년)를 언급하는 사실 정보를 포함하고 있습니다.",
+              "evidence": "Google result (프리미엄 가전, 2위): 'File:LG전자, 미국 프리미엄 가전시장 공략 강화 - 14262405138.jpg...'에 'Jun 17, 2014' 날짜가 명시됨."
+            }
+          ]
+        },
+        {
+          "name": "E-E-A-T & 콘텐츠 품질",
+          "subtotal": 13,
+          "maxPoints": 25,
+          "items": [
+            {
+              "item": "작가 프로필이나 전문성이 명시되어 있는가?",
+              "max_points": 6,
+              "awarded": 0,
+              "rationale": "제공된 데이터는 외부 검색 결과 및 AI 요약이므로, LG 자체 콘텐츠에 전문가 프로필이나 명확한 저자가 명시되어 있는지 여부를 평가할 수 없습니다.",
+              "evidence": "NormalizedIntake: 저자 프로필 또는 전문성 명시 정보 부재."
+            },
+            {
+              "item": "출처나 인용이 명확한가?",
+              "max_points": 7,
+              "awarded": 7,
+              "rationale": "Perplexity AI는 LG를 언급하면서 시장 보고서, 기술 리뷰 사이트(RTINGS.com), 소비자 보고서 등 신뢰할 수 있는 외부 출처를 명확히 인용하여 높은 투명성을 보입니다.",
+              "evidence": "Perplexity `스마트 TV` `sources`: 'The 6 Best TVs of 2025 - RTINGS.com' 및 'Best TVs of 2025, Tested by Our Experts - Consumer Reports' 등 다수의 권위 있는 출처가 인용됨."
+            },
+            {
+              "item": "최신 정보로 업데이트되어 있는가?",
+              "max_points": 7,
+              "awarded": 6,
+              "rationale": "Perplexity AI 요약에서 2025년 기준의 최신 모델(예: LG G5 OLED, LG C5 OLED)과 소비자 평가가 반복적으로 언급되어 정보의 최신성이 매우 높습니다.",
+              "evidence": "Perplexity Mentions (스마트 TV): 'Major Brands and Top Models (2025)', '- LG G5 OLED: Exceptional color performance...'와 같이 2025년 데이터가 자주 등장함."
+            },
+            {
+              "item": "연락처나 정책 정보가 있는가?",
+              "max_points": 5,
+              "awarded": 0,
+              "rationale": "제공된 검색 결과 스니펫이나 AI 요약에서는 대상 브랜드의 고객 서비스 연락처 또는 개인정보 보호 정책 정보 등을 확인할 수 없습니다.",
+              "evidence": "NormalizedIntake: 연락처 및 정책 정보에 대한 데이터 부재."
+            }
+          ]
+        },
+        {
+          "name": "오프사이트 권위",
+          "subtotal": 19.5,
+          "maxPoints": 30,
+          "items": [
+            {
+              "item": "미디어나 언론에서 언급되었는가?",
+              "max_points": 9,
+              "awarded": 7,
+              "rationale": "LG는 구글 검색 결과에서 국제적인 언론 매체인 가디언(The Guardian)과 위키미디어 프로젝트를 통해 주요 가전 브랜드로서 여러 차례 언급되었습니다.",
+              "evidence": "Google `스마트 TV` (9위): 'The Guardian' 도메인에서 LG 스마트 TV 데이터 수집에 대한 기사가 발견됨. '프리미엄 가전' (2위): 'commons.wikimedia.org'에 보도자료 파일 언급."
+            },
+            {
+              "item": "레딧, 커뮤니티에서 논의되고 있는가?",
+              "max_points": 7,
+              "awarded": 0,
+              "rationale": "제공된 데이터 내에 레딧, 포럼 또는 기타 사용자 기반 커뮤니티에서의 LG 제품 논의에 대한 증거가 포함되어 있지 않습니다.",
+              "evidence": "NormalizedIntake: 커뮤니티 및 소셜 데이터 부재."
+            },
+            {
+              "item": "전문가나 인플루언서가 인용했는가?",
+              "max_points": 9,
+              "awarded": 7.5,
+              "rationale": "Perplexity AI가 LG를 리뷰하면서 RTINGS.com, Consumer Reports 등 기술 및 소비자 평가 전문가들의 상세 리뷰와 비교 데이터를 기반으로 인용하고 있습니다.",
+              "evidence": "Perplexity Mentions (스마트 TV): LG OLED 모델이 RTINGS.com, Consumer Reports 인용 내용과 함께 경쟁 모델(Samsung QD-OLED)과 비교되는 맥락에서 언급됨."
+            },
+            {
+              "item": "브랜드 엔터티가 일관되게 사용되는가?",
+              "max_points": 5,
+              "awarded": 5,
+              "rationale": "모든 검색 엔진 및 AI 분석에서 'LG'라는 브랜드명이 핵심 엔터티로 명확하고 일관되게 인식 및 사용되고 있습니다.",
+              "evidence": "Google 및 Perplexity: 'LG', 'LG 전자'로 명확하게 식별되며, 경쟁 구도에서도 일관된 브랜드명 사용."
+            }
+          ]
+        },
+        {
+          "name": "기술 & 스키마",
+          "subtotal": 0,
+          "maxPoints": 15,
+          "items": [
+            {
+              "item": "Core Web Vitals가 양호한가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "LG의 웹사이트 Core Web Vitals 점수에 대한 성능 측정 데이터가 제공되지 않았습니다.",
+              "evidence": "NormalizedIntake: Core Web Vitals 데이터 부재."
+            },
+            {
+              "item": "모바일 최적화가 되어 있는가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "LG 웹사이트의 모바일 최적화 상태를 검증할 수 있는 기술 감사 데이터가 누락되었습니다.",
+              "evidence": "NormalizedIntake: 모바일 최적화 데이터 부재."
+            },
+            {
+              "item": "Organization/Article 스키마가 적용되어 있는가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "대상 브랜드 웹사이트에 Organization 또는 Article 스키마 마크업이 적용되었는지 여부를 판단할 정보가 없습니다.",
+              "evidence": "NormalizedIntake: 스키마 마크업 데이터 부재."
+            },
+            {
+              "item": "FAQ/HowTo/Product 스키마가 있는가?",
+              "max_points": 3,
+              "awarded": 0,
+              "rationale": "제품 정보 페이지에서 FAQ, HowTo, Product 스키마와 같은 상세 구조화 데이터가 사용되었는지 확인할 수 없습니다.",
+              "evidence": "NormalizedIntake: 구조화된 데이터(FAQ/Product) 적용 데이터 부재."
+            }
+          ]
+        },
+        {
+          "name": "직접 AEO 성과",
+          "subtotal": 9,
+          "maxPoints": 15,
+          "items": [
+            {
+              "item": "AI Overviews에 노출되었는가?",
+              "max_points": 4,
+              "awarded": 3.5,
+              "rationale": "LG는 Perplexity AI의 답변에서 '스마트 TV' 분야의 핵심 브랜드로 언급되어 주요 기술(OLED, webOS) 및 모델별 장점이 상세하게 요약되며 높은 노출도를 보입니다.",
+              "evidence": "Perplexity `스마트 TV`: LG가 'Major Brands and Top Models (2025)' 표에 포함되었으며, 6회 언급되어 AI 요약 내에서 높은 가시성을 확보함."
+            },
+            {
+              "item": "챗봇에서 추천되거나 언급되는가?",
+              "max_points": 3,
+              "awarded": 2.5,
+              "rationale": "'스마트 TV' 쿼리에서 LG는 Perplexity 경쟁 점수 59점으로 삼성과 함께 공동 1위를 차지하여 챗봇 환경에서 강력하게 추천되는 위치에 있습니다.",
+              "evidence": "Perplexity `스마트 TV` `ranking`: LG의 `combined` 점수 59점으로 1위를 기록, 주요 경쟁사와 동등한 최고 수준의 추천 위치."
+            },
+            {
+              "item": "브랜드 검색량이 증가하고 있는가?",
+              "max_points": 4,
+              "awarded": 0,
+              "rationale": "시간 경과에 따른 브랜드 검색량 추세 또는 구체적인 검색량 데이터가 입력으로 제공되지 않아 평가할 수 없습니다.",
+              "evidence": "NormalizedIntake: 브랜드 검색량 변화 데이터 부재."
+            },
+            {
+              "item": "관련 쿼리에서 상위 노출되는가?",
+              "max_points": 4,
+              "awarded": 3,
+              "rationale": "'프리미엄 가전' 쿼리에서는 구글 2위로 높은 노출을 보였으나, 주력 제품인 '스마트 TV'에서는 7위, 9위로 중하위권이며 '에어컨'에서는 노출되지 않아 키워드별 편차가 큽니다.",
+              "evidence": "Google `brandVisibility`: '프리미엄 가전' (2위, 100점), '스마트 TV' (7위, 60점), '에어컨' (0점)."
+            }
+          ]
+        }
+      ]
+    },
+    "recommendations": {
+      "recommendations": [
+        {
+          "category": "기술 & 스키마",
+          "priority": "P0",
+          "impact": "high",
+          "effort": "medium",
+          "description": "구조화된 데이터 마크업 부재는 AI 개요 생성을 위한 핵심 신호를 누락시키는 중대한 결함입니다 (점수 0/15). 메인 페이지에 Organization 스키마를, 모든 주요 제품 페이지에 Product 스키마를 적용하여 엔터티와 제품 정보를 명확하게 정의해야 합니다.",
+          "suggestion_snippet": null,
+          "where_to_apply": "전체 웹사이트 헤더 및 주요 제품(스마트 TV, 에어컨, 냉장고 등) 랜딩 페이지의 <head> 태그 내",
+          "sample_schema_block": {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "LG OLED evo G5 스마트 TV",
+            "description": "최신 2025년형 LG OLED evo G5는 픽셀 디밍 기술과 webOS를 기반으로 최고의 화질과 사용자 경험을 제공합니다.",
+            "brand": {
+              "@type": "Organization",
+              "name": "LG"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "KRW",
+              "price": "3500000",
+              "availability": "https://schema.org/InStock"
+            },
+            "review": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "1250"
+            }
+          },
+          "metric": "핵심 제품 페이지의 리치 결과 노출률 및 AI 개요 인용률"
+        },
+        {
+          "category": "온페이지 구조",
+          "priority": "P0",
+          "impact": "high",
+          "effort": "low",
+          "description": "H2/H3 다음에 40~60자 답변이 있는 구조가 완전히 부재합니다 (0/4). 질문 형식의 H2 태그를 사용하고 그 바로 아래에 간결하고 직접적인 답변(Answer-First Block)을 배치하여 AI 개요가 해당 정보를 쉽게 추출하도록 유도해야 합니다.",
+          "suggestion_snippet": "<h2>LG OLED TV와 QNED TV의 주요 차이점은 무엇인가요?</h2>\n<p><strong>LG OLED TV</strong>는 완벽한 블랙과 무한 명암비를 제공하여 영화 감상에 최적화된 반면, <strong>LG QNED TV</strong>는 미니 LED 기술로 높은 밝기와 넓은 색 영역을 제공하여 밝은 환경에서 뛰어난 성능을 발휘합니다.</p>",
+          "where_to_apply": "스마트 TV 비교/선택 가이드 페이지의 H2 교체 및 답변 문단 추가",
+          "metric": "AI 개요 내 LG 제품의 핵심 속성(OLED vs QNED) 요약 빈도"
+        },
+        {
+          "category": "직접 AEO 성과",
+          "priority": "P0",
+          "impact": "high",
+          "effort": "medium",
+          "description": "'에어컨' 쿼리 가시성이 심각하게 낮습니다(0점). LG의 'ThinQ' 기반 스마트 에어컨 기능과 높은 에너지 효율성(E-E-A-T에서 강점인 'Energy Efficiency'와 연관)을 강조하는 전문 콘텐츠 페이지를 구축하고 관련 Schema를 적용해야 합니다.",
+          "suggestion_snippet": "<h1>2025년형 LG 휘센 에어컨: AI 기능과 에너지 효율의 혁신</h1>\n<p>LG 휘센 에어컨은 딥러닝 AI 기술을 통해 실내 환경을 스스로 학습하고 최적의 냉방 솔루션을 제공합니다. 에너지 소비 효율 1등급을 달성하여 장기적인 비용 절감 효과를 선사합니다.</p>",
+          "where_to_apply": "LG 에어컨 제품 카테고리 메인 랜딩 페이지 (H1, 메타 디스크립션 및 본문 도입부)",
+          "metric": "핵심 에어컨 쿼리에서의 구글 검색 순위 및 Perplexity AI 언급률"
+        },
+        {
+          "category": "E-E-A-T",
+          "priority": "P1",
+          "impact": "medium",
+          "effort": "medium",
+          "description": "작가 프로필이나 전문성 명시가 부재합니다 (0/6). 기술 리뷰 및 제품 비교 콘텐츠에 '가전 엔지니어' 또는 '제품 전문가'의 명확한 프로필을 추가하고 `author` 스키마를 사용하여 콘텐츠의 전문성(E-E-A-T)을 높여야 합니다.",
+          "suggestion_snippet": "<section class='author-profile'>\n    <h3>저자: 김철수 연구원 (LG전자 R&D팀 15년 경력)</h3>\n    <p>김철수 연구원은 15년 동안 LG전자의 OLED 패널 개발에 참여했으며, 디스플레이 기술 및 색상 정확도 분야의 권위자입니다.</p>\n</section>",
+          "where_to_apply": "스마트 TV 및 프리미엄 가전 심층 리뷰/기술 설명 페이지 하단",
+          "metric": "권위 있는 출처(RTINGS, Consumer Reports 등)와의 콘텐츠 신뢰도 비교 점수 변화"
+        },
+        {
+          "category": "E-E-A-T",
+          "priority": "P1",
+          "impact": "high",
+          "effort": "high",
+          "description": "(경쟁사 미러링 - Wikipedia 모델) 권위 있는 사이트처럼 깊이 있고 포괄적인 정보 제공을 통해 주제 권위(Topical Authority)를 확보해야 합니다. LG webOS, OLED, ThinQ 기술의 작동 원리 및 특징을 깊이 다루는 'LG 스마트 TV 기술 백서'를 제작하여 광범위한 정보 수요를 충족시킵니다.",
+          "suggestion_snippet": "<h2>LG webOS: 단순한 운영 체제를 넘어선 스마트 허브</h2>\n<p>LG webOS는 2014년 처음 도입된 이래 사용자 친화적인 인터페이스와 빠른 속도를 자랑하며, 현재는 가정 내 모든 스마트 기기를 연결하는 핵심 허브 역할을 수행합니다. 매년 펌웨어 업데이트를 통해 최신 보안 및 연결성을 제공하고 있습니다. (약 60자)</p>",
+          "where_to_apply": "LG 기술 블로그 또는 'LG ThinQ 기술 센터' 내 백서 페이지",
+          "metric": "해당 백서 페이지로 유입되는 내부 링크 수 및 페이지 검색 순위 (롱테일 쿼리 포함)"
+        },
+        {
+          "category": "기술 & 스키마",
+          "priority": "P1",
+          "impact": "medium",
+          "effort": "low",
+          "description": "(경쟁사 미러링 - App Store 모델) 스마트 TV의 핵심 소프트웨어 기능(예: webOS 앱, 스크린 쉐어)에 대해 `SoftwareApplication` 스키마를 적용하여 AI가 해당 기능을 명확한 엔터티로 인식하도록 구조화합니다. (FAQ/HowTo 스키마 부재 항목 보완)",
+          "suggestion_snippet": "<h2>LG 스마트 TV에서 아이폰을 미러링하려면 어떻게 해야 하나요?</h2>\n<p>아이폰에서 LG TV로 미러링하는 가장 빠른 방법은 에어플레이(AirPlay) 2 기능을 활성화하는 것입니다. Wi-Fi 네트워크가 동일한지 확인한 후, 아이폰 제어 센터에서 화면 미러링을 선택하고 LG TV를 목록에서 찾아 연결하세요.</p>",
+          "where_to_apply": "고객 지원/How-To 가이드 페이지의 H2 제목 및 본문",
+          "metric": "앱 연동 관련 'How-to' 쿼리에서 피처드 스니펫/AI 개요 노출률"
+        },
+        {
+          "category": "온페이지 구조",
+          "priority": "P2",
+          "impact": "medium",
+          "effort": "low",
+          "description": "표나 목록 구조화가 부재합니다 (0/4). 스마트 TV 비교(OLED vs QLED) 또는 프리미엄 가전 기능 요약 시, AI가 정보를 구조적으로 인식하기 쉽도록 HTML 테이블을 활용해야 합니다.",
+          "suggestion_snippet": "<table>\n    <thead><tr><th>특징</th><th>LG OLED evo (G5)</th><th>경쟁사 QLED</th></tr></thead>\n    <tbody>\n        <tr><td>블랙 표현</td><td>완벽한 블랙 (자체발광)</td><td>미니 LED 백라이트 (깊은 블랙)</td></tr>\n        <tr><td>운영 체제</td><td>webOS</td><td>Tizen OS</td></tr>\n    </tbody>\n</table>",
+          "where_to_apply": "제품 비교 콘텐츠 페이지 내, 핵심 속성 요약 섹션",
+          "metric": "AI 개요에서 LG 제품 스펙 및 경쟁 우위가 표 형식으로 인용되는 비율"
+        }
+      ]
+    },
+    "brandStrategy": {
+      "brandName": "엘지 (LG)",
+      "overallStrategy": "LG는 스마트 TV 분야에서 AI 인용도가 높으나(Perplexity 1위), 경쟁사 대비 웹사이트의 기술적 구조화(스키마, Q&A 형식)가 부족하고, '에어컨' 분야의 시장 가시성이 전무합니다. 따라서 'OLED, webOS, ThinQ'의 기술적 우위를 AI 봇이 즉각적으로 인용할 수 있도록 온페이지 구조와 스키마를 P0로 최적화하고, 가시성이 낮은 쿼리(에어컨)에 대한 권위 콘텐츠를 즉시 구축하는 'AI 인용 극대화 전략'을 실행해야 합니다.",
+      "queryStrategies": [
+        {
+          "query": "스마트 TV",
+          "currentPerformance": {
+            "googleScore": 60,
+            "perplexityScore": 59,
+            "overallRanking": "AI 요약 공동 1위, Google 중하위권 (7, 9위)"
+          },
+          "competitorInsights": [
+            "Samsung은 QLED 및 Tizen OS를 강조하며 스마트 홈 통합에 집중하고 있음.",
+            "Wikipedia, Best Buy 등 상위 랭커들은 광범위한 정보(4000+ 단어), 잘 구조화된 콘텐츠, Article/SoftwareApplication 스키마를 사용하여 권위를 확보함."
+          ],
+          "strategies": [
+            {
+              "category": "온페이지 콘텐츠 최적화 (P0)",
+              "priority": "P0",
+              "description": "경쟁사와의 비교 우위를 강조하는 질문형 H2/H3 태그와 40-60자 Answer-First 답변 블록을 도입하여 AI 개요 인용률을 높입니다. 특히 'OLED'의 기술적 장점을 명확히 해야 합니다.",
+              "specificActions": [
+                "H2: 'LG OLED evo와 경쟁사의 QLED, 어떤 차이가 있나요?'와 같은 직접적인 비교 질문 사용",
+                "주요 기술 스펙 비교를 위한 HTML 표 구조 삽입 (경쟁사 Best Buy 미러링)",
+                "LG webOS의 주요 앱 호환성 및 기능에 대한 FAQ 섹션 강화."
+              ],
+              "contentSnippet": "## LG OLED evo G5가 QLED TV보다 뛰어난 점은 무엇인가요?\n\nLG OLED evo G5는 픽셀 하나하나가 스스로 빛을 내는 자체 발광 기술을 사용하여, 완벽한 블랙과 무한 명암비를 구현함으로써 비교할 수 없는 화질 깊이와 정확한 색상을 제공합니다. 특히 빠른 응답 속도는 게이밍 환경에 최적화되어 있습니다.",
+              "schemaExample": {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "LG OLED evo와 기존 OLED의 주요 기술적 차이점은 무엇인가요?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "OLED evo는 밝기와 효율성을 개선한 5세대 패널 기술을 사용하여 기존 OLED 대비 더욱 선명하고 밝은 화면을 제공하며, 특히 α9 Gen6 AI 프로세서가 탑재되어 최적의 시청 경험을 제공합니다."
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "category": "기술 & 스키마 적용 (P0)",
+              "priority": "P0",
+              "description": "핵심 제품 페이지에 Product Schema와 함께 LG webOS 기능을 엔터티로 정의하기 위한 SoftwareApplication 스키마를 적용합니다 (경쟁사 App Store 랭킹 분석 반영).",
+              "specificActions": [
+                "LG OLED evo G5 모델 페이지에 Product Schema 적용 (리뷰, 평점, 가격 정보 포함).",
+                "webOS 앱 마켓 및 스마트 기능 설명 페이지에 SoftwareApplication 스키마 적용."
+              ],
+              "contentSnippet": "LG webOS 23: 개인화된 퀵 카드와 'ThinQ Home Hub' 통합으로 사용자 맞춤형 콘텐츠와 편리한 스마트 기기 제어를 제공하는 혁신적인 운영체제입니다.",
+              "schemaExample": {
+                "@type": "SoftwareApplication",
+                "name": "LG webOS 23",
+                "operatingSystem": "LG Smart TVs",
+                "applicationCategory": "MultimediaApplication"
+              }
+            }
+          ],
+          "implementationTimeline": "1주차: 구조화된 데이터 설계, 2-3주차: TV 상세 페이지 콘텐츠 및 스키마 적용, 4주차: AI 인용 성과 모니터링",
+          "expectedOutcome": "스마트 TV 쿼리에서 Google 3위권 진입, AI 개요/FAQ 피처드 스니펫 획득률 60% 이상"
+        },
+        {
+          "query": "프리미엄 가전",
+          "currentPerformance": {
+            "googleScore": 100,
+            "perplexityScore": 33,
+            "overallRanking": "Google 2위, AI 요약 2위 (삼성에 뒤처짐)"
+          },
+          "competitorInsights": [
+            "Samsung은 'Bespoke'라는 명확한 커스터마이징 디자인 전략을 강조하여 AI 요약에서 긍정적 언급(Sentiment Score 67%)을 확보함.",
+            "Perplexity AI는 LG의 강점으로 'ThinQ 스마트 제어' 및 '에너지 효율성'을 언급함."
+          ],
+          "strategies": [
+            {
+              "category": "E-E-A-T 및 권위 확보 (P1)",
+              "priority": "P1",
+              "description": "단순 제품 소개를 넘어, LG 시그니처(LG SIGNATURE)의 설계 철학과 기술을 강조하는 콘텐츠를 통해 기술적 전문성(Expertise)을 강화합니다. 경쟁사의 디자인 포커스에 맞서 LG는 '지속 가능한 기술과 내구성'을 핵심 메시지로 내세웁니다.",
+              "specificActions": [
+                "LG Signature의 기술적 배경(인버터 컴프레서 수명, 에너지 효율 1등급)에 대한 'LG 기술 전문가'의 프로필과 함께 Article 스키마 적용 (E-E-A-T 확보).",
+                "ThinQ AI가 가전제품 전체(TV, 냉장고, 세탁기)를 통합 관리하는 방식에 대한 상세 가이드 콘텐츠 제작."
+              ],
+              "contentSnippet": "## LG SIGNATURE: 시대를 초월하는 기술, '가치'를 높입니다\n\nLG 시그니처는 기술과 디자인의 완벽한 조화를 추구하며, 특히 혁신적인 인버터 리니어 컴프레서 기술은 탁월한 내구성과 최소화된 에너지 소비를 보장합니다. 이는 단순한 가전을 넘어 고객의 삶의 질을 높이는 프리미엄 솔루션입니다.",
+              "schemaExample": {
+                "@type": "Article",
+                "headline": "LG Signature, 프리미엄 가전 시장을 선도하는 지속 가능 기술",
+                "author": {
+                  "@type": "Person",
+                  "name": "박영희 책임 연구원, LG전자 디자인 혁신 센터"
+                },
+                "datePublished": "2025-05-01"
+              }
+            }
+          ],
+          "implementationTimeline": "1-2주차: LG SIGNATURE/ThinQ 기술 백서 제작 및 E-E-A-T 요소(저자 프로필) 추가, 3-4주차: 기존 제품 페이지 내 스키마 강화 및 AI 인용 모니터링",
+          "expectedOutcome": "Perplexity AI 요약에서 LG의 긍정적 감성 점수 75% 이상 달성, 'ThinQ' 관련 용어의 AI 인용 빈도 50% 증가"
+        },
+        {
+          "query": "에어컨",
+          "currentPerformance": {
+            "googleScore": 0,
+            "perplexityScore": 0,
+            "overallRanking": "모든 검색 및 AI 플랫폼에서 언급 부재 (심각)"
+          },
+          "competitorInsights": [
+            "에어컨 시장 콘텐츠는 주로 에너지 효율 등급(SEER), 설치 유형, 그리고 '최고의 브랜드' 비교에 중점을 두고 있음.",
+            "AI는 구체적인 기술 스펙(인버터, 듀얼 컴프레서)과 관련된 질문에 답변할 수 있는 구조화된 데이터를 선호함."
+          ],
+          "strategies": [
+            {
+              "category": "콘텐츠 제작 및 가시성 확보 (P0)",
+              "priority": "P0",
+              "description": "LG 휘센 에어컨을 위한 '종합 기술 가이드 허브 페이지'를 구축하여, 현재 0%인 가시성을 즉시 끌어올립니다. LG만의 차별화된 '듀얼 인버터' 및 'AI 딥러닝' 기술에 집중합니다.",
+              "specificActions": [
+                "H1: '2025년 LG 휘센 에어컨: DUAL 인버터 기술과 AI 딥러닝의 완벽한 조화' (키워드 및 기술 포함).",
+                "사용자들이 자주 묻는 설치 및 유지보수 관련 질문에 HowTo 및 FAQ 스키마를 적용한 페이지 제작.",
+                "에어컨 구매 시 고려해야 할 요소(에너지 효율, 소음, 관리 용이성)에 대해 경쟁사 대비 LG의 우위를 표로 정리."
+              ],
+              "contentSnippet": "## LG 휘센 에어컨의 DUAL 인버터 컴프레서는 무엇이 다른가요?\n\nLG DUAL 인버터 컴프레서는 냉매 압축 효율을 극대화하여 기존 에어컨 대비 냉방 속도는 빠르면서도 에너지 소비는 최대 70%까지 절감합니다. 소음까지 줄여 조용한 프리미엄 냉방을 실현합니다.",
+              "schemaExample": {
+                "@type": "HowTo",
+                "name": "LG 휘센 에어컨 필터 청소 방법",
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "name": "전원 차단",
+                    "text": "안전을 위해 에어컨 전원을 차단하고, 실내기 커버를 열어주세요."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "name": "필터 분리 및 세척",
+                    "text": "극세 필터와 초미세 플러스 필터를 분리하여 중성세제로 세척 후 그늘에서 완전히 건조합니다."
+                  }
+                ]
+              }
+            }
+          ],
+          "implementationTimeline": "1-2주차: 에어컨 허브 페이지 콘텐츠 개발 완료 및 스키마 적용, 3주차: 내부 링크 구조 재정비 및 Google Search Console 제출",
+          "expectedOutcome": "에어컨 쿼리에서 4주 내 구글 10위권 진입 및 Perplexity AI 요약에 LG 브랜드 첫 언급 달성"
+        }
+      ],
+      "crossQueryInsights": [
+        "모든 제품군(TV, 가전, 에어컨)에서 LG의 핵심 엔터티인 'ThinQ AI'를 명시적으로 연결하여 '통합 스마트홈 솔루션' 제공자로서의 일관된 브랜드 이미지를 구축해야 합니다.",
+        "경쟁사(삼성)가 디자인과 커스터마이징을 내세울 때, LG는 '기술력(OLED, DUAL 인버터)과 에너지 효율'이라는 실질적 우위를 질문-답변 구조를 통해 간결하고 명확하게 전달해야 합니다.",
+        "P0 항목인 Schema 마크업 부재는 모든 쿼리의 AI 성능을 저해하는 요소이므로, 최우선으로 해결해야 합니다. FAQPage와 Product 스키마를 템플릿화하여 일괄 적용합니다."
+      ],
+      "brandVoiceGuidelines": {
+        "tone": "기술적 전문성과 사용자 중심의 따뜻함",
+        "keyMessages": [
+          "혁신적 기술: OLED, DUAL 인버터",
+          "사용자 경험: webOS, ThinQ AI",
+          "신뢰성: 에너지 효율 및 내구성",
+          "프리미엄 한국 브랜드의 자부심"
+        ],
+        "avoidTerms": [
+          "저렴한",
+          "할인",
+          "특가",
+          "보급형"
+        ],
+        "preferredTerms": [
+          "프리미엄",
+          "혁신",
+          "기술력",
+          "자체 발광",
+          "듀얼 인버터",
+          "딥러닝",
+          "ThinQ"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "totalScore": 43,
+    "scoreCategory": "Foundational Stage",
+    "queriesAnalyzed": 3,
+    "topRecommendations": [
+      {
+        "category": "기술 & 스키마",
+        "priority": "P0",
+        "impact": "high",
+        "effort": "medium",
+        "description": "구조화된 데이터 마크업 부재는 AI 개요 생성을 위한 핵심 신호를 누락시키는 중대한 결함입니다 (점수 0/15). 메인 페이지에 Organization 스키마를, 모든 주요 제품 페이지에 Product 스키마를 적용하여 엔터티와 제품 정보를 명확하게 정의해야 합니다.",
+        "suggestion_snippet": null,
+        "where_to_apply": "전체 웹사이트 헤더 및 주요 제품(스마트 TV, 에어컨, 냉장고 등) 랜딩 페이지의 <head> 태그 내",
+        "sample_schema_block": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "LG OLED evo G5 스마트 TV",
+          "description": "최신 2025년형 LG OLED evo G5는 픽셀 디밍 기술과 webOS를 기반으로 최고의 화질과 사용자 경험을 제공합니다.",
+          "brand": {
+            "@type": "Organization",
+            "name": "LG"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "KRW",
+            "price": "3500000",
+            "availability": "https://schema.org/InStock"
+          },
+          "review": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "1250"
+          }
+        },
+        "metric": "핵심 제품 페이지의 리치 결과 노출률 및 AI 개요 인용률"
+      },
+      {
+        "category": "온페이지 구조",
+        "priority": "P0",
+        "impact": "high",
+        "effort": "low",
+        "description": "H2/H3 다음에 40~60자 답변이 있는 구조가 완전히 부재합니다 (0/4). 질문 형식의 H2 태그를 사용하고 그 바로 아래에 간결하고 직접적인 답변(Answer-First Block)을 배치하여 AI 개요가 해당 정보를 쉽게 추출하도록 유도해야 합니다.",
+        "suggestion_snippet": "<h2>LG OLED TV와 QNED TV의 주요 차이점은 무엇인가요?</h2>\n<p><strong>LG OLED TV</strong>는 완벽한 블랙과 무한 명암비를 제공하여 영화 감상에 최적화된 반면, <strong>LG QNED TV</strong>는 미니 LED 기술로 높은 밝기와 넓은 색 영역을 제공하여 밝은 환경에서 뛰어난 성능을 발휘합니다.</p>",
+        "where_to_apply": "스마트 TV 비교/선택 가이드 페이지의 H2 교체 및 답변 문단 추가",
+        "metric": "AI 개요 내 LG 제품의 핵심 속성(OLED vs QNED) 요약 빈도"
+      },
+      {
+        "category": "직접 AEO 성과",
+        "priority": "P0",
+        "impact": "high",
+        "effort": "medium",
+        "description": "'에어컨' 쿼리 가시성이 심각하게 낮습니다(0점). LG의 'ThinQ' 기반 스마트 에어컨 기능과 높은 에너지 효율성(E-E-A-T에서 강점인 'Energy Efficiency'와 연관)을 강조하는 전문 콘텐츠 페이지를 구축하고 관련 Schema를 적용해야 합니다.",
+        "suggestion_snippet": "<h1>2025년형 LG 휘센 에어컨: AI 기능과 에너지 효율의 혁신</h1>\n<p>LG 휘센 에어컨은 딥러닝 AI 기술을 통해 실내 환경을 스스로 학습하고 최적의 냉방 솔루션을 제공합니다. 에너지 소비 효율 1등급을 달성하여 장기적인 비용 절감 효과를 선사합니다.</p>",
+        "where_to_apply": "LG 에어컨 제품 카테고리 메인 랜딩 페이지 (H1, 메타 디스크립션 및 본문 도입부)",
+        "metric": "핵심 에어컨 쿼리에서의 구글 검색 순위 및 Perplexity AI 언급률"
+      }
+    ]
+  }
+}

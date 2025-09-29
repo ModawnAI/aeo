@@ -1,0 +1,171 @@
+{
+  "brandStrategy": {
+    "brandName": "엘지 (LG)",
+    "overallStrategy": "LG는 스마트 TV 분야에서 AI 인용도가 높으나(Perplexity 1위), 경쟁사 대비 웹사이트의 기술적 구조화(스키마, Q&A 형식)가 부족하고, '에어컨' 분야의 시장 가시성이 전무합니다. 따라서 'OLED, webOS, ThinQ'의 기술적 우위를 AI 봇이 즉각적으로 인용할 수 있도록 온페이지 구조와 스키마를 P0로 최적화하고, 가시성이 낮은 쿼리(에어컨)에 대한 권위 콘텐츠를 즉시 구축하는 'AI 인용 극대화 전략'을 실행해야 합니다.",
+    "queryStrategies": [
+      {
+        "query": "스마트 TV",
+        "currentPerformance": {
+          "googleScore": 60,
+          "perplexityScore": 59,
+          "overallRanking": "AI 요약 공동 1위, Google 중하위권 (7, 9위)"
+        },
+        "competitorInsights": [
+          "Samsung은 QLED 및 Tizen OS를 강조하며 스마트 홈 통합에 집중하고 있음.",
+          "Wikipedia, Best Buy 등 상위 랭커들은 광범위한 정보(4000+ 단어), 잘 구조화된 콘텐츠, Article/SoftwareApplication 스키마를 사용하여 권위를 확보함."
+        ],
+        "strategies": [
+          {
+            "category": "온페이지 콘텐츠 최적화 (P0)",
+            "priority": "P0",
+            "description": "경쟁사와의 비교 우위를 강조하는 질문형 H2/H3 태그와 40-60자 Answer-First 답변 블록을 도입하여 AI 개요 인용률을 높입니다. 특히 'OLED'의 기술적 장점을 명확히 해야 합니다.",
+            "specificActions": [
+              "H2: 'LG OLED evo와 경쟁사의 QLED, 어떤 차이가 있나요?'와 같은 직접적인 비교 질문 사용",
+              "주요 기술 스펙 비교를 위한 HTML 표 구조 삽입 (경쟁사 Best Buy 미러링)",
+              "LG webOS의 주요 앱 호환성 및 기능에 대한 FAQ 섹션 강화."
+            ],
+            "contentSnippet": "## LG OLED evo G5가 QLED TV보다 뛰어난 점은 무엇인가요?\n\nLG OLED evo G5는 픽셀 하나하나가 스스로 빛을 내는 자체 발광 기술을 사용하여, 완벽한 블랙과 무한 명암비를 구현함으로써 비교할 수 없는 화질 깊이와 정확한 색상을 제공합니다. 특히 빠른 응답 속도는 게이밍 환경에 최적화되어 있습니다.",
+            "schemaExample": {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "LG OLED evo와 기존 OLED의 주요 기술적 차이점은 무엇인가요?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "OLED evo는 밝기와 효율성을 개선한 5세대 패널 기술을 사용하여 기존 OLED 대비 더욱 선명하고 밝은 화면을 제공하며, 특히 α9 Gen6 AI 프로세서가 탑재되어 최적의 시청 경험을 제공합니다."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "category": "기술 & 스키마 적용 (P0)",
+            "priority": "P0",
+            "description": "핵심 제품 페이지에 Product Schema와 함께 LG webOS 기능을 엔터티로 정의하기 위한 SoftwareApplication 스키마를 적용합니다 (경쟁사 App Store 랭킹 분석 반영).",
+            "specificActions": [
+              "LG OLED evo G5 모델 페이지에 Product Schema 적용 (리뷰, 평점, 가격 정보 포함).",
+              "webOS 앱 마켓 및 스마트 기능 설명 페이지에 SoftwareApplication 스키마 적용."
+            ],
+            "contentSnippet": "LG webOS 23: 개인화된 퀵 카드와 'ThinQ Home Hub' 통합으로 사용자 맞춤형 콘텐츠와 편리한 스마트 기기 제어를 제공하는 혁신적인 운영체제입니다.",
+            "schemaExample": {
+              "@type": "SoftwareApplication",
+              "name": "LG webOS 23",
+              "operatingSystem": "LG Smart TVs",
+              "applicationCategory": "MultimediaApplication"
+            }
+          }
+        ],
+        "implementationTimeline": "1주차: 구조화된 데이터 설계, 2-3주차: TV 상세 페이지 콘텐츠 및 스키마 적용, 4주차: AI 인용 성과 모니터링",
+        "expectedOutcome": "스마트 TV 쿼리에서 Google 3위권 진입, AI 개요/FAQ 피처드 스니펫 획득률 60% 이상"
+      },
+      {
+        "query": "프리미엄 가전",
+        "currentPerformance": {
+          "googleScore": 100,
+          "perplexityScore": 33,
+          "overallRanking": "Google 2위, AI 요약 2위 (삼성에 뒤처짐)"
+        },
+        "competitorInsights": [
+          "Samsung은 'Bespoke'라는 명확한 커스터마이징 디자인 전략을 강조하여 AI 요약에서 긍정적 언급(Sentiment Score 67%)을 확보함.",
+          "Perplexity AI는 LG의 강점으로 'ThinQ 스마트 제어' 및 '에너지 효율성'을 언급함."
+        ],
+        "strategies": [
+          {
+            "category": "E-E-A-T 및 권위 확보 (P1)",
+            "priority": "P1",
+            "description": "단순 제품 소개를 넘어, LG 시그니처(LG SIGNATURE)의 설계 철학과 기술을 강조하는 콘텐츠를 통해 기술적 전문성(Expertise)을 강화합니다. 경쟁사의 디자인 포커스에 맞서 LG는 '지속 가능한 기술과 내구성'을 핵심 메시지로 내세웁니다.",
+            "specificActions": [
+              "LG Signature의 기술적 배경(인버터 컴프레서 수명, 에너지 효율 1등급)에 대한 'LG 기술 전문가'의 프로필과 함께 Article 스키마 적용 (E-E-A-T 확보).",
+              "ThinQ AI가 가전제품 전체(TV, 냉장고, 세탁기)를 통합 관리하는 방식에 대한 상세 가이드 콘텐츠 제작."
+            ],
+            "contentSnippet": "## LG SIGNATURE: 시대를 초월하는 기술, '가치'를 높입니다\n\nLG 시그니처는 기술과 디자인의 완벽한 조화를 추구하며, 특히 혁신적인 인버터 리니어 컴프레서 기술은 탁월한 내구성과 최소화된 에너지 소비를 보장합니다. 이는 단순한 가전을 넘어 고객의 삶의 질을 높이는 프리미엄 솔루션입니다.",
+            "schemaExample": {
+              "@type": "Article",
+              "headline": "LG Signature, 프리미엄 가전 시장을 선도하는 지속 가능 기술",
+              "author": {
+                "@type": "Person",
+                "name": "박영희 책임 연구원, LG전자 디자인 혁신 센터"
+              },
+              "datePublished": "2025-05-01"
+            }
+          }
+        ],
+        "implementationTimeline": "1-2주차: LG SIGNATURE/ThinQ 기술 백서 제작 및 E-E-A-T 요소(저자 프로필) 추가, 3-4주차: 기존 제품 페이지 내 스키마 강화 및 AI 인용 모니터링",
+        "expectedOutcome": "Perplexity AI 요약에서 LG의 긍정적 감성 점수 75% 이상 달성, 'ThinQ' 관련 용어의 AI 인용 빈도 50% 증가"
+      },
+      {
+        "query": "에어컨",
+        "currentPerformance": {
+          "googleScore": 0,
+          "perplexityScore": 0,
+          "overallRanking": "모든 검색 및 AI 플랫폼에서 언급 부재 (심각)"
+        },
+        "competitorInsights": [
+          "에어컨 시장 콘텐츠는 주로 에너지 효율 등급(SEER), 설치 유형, 그리고 '최고의 브랜드' 비교에 중점을 두고 있음.",
+          "AI는 구체적인 기술 스펙(인버터, 듀얼 컴프레서)과 관련된 질문에 답변할 수 있는 구조화된 데이터를 선호함."
+        ],
+        "strategies": [
+          {
+            "category": "콘텐츠 제작 및 가시성 확보 (P0)",
+            "priority": "P0",
+            "description": "LG 휘센 에어컨을 위한 '종합 기술 가이드 허브 페이지'를 구축하여, 현재 0%인 가시성을 즉시 끌어올립니다. LG만의 차별화된 '듀얼 인버터' 및 'AI 딥러닝' 기술에 집중합니다.",
+            "specificActions": [
+              "H1: '2025년 LG 휘센 에어컨: DUAL 인버터 기술과 AI 딥러닝의 완벽한 조화' (키워드 및 기술 포함).",
+              "사용자들이 자주 묻는 설치 및 유지보수 관련 질문에 HowTo 및 FAQ 스키마를 적용한 페이지 제작.",
+              "에어컨 구매 시 고려해야 할 요소(에너지 효율, 소음, 관리 용이성)에 대해 경쟁사 대비 LG의 우위를 표로 정리."
+            ],
+            "contentSnippet": "## LG 휘센 에어컨의 DUAL 인버터 컴프레서는 무엇이 다른가요?\n\nLG DUAL 인버터 컴프레서는 냉매 압축 효율을 극대화하여 기존 에어컨 대비 냉방 속도는 빠르면서도 에너지 소비는 최대 70%까지 절감합니다. 소음까지 줄여 조용한 프리미엄 냉방을 실현합니다.",
+            "schemaExample": {
+              "@type": "HowTo",
+              "name": "LG 휘센 에어컨 필터 청소 방법",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "name": "전원 차단",
+                  "text": "안전을 위해 에어컨 전원을 차단하고, 실내기 커버를 열어주세요."
+                },
+                {
+                  "@type": "HowToStep",
+                  "name": "필터 분리 및 세척",
+                  "text": "극세 필터와 초미세 플러스 필터를 분리하여 중성세제로 세척 후 그늘에서 완전히 건조합니다."
+                }
+              ]
+            }
+          }
+        ],
+        "implementationTimeline": "1-2주차: 에어컨 허브 페이지 콘텐츠 개발 완료 및 스키마 적용, 3주차: 내부 링크 구조 재정비 및 Google Search Console 제출",
+        "expectedOutcome": "에어컨 쿼리에서 4주 내 구글 10위권 진입 및 Perplexity AI 요약에 LG 브랜드 첫 언급 달성"
+      }
+    ],
+    "crossQueryInsights": [
+      "모든 제품군(TV, 가전, 에어컨)에서 LG의 핵심 엔터티인 'ThinQ AI'를 명시적으로 연결하여 '통합 스마트홈 솔루션' 제공자로서의 일관된 브랜드 이미지를 구축해야 합니다.",
+      "경쟁사(삼성)가 디자인과 커스터마이징을 내세울 때, LG는 '기술력(OLED, DUAL 인버터)과 에너지 효율'이라는 실질적 우위를 질문-답변 구조를 통해 간결하고 명확하게 전달해야 합니다.",
+      "P0 항목인 Schema 마크업 부재는 모든 쿼리의 AI 성능을 저해하는 요소이므로, 최우선으로 해결해야 합니다. FAQPage와 Product 스키마를 템플릿화하여 일괄 적용합니다."
+    ],
+    "brandVoiceGuidelines": {
+      "tone": "기술적 전문성과 사용자 중심의 따뜻함",
+      "keyMessages": [
+        "혁신적 기술: OLED, DUAL 인버터",
+        "사용자 경험: webOS, ThinQ AI",
+        "신뢰성: 에너지 효율 및 내구성",
+        "프리미엄 한국 브랜드의 자부심"
+      ],
+      "avoidTerms": [
+        "저렴한",
+        "할인",
+        "특가",
+        "보급형"
+      ],
+      "preferredTerms": [
+        "프리미엄",
+        "혁신",
+        "기술력",
+        "자체 발광",
+        "듀얼 인버터",
+        "딥러닝",
+        "ThinQ"
+      ]
+    }
+  }
+}
