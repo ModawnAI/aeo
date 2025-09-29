@@ -1,0 +1,55 @@
+{
+  "name": "aeo-chain-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered Answer Engine Optimization (AEO) analysis tool with Korean localization",
+  "main": "src/aeo-chain.js",
+  "scripts": {
+    "start": "node src/aeo-chain.js",
+    "aeo-chain": "node src/aeo-chain.js",
+    "test-chain": "node src/test-chain.js",
+    "dashboard": "cd output && python3 -m http.server 8080",
+    "dashboard-open": "npm run dashboard & sleep 2 && (open http://localhost:8080/dashboard.html || start http://localhost:8080/dashboard.html || xdg-open http://localhost:8080/dashboard.html)",
+    "models": "node -e \"console.log('Model configuration not yet implemented. Please edit .taskmaster/config.json manually.')\"",
+    "models-setup": "node -e \"console.log('Interactive model setup not yet implemented. Please edit .taskmaster/config.json manually.')\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "clean": "rm -rf output/aeo-results.json output/partial-*.json",
+    "setup": "cp env.example .env && echo 'Please edit .env with your API keys'"
+  },
+  "keywords": [
+    "aeo",
+    "answer-engine-optimization",
+    "seo",
+    "ai-search",
+    "perplexity",
+    "google-ai-overview",
+    "korean",
+    "brand-analysis",
+    "competitor-analysis",
+    "content-strategy"
+  ],
+  "author": "AEO Chain Analyzer Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.128",
+    "@google/genai": "^1.21.0",
+    "@perplexity-ai/perplexity_ai": "^0.6.0",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "mime": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "@types/node": "^22.18.6",
+    "jest": "^29.7.0",
+    "shadcn": "^3.3.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ]
+  }
+}

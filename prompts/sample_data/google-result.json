@@ -1,0 +1,237 @@
+[
+    {
+      "query": "스마트 TV",
+      "searchEngine": "google",
+      "brandName": "LG",
+      "results": [
+        {
+          "position": 1,
+          "title": "Smart TVs: HD & LED Smart TVs – Best Buy",
+          "url": "https://www.bestbuy.com/site/tvs/smart-tvs/pcmcat220700050011.c?id=pcmcat220700050011",
+          "snippet": "With a smart TV, you can access your streaming services directly through your television with no need for an additional streaming media player. You have ...",
+          "domain": "www.bestbuy.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 2,
+          "title": "Smart TV - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Smart_TV",
+          "snippet": "These devices allow viewers to find and play videos, movies, TV shows, photos, and other content from the Web, cable or satellite TV channels, or a local ...",
+          "domain": "en.wikipedia.org",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 3,
+          "title": "Screen Mirroring | Smart TV on the App Store",
+          "url": "https://apps.apple.com/tr/app/screen-mirroring-smart-tv/id1586624313",
+          "snippet": "Screen Mirroring app allows you to easily mirror your iPhone's screen to any smart TV in great quality and with no delays. Making a presentation?",
+          "domain": "apps.apple.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 4,
+          "title": "Smart TV - Develop | Samsung Developers",
+          "url": "https://developer.samsung.com/smarttv/develop",
+          "snippet": "Smart TV. Learn how to extend your apps to the big screen. Create seamless TV and mobile experiences with the latest Tizen TV SDK. Get Started Get Started ...",
+          "domain": "developer.samsung.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 5,
+          "title": "Watch YouTube on your smart TV by linking to your devices - Android",
+          "url": "https://support.google.com/youtube/answer/7640706?hl=en&co=GENIE.Platform%3DAndroid",
+          "snippet": "Open the YouTube app on your phone or tablet. Select the video that you want to watch and tap Cast in the video player. Choose the smart TV or streaming device ...",
+          "domain": "support.google.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 6,
+          "title": "Smart-TV Usability: Accessing Content is Key - NN/G",
+          "url": "https://www.nngroup.com/articles/smart-tv-usability/",
+          "snippet": "Sep 20, 2015 ... In this article we discuss the overarching principles that must be considered to address the top user tasks in this domain: browsing, locating, and accessing ...",
+          "domain": "www.nngroup.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 7,
+          "title": "Supported LG TV models | Disney+ Help Center | US",
+          "url": "https://help.disneyplus.com/article/disneyplus-lg-tv",
+          "snippet": "*Please note that streaming is not supported on the LG TV web browser application or LG TVs with NetCast OS. ... Supported Samsung Smart TV models. Need more help ...",
+          "domain": "help.disneyplus.com",
+          "brandMentioned": true,
+          "relevanceScore": 50
+        },
+        {
+          "position": 8,
+          "title": "Philips TV. Philips Smart TV | Philips",
+          "url": "https://www.philips.com/c-w/country-selectorpage/tv/smarttv.html",
+          "snippet": "Welcome to Philips Smart TV · Choose your country below · Europe · Latin America · Asia Pacific · Connect with Philips · Select site Philips. Consumer Products ...",
+          "domain": "www.philips.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 9,
+          "title": "Information commissioner investigates LG snooping smart TV data ...",
+          "url": "https://www.theguardian.com/technology/2013/nov/21/information-commissioner-investigates-lg-snooping-smart-tv-data-collection",
+          "snippet": "Nov 21, 2013 ... LG's smart TV sets send information back to the Korean company about what programmes you have watched, and even what files you may have stored on a USB disks ...",
+          "domain": "www.theguardian.com",
+          "brandMentioned": true,
+          "relevanceScore": 50
+        },
+        {
+          "position": 10,
+          "title": "Which Smart TV models are supported? | Plex Support",
+          "url": "https://support.plex.tv/articles/204080173-which-smart-tv-models-are-supported/",
+          "snippet": "Jan 21, 2025 ... Plex offers player apps across a wide range of smart TV manufacturers and models. These are broken out into two broad categories.",
+          "domain": "support.plex.tv",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        }
+      ],
+      "brandVisibility": {
+        "topPosition": 7,
+        "totalMentions": 2,
+        "averagePosition": 8,
+        "visibilityScore": 60
+      },
+      "competitorAnalysis": {
+        "directCompetitors": [
+          "Samsung",
+          "Sony",
+          "Panasonic"
+        ],
+        "competitorPositions": {
+          "Samsung": [
+            4,
+            7
+          ],
+          "Sony": [],
+          "Panasonic": []
+        },
+        "marketShare": 20
+      }
+    },
+    {
+      "query": "프리미엄 가전",
+      "searchEngine": "google",
+      "brandName": "LG",
+      "results": [
+        {
+          "position": 1,
+          "title": "Products",
+          "url": "https://hswus.com/en/collections/all",
+          "snippet": "주방가전; 주방가전 > 냉장고; 주방가전 > 믹서기; 주방가전 > 밥솥; 주방가전 > 밥솥 > IH전기압력; 주방가전 > 밥솥 > 일반압력; 주방가전 > 밥솥 > 전기보온; 주방가전 ...",
+          "domain": "hswus.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 2,
+          "title": "File:LG전자, 미국 프리미엄 가전시장 공략 강화 - 14262405138.jpg ...",
+          "url": "https://commons.wikimedia.org/wiki/File:LG%EC%A0%84%EC%9E%90,_%EB%AF%B8%EA%B5%AD_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EA%B0%80%EC%A0%84%EC%8B%9C%EC%9E%A5_%EA%B3%B5%EB%9E%B5_%EA%B0%95%ED%99%94_-_14262405138.jpg",
+          "snippet": "Jun 17, 2014 ... ... 프리미엄 가전 시장을 지속 선도해 나갈 것”이라고 강조. ※ Social LG전자 (social.lge.co.kr/newsroom) 에서 관련 보도자료를 확인하실 수 있습니다 ...",
+          "domain": "commons.wikimedia.org",
+          "brandMentioned": true,
+          "relevanceScore": 100
+        },
+        {
+          "position": 3,
+          "title": ". 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복 ...",
+          "url": "https://www.instagram.com/p/DKRTWz_yCjR/",
+          "snippet": "May 30, 2025 ... . 100년 전통의 독일 프리미엄 가전 “블라우풍트”함께 하게 되어 행복합니다 #블라우풍트 ... Photo by 유이 (Uie) on September 25, 2025. May be an ...",
+          "domain": "www.instagram.com",
+          "brandMentioned": false,
+          "relevanceScore": 50
+        },
+        {
+          "position": 4,
+          "title": "멀티쿠커",
+          "url": "https://cuckooamerica.com/ko/collections/multi-cookers",
+          "snippet": "주방가전. 주방가전. 커피메이커&전기주전자 · 에어프라이어&제빵기 · 믹서기&얼음 ... 5쿼트 프리미엄 멀티압력밥솥 (CMC-QSB501S). $199.99. 5.0. 6쿼트 8-in-1 압력밥솥 ...",
+          "domain": "cuckooamerica.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 5,
+          "title": "대구 범어 STX칸 model. CCE84751FB (사진 무단배포 사용을 엄격히 ...",
+          "url": "https://www.instagram.com/p/DOsNG8EkuPP/",
+          "snippet": "Sep 16, 2025 ... Photo by AEG 독일 프리미엄 가전 정품 판매 on September 15, 2025. May be.",
+          "domain": "www.instagram.com",
+          "brandMentioned": false,
+          "relevanceScore": 20
+        },
+        {
+          "position": 6,
+          "title": "MissyShop |",
+          "url": "https://kmarket365.com/me/prod_cat_list.asp?cat_code=49&oby=3",
+          "snippet": "주방가전 · 계절/생활가전 · 건강가전 · 주방 · 명품식기브랜드 · 보관용기 · 조리용품 · 주방소품 · 식품 · 즉석가공식품 · 쌀/잡곡/면류 · 양념/소스/가루 · 건조식품.",
+          "domain": "kmarket365.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 7,
+          "title": "Fissler - MissyShop",
+          "url": "https://www.kmarket365.com/me/prod_cat_list.asp?cat_code=140249",
+          "snippet": "주방가전 · 계절/생활가전 · 건강가전 · 주방 · 명품식기브랜드 · 보관용기 · 조리용품 · 주방소품 · 식품 · 즉석가공식품 · 쌀/잡곡/면류 · 양념/소스/가루 · 건조식품.",
+          "domain": "www.kmarket365.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 8,
+          "title": "최고의 가치를 실현하는 기업 - (주)리홈쿠첸",
+          "url": "https://www.bizntech.co.kr/eng/business/living.jsp",
+          "snippet": "생활을 바꾸는 스타일가전 프리미엄 생활, 주방가전 브랜드. Business Introduction. LiHOM. A stylish home appliance that changes a way of lifestyle. LiHOM is a ...",
+          "domain": "www.bizntech.co.kr",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 9,
+          "title": "Free 주방가전 Logo/profile Templates | MiriCanvas",
+          "url": "https://www.miricanvas.com/en/template/logo/%EC%A3%BC%EB%B0%A9%EA%B0%80%EC%A0%84",
+          "snippet": "Find a unique, distinctive 주방가전 Logo/profile template perfect for your needs at MiriCanvas.",
+          "domain": "www.miricanvas.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        },
+        {
+          "position": 10,
+          "title": "BUBANG",
+          "url": "http://bubang.com/eng/business/cuchen.jsp",
+          "snippet": "리빙사업부. 생활을 바꾸는 스타일가전 프리미엄 생활, 주방가전 브랜드 ...",
+          "domain": "bubang.com",
+          "brandMentioned": false,
+          "relevanceScore": 0
+        }
+      ],
+      "brandVisibility": {
+        "topPosition": 2,
+        "totalMentions": 1,
+        "averagePosition": 2,
+        "visibilityScore": 100
+      },
+      "competitorAnalysis": {
+        "directCompetitors": [
+          "Samsung",
+          "Sony",
+          "Panasonic"
+        ],
+        "competitorPositions": {
+          "Samsung": [],
+          "Sony": [],
+          "Panasonic": []
+        },
+        "marketShare": 10
+      }
+    }
+  ]

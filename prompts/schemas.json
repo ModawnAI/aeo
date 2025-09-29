@@ -1,0 +1,387 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AEO Chain Schemas",
+  "type": "object",
+  "definitions": {
+    "GoogleSearchInput": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "searchEngine": { "type": "string", "enum": ["google"] },
+          "brandName": { "type": "string" },
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": { "type": "integer" },
+                "title": { "type": "string" },
+                "url": { "type": "string" },
+                "snippet": { "type": "string" },
+                "domain": { "type": "string" },
+                "brandMentioned": { "type": "boolean" },
+                "relevanceScore": { "type": "number" }
+              },
+              "required": ["position", "url"],
+              "additionalProperties": true
+            }
+          },
+          "brandVisibility": {
+            "type": "object",
+            "properties": {
+              "topPosition": { "type": "integer" },
+              "totalMentions": { "type": "integer" },
+              "averagePosition": { "type": "number" },
+              "visibilityScore": { "type": "number" }
+            },
+            "additionalProperties": true
+          },
+          "competitorAnalysis": {
+            "type": "object",
+            "properties": {
+              "directCompetitors": { "type": "array", "items": { "type": "string" } },
+              "competitorPositions": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "integer" } } },
+              "marketShare": { "type": "number" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "required": ["query", "searchEngine", "results"],
+        "additionalProperties": true
+      }
+    },
+    "PerplexityInput": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "aiEngines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "engine": { "type": "string", "enum": ["perplexity"] },
+                "targetBrand": {
+                  "type": ["object", "null"],
+                  "properties": {
+                    "brandName": { "type": "string" },
+                    "mentionCount": { "type": "number" },
+                    "firstMentionPosition": { "type": "number" },
+                    "averagePosition": { "type": "number" },
+                    "sentimentScore": { "type": "number" },
+                    "recommendationContext": { "type": "boolean" },
+                    "authorityScore": { "type": "number" },
+                    "mentions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "text": { "type": "string" },
+                          "position": { "type": "number" },
+                          "sentiment": { "type": "string" },
+                          "context": { "type": "string" }
+                        },
+                        "required": ["text", "position"]
+                      }
+                    }
+                  },
+                  "additionalProperties": true
+                },
+                "competitors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "brandName": { "type": "string" },
+                      "mentionCount": { "type": "number" },
+                      "firstMentionPosition": { "type": "number" },
+                      "averagePosition": { "type": "number" },
+                      "sentimentScore": { "type": "number" },
+                      "recommendationContext": { "type": "boolean" },
+                      "authorityScore": { "type": "number" },
+                      "mentions": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "text": { "type": "string" },
+                            "position": { "type": "number" },
+                            "sentiment": { "type": "string" },
+                            "context": { "type": "string" }
+                          },
+                          "required": ["text", "position"]
+                        }
+                      }
+                    },
+                    "required": ["brandName"]
+                  }
+                },
+                "sources": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "url": { "type": "string" },
+                      "title": { "type": "string" },
+                      "cited": { "type": "boolean" }
+                    },
+                    "required": ["url"]
+                  }
+                },
+                "timestamp": { "type": "string" }
+              },
+              "required": ["engine", "sources"],
+              "additionalProperties": true
+            }
+          },
+          "brandComparison": {
+            "type": "object",
+            "properties": {
+              "targetBrandScore": {
+                "type": "object",
+                "properties": {
+                  "brandName": { "type": "string" },
+                  "visibility": { "type": "number" },
+                  "sentiment": { "type": "number" },
+                  "recommendation": { "type": "number" },
+                  "authority": { "type": "number" },
+                  "mentionRank": { "type": "number" },
+                  "combined": { "type": "number" }
+                },
+                "required": ["brandName"]
+              },
+              "competitorScores": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "brandName": { "type": "string" },
+                    "visibility": { "type": "number" },
+                    "sentiment": { "type": "number" },
+                    "recommendation": { "type": "number" },
+                    "authority": { "type": "number" },
+                    "mentionRank": { "type": "number" },
+                    "combined": { "type": "number" }
+                  },
+                  "required": ["brandName"]
+                }
+              },
+              "ranking": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "brandName": { "type": "string" },
+                    "visibility": { "type": "number" },
+                    "sentiment": { "type": "number" },
+                    "recommendation": { "type": "number" },
+                    "authority": { "type": "number" },
+                    "mentionRank": { "type": "number" },
+                    "combined": { "type": "number" }
+                  },
+                  "required": ["brandName"]
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "overallScore": {
+            "type": "object",
+            "properties": {
+              "searchVisibility": { "type": "number" },
+              "aiVisibility": { "type": "number" },
+              "authorityScore": { "type": "number" },
+              "competitivePosition": { "type": "number" },
+              "combined": { "type": "number" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "required": ["query", "aiEngines"],
+        "additionalProperties": true
+      }
+    },
+    "NormalizedIntake": {
+      "type": "object",
+      "properties": {
+        "brand": { "type": "string" },
+        "productService": { "type": "string" },
+        "targetQueries": { "type": "array", "items": { "type": "string" } },
+        "google": { "$ref": "#/definitions/GoogleSearchInput" },
+        "perplexity": { "$ref": "#/definitions/PerplexityInput" },
+        "competitors": { "type": "array", "items": { "type": "string" } },
+        "brandPresence": {
+          "type": "object",
+          "properties": {
+            "inGoogleTop10": { "type": "boolean" },
+            "googleTopPositions": { "type": "array", "items": { "type": "integer" } },
+            "inPerplexity": { "type": "boolean" },
+            "perplexityVisibility": { "type": "number" }
+          },
+          "additionalProperties": false
+        },
+        "issues": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["targetQueries"],
+      "additionalProperties": false
+    },
+    "AEOHeuristics": {
+      "type": "object",
+      "properties": {
+        "pillars": { "type": "array", "items": { "type": "string" } },
+        "checks": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "required": ["pillars", "checks"],
+      "additionalProperties": false
+    },
+    "AEOScore": {
+      "type": "object",
+      "properties": {
+        "pillars": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "subtotal": { "type": "number" },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "item": { "type": "string" },
+                    "max_points": { "type": "number" },
+                    "awarded": { "type": "number" },
+                    "rationale": { "type": "string" },
+                    "evidence": { "type": "string" }
+                  },
+                  "required": ["item", "max_points", "awarded"],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": ["name", "subtotal", "items"],
+            "additionalProperties": false
+          }
+        },
+        "total": { "type": "number" }
+      },
+      "required": ["pillars", "total"],
+      "additionalProperties": false
+    },
+    "Recommendations": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "priority": { "type": "string", "enum": ["P0", "P1", "P2"] },
+              "impact": { "type": "string", "enum": ["high", "medium", "low"] },
+              "effort": { "type": "string", "enum": ["low", "medium", "high"] },
+              "description": { "type": "string" },
+              "suggestion_snippet": { "type": "string" },
+              "where_to_apply": { "type": "string" },
+              "sample_schema_block": { "type": "object" },
+              "metric": { "type": "string" }
+            },
+            "required": ["category", "priority", "impact", "effort", "description"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["items"],
+      "additionalProperties": false
+    },
+    "PageAudit": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "signals": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "metaDescription": { "type": "string" },
+            "h1": { "type": "string" },
+            "h2Questions": { "type": "array", "items": { "type": "string" } },
+            "answerFirstBlocks": { "type": "array", "items": { "type": "string" } },
+            "faq": { "type": "array", "items": { "type": "string" } },
+            "schemaTypes": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": true
+        },
+        "whyItRanks": { "type": "string" }
+      },
+      "required": ["url"],
+      "additionalProperties": true
+    },
+    "BrandStrategy": {
+      "type": "object",
+      "properties": {
+        "brandName": { "type": "string" },
+        "overallStrategy": { "type": "string" },
+        "queryStrategies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "query": { "type": "string" },
+              "currentPerformance": {
+                "type": "object",
+                "properties": {
+                  "googleScore": { "type": "number" },
+                  "perplexityScore": { "type": "number" },
+                  "overallRanking": { "type": "string" }
+                }
+              },
+              "competitorInsights": { "type": "array", "items": { "type": "string" } },
+              "strategies": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "category": { "type": "string" },
+                    "priority": { "type": "string" },
+                    "description": { "type": "string" },
+                    "specificActions": { "type": "array", "items": { "type": "string" } },
+                    "contentSnippet": { "type": "string" },
+                    "schemaExample": { "type": "object" }
+                  },
+                  "required": ["category", "priority", "description", "specificActions"]
+                }
+              },
+              "implementationTimeline": { "type": "string" },
+              "expectedOutcome": { "type": "string" }
+            },
+            "required": ["query", "strategies"]
+          }
+        },
+        "crossQueryInsights": { "type": "array", "items": { "type": "string" } },
+        "brandVoiceGuidelines": {
+          "type": "object",
+          "properties": {
+            "tone": { "type": "string" },
+            "keyMessages": { "type": "array", "items": { "type": "string" } },
+            "avoidTerms": { "type": "array", "items": { "type": "string" } },
+            "preferredTerms": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      },
+      "required": ["brandName", "queryStrategies"],
+      "additionalProperties": false
+    }
+  }
+}
+
+
